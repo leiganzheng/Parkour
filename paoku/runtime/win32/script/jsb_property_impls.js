@@ -45,7 +45,7 @@ var _undefined = {
     },
     _shadowUndefined: _customUndefined("Please use enableShadow function"),
     _strokeUndefined: _customUndefined("Please use enableStroke function")
-}
+};
 
 _safeExtend(cc.Node.prototype, {
     _getWidth: function() {

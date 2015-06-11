@@ -124,7 +124,7 @@ ccs.TInfo = ccs.Class.extend({
 
 ccs.registerTriggerClass = function(className, createFunc) {
     new ccs.TInfo(className, createFunc);
-}
+};
 
 ccs.BaseTriggerCondition = ccs.Class.extend({
     init: function () {
@@ -286,7 +286,7 @@ ccs.TriggerObj.create = function() {
   if (ret.init())
     return ret;
   return null;
-}
+};
 
 ccs.triggerManager = {
     _eventTriggers: {},

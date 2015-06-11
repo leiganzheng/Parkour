@@ -253,9 +253,10 @@ RootActor.prototype = {
         "from": this.actorID,
         "selected": selected || 0,
         "tabs": [actor.form() for (actor of tabActorList)],
-      };
-
-      /* DebuggerServer.addGlobalActor support: name actors in 'listTabs' reply. */
+  }
+;
+;
+/* DebuggerServer.addGlobalActor support: name actors in 'listTabs' reply. */
       this._appendExtraActors(reply);
 
       /*
@@ -266,8 +267,8 @@ RootActor.prototype = {
       tabList.onListChanged = this._onTabListChanged;
 
       return reply;
-    });
-  },
+})
+},
 
   onTabListChanged: function () {
     this.conn.send({ from: this.actorID, type:"tabListChanged" });
@@ -299,9 +300,11 @@ RootActor.prototype = {
       return {
         "from": this.actorID,
         "addons": [addonActor.form() for (addonActor of addonActors)]
-      };
-    });
-  },
+  }
+;
+;
+})
+},
 
   onAddonListChanged: function () {
     this.conn.send({ from: this.actorID, type: "addonListChanged" });
@@ -318,8 +321,8 @@ RootActor.prototype = {
   },
 
   /* Support for DebuggerServer.addGlobalActor. */
-  _createExtraActors: CommonCreateExtraActors,
-  _appendExtraActors: CommonAppendExtraActors,
+  CommonCreateExtraActors,
+      _appendExtraActors: CommonAppendExtraActors,
 
   /* ThreadActor hooks. */
 

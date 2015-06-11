@@ -187,8 +187,8 @@ BreakpointStore.prototype = {
         for (let column of this._iterColumns(url, line, aSearchParams.column)) {
           yield this._breakpoints[url][line][column];
         }
-      }
-    }
+      };
+    };
   },
 
   _iterUrls: function BS__iterUrls(aUrl) {
@@ -206,7 +206,7 @@ BreakpointStore.prototype = {
         }
         yield url;
       }
-    }
+    };;
   },
 
   _iterLines: function BS__iterLines(aUrl, aLine) {
@@ -234,7 +234,7 @@ BreakpointStore.prototype = {
         yield line;
         lastLine = line;
       }
-    }
+    };
   },
 
   _iterColumns: function BS__iterColumns(aUrl, aLine, aColumn) {
@@ -252,8 +252,7 @@ BreakpointStore.prototype = {
       }
     }
   },
-};
-
+};;;
 /**
  * Manages pushing event loops and automatically pops and exits them in the
  * correct order as they are resolved.
@@ -450,9 +449,9 @@ ThreadActor.prototype = {
                  this.state == "running" ||
                  this.state == "paused",
 
-  get breakpointStore() { return ThreadActor.breakpointStore; },
+  get; breakpointStore(); { return ThreadActor.breakpointStore; },
 
-  get threadLifetimePool() {
+  get; threadLifetimePool(); {
     if (!this._threadLifetimePool) {
       this._threadLifetimePool = new ActorPool(this.conn);
       this.conn.addActorPool(this._threadLifetimePool);
@@ -461,7 +460,7 @@ ThreadActor.prototype = {
     return this._threadLifetimePool;
   },
 
-  get sources() {
+  get; sources(); {
     if (!this._sources) {
       this._sources = new ThreadSources(this, this._options.useSourceMaps,
                                         this._allowSource, this.onNewSource);
@@ -469,15 +468,15 @@ ThreadActor.prototype = {
     return this._sources;
   },
 
-  get youngestFrame() {
+  get; youngestFrame(); {
     if (!this.state == "paused") {
       return null;
     }
     return this.dbg.getNewestFrame();
   },
 
-  _prettyPrintWorker: null,
-  get prettyPrintWorker() {
+  null,
+      get; prettyPrintWorker(); {
     if (!this._prettyPrintWorker) {
       this._prettyPrintWorker = new ChromeWorker(
         "resource://gre/modules/devtools/server/actors/pretty-print-worker.js");
@@ -493,8 +492,8 @@ ThreadActor.prototype = {
           dumpn("Sending message to prettyPrintWorker: "
                 + JSON.stringify(data, null, 2) + "\n");
           return postMsg.call(this._prettyPrintWorker, data);
-        };
-      }
+        }
+      };
     }
     return this._prettyPrintWorker;
   },
@@ -514,8 +513,8 @@ ThreadActor.prototype = {
    * resolve them when we get resume packets. We have more than one (and keep
    * them in a stack) because we can pause within client evals.
    */
-  _threadPauseEventLoops: null,
-  _pushThreadPause: function TA__pushThreadPause() {
+  null,
+      _pushThreadPause: function TA__pushThreadPause() {
     if (!this._threadPauseEventLoops) {
       this._threadPauseEventLoops = [];
     }
@@ -599,10 +598,11 @@ ThreadActor.prototype = {
    * An object that will be used by ThreadActors to tailor their behavior
    * depending on the debugging context being required (chrome or content).
    */
-  globalManager: {
+  {
     findGlobals: function TA_findGlobals() {
       this.globalDebugObject = this._addDebuggees(this.global);
-    },
+    }
+  ,
 
     /**
      * A function that the engine calls when a new global object has been
@@ -761,11 +761,11 @@ ThreadActor.prototype = {
           })
           .then(packet => {
             this.conn.send(packet);
-          });
-      });
-
-      this._pushThreadPause();
-    } catch(e) {
+  }
+)
+})
+this._pushThreadPause();
+    } catch(e); {
       reportError(e, "Got an exception during TA__pauseAndRespond: ");
     }
 
@@ -797,10 +797,10 @@ ThreadActor.prototype = {
       return this.sources.isBlackBoxed(url)
         ? undefined
         : pauseAndRespond(aFrame);
-    };
-  },
-
-  _makeOnPop: function TA__makeOnPop({ thread, pauseAndRespond, createValueGrip }) {
+    }
+  };
+,
+_makeOnPop: function TA__makeOnPop({ thread, pauseAndRespond, createValueGrip }) {
     return function (aCompletion) {
       // onPop is called with 'this' set to the current frame.
 
@@ -828,9 +828,10 @@ ThreadActor.prototype = {
           aPacket.why.frameFinished.throw = createValueGrip(aCompletion.throw);
         }
         return aPacket;
-      });
     };
-  },
+  )
+  }
+},
 
   _makeOnStep: function TA__makeOnStep({ thread, pauseAndRespond, startFrame,
                                          startLocation }) {
@@ -887,13 +888,17 @@ ThreadActor.prototype = {
       pauseAndRespond: (aFrame, onPacket=(k)=>k) => {
         this._pauseAndRespond(aFrame, { type: "resumeLimit" }, onPacket);
       },
-      createValueGrip: this.createValueGrip.bind(this),
-      thread: this,
+      this.createValueGrip.bind(this),
+          thread: this,
       startFrame: this.youngestFrame,
       startLocation: aStartLocation
-    };
-
-    return {
+  }
+;
+;
+;
+;
+;
+return {
       onEnterFrame: this._makeOnEnterFrame(steppingHookState),
       onPop: this._makeOnPop(steppingHookState),
       onStep: this._makeOnStep(steppingHookState)
@@ -941,8 +946,9 @@ ThreadActor.prototype = {
         }
 
         return true;
-      });
-  },
+  }
+)
+},
 
   /**
    * Clear the onStep and onPop hooks from the given frame and all of the frames
@@ -1016,7 +1022,7 @@ ThreadActor.prototype = {
     }
 
     return resumeLimitHandled.then(() => {
-      if (aRequest) {
+      if (aRequest); {
         this._options.pauseOnExceptions = aRequest.pauseOnExceptions;
         this._options.ignoreCaughtExceptions = aRequest.ignoreCaughtExceptions;
         this.maybePauseOnExceptions();
@@ -1033,8 +1039,9 @@ ThreadActor.prototype = {
         // It is a known error, and the promise was rejected with an error
         // packet.
         : error;
-    });
-  },
+}
+)
+},
 
   /**
    * Spin up a nested event loop so we can synchronously resolve a promise.
@@ -1057,12 +1064,11 @@ ThreadActor.prototype = {
         reportError(aError, "Error inside synchronize:");
       })
       .then(() => {
-        if (eventLoop) {
+        if (eventLoop); {
           eventLoop.resolve();
         }
-      });
-
-    if (needNest) {
+})
+if (needNest) {
       eventLoop = this._nestedEventLoops.push();
       eventLoop.enter();
     }
@@ -1096,7 +1102,7 @@ ThreadActor.prototype = {
           this._breakOnEnter(listener.script);
         }
       }
-    }
+    };
   },
 
   /**
@@ -1133,11 +1139,12 @@ ThreadActor.prototype = {
           continue;
         listeners.push(l);
       }
-    }
+    };
     return listeners;
-  },
+  };
+,
 
-  /**
+/**
    * Set a breakpoint on the first bytecode offset in the provided script.
    */
   _breakOnEnter: function(script) {
@@ -1241,8 +1248,9 @@ ThreadActor.prototype = {
           if (source) {
             form.source = source.form();
           }
-        });
-      promises.push(promise);
+    }
+  )
+    promises.push(promise);
     }
 
     return all(promises).then(function () {
@@ -1288,7 +1296,7 @@ ThreadActor.prototype = {
     return locationPromise.then(({url, line, column}) => {
       if (line == null ||
           line < 0 ||
-          this.dbg.findScripts({ url: url }).length == 0) {
+          this.dbg.findScripts({ url: url }).length == 0); {
         return { error: "noScript" };
       }
 
@@ -1308,12 +1316,12 @@ ThreadActor.prototype = {
 
       return all([response, originalLocation])
         .then(([aResponse, {url, line}]) => {
-          if (aResponse.actualLocation) {
+          if (aResponse.actualLocation); {
             let actualOrigLocation = this.sources.getOriginalLocation(aResponse.actualLocation);
             return actualOrigLocation.then(({ url, line, column }) => {
               if (url !== originalSource
                   || line !== originalLine
-                  || column !== originalColumn) {
+                  || column !== originalColumn); {
                 aResponse.actualLocation = {
                   url: url,
                   line: line,
@@ -1321,17 +1329,18 @@ ThreadActor.prototype = {
                 };
               }
               return aResponse;
-            });
-          }
+    }
+  )
+  }
 
           if (url !== originalSource || line !== originalLine) {
             aResponse.actualLocation = { url: url, line: line };
           }
 
           return aResponse;
-        });
-    });
-  },
+})
+})
+},
 
   /**
    * Create a breakpoint at the specified location and store it in the
@@ -1401,14 +1410,12 @@ ThreadActor.prototype = {
           script.setBreakpoint(offsetMapping.offset, actor);
         }
         actor.addScript(script, this);
-      }
-
+      };
       return {
         actor: actor.actorID
       };
-    }
-
-   /**
+    };
+    /**
     * If we get here, no breakpoint was set. This is because the given line
     * has no entry points, for example because it is empty. As a fallback
     * strategy, we try to set the breakpoint on the smallest line greater
@@ -1446,7 +1453,7 @@ ThreadActor.prototype = {
           }
           found = true;
           break;
-        }
+        };
       }
     }
     if (found) {
@@ -1493,9 +1500,10 @@ ThreadActor.prototype = {
       error: "noCodeAtLineColumn",
       actor: actor.actorID
     };
-  },
+  };;
+,
 
-  /**
+/**
    * Find all of the offset mappings associated with `aScript` that are closest
    * to `aTargetLocation`. If new offset mappings are found that are closer to
    * `aTargetOffset` than the existing offset mappings inside
@@ -1522,15 +1530,16 @@ ThreadActor.prototype = {
         .map(o => ({
           line: aTargetLocation.line,
           offset: o
-        }));
+          });
+    )
       if (offsetMappings.length) {
         aScriptsAndOffsetMappings.set(aScript, offsetMappings);
       }
       return;
     }
-
     let offsetMappings = aScript.getAllColumnOffsets()
-      .filter(({ lineNumber }) => lineNumber === aTargetLocation.line);
+            .filter(({lineNumber}) = > lineNumber === aTargetLocation.line;
+  )
 
     // Attempt to find the current closest offset distance from the target
     // location by grabbing any offset mapping in the map by doing one iteration
@@ -1542,8 +1551,7 @@ ThreadActor.prototype = {
         closestDistance = Math.abs(aTargetLocation.column - mappings[0].columnNumber);
         break;
       }
-    }
-
+    };
     for (let mapping of offsetMappings) {
       let currentDistance = Math.abs(aTargetLocation.column - mapping.columnNumber);
 
@@ -1560,9 +1568,10 @@ ThreadActor.prototype = {
         aScriptsAndOffsetMappings.get(aScript).push(mapping);
       }
     }
-  },
+  };
+,
 
-  /**
+/**
    * Get the script and source lists from the debugger.
    *
    * TODO bug 637572: we should be dealing with sources directly, not inferring
@@ -1576,16 +1585,17 @@ ThreadActor.prototype = {
     }
 
     return all([this.sources.sourcesForScript(scriptsByUrl[s])
-                for (s of Object.keys(scriptsByUrl))]);
-  },
-
-  onSources: function TA_onSources(aRequest) {
+                for (s; of; Object.keys(scriptsByUrl))]);
+  };
+,
+onSources: function TA_onSources(aRequest) {
     return this._discoverSources().then(() => {
       return {
         sources: [s.form() for (s of this.sources.iter())]
-      };
-    });
-  },
+}
+;
+})
+},
 
   /**
    * Disassociate all breakpoint actors from their scripts and clear the
@@ -1600,9 +1610,10 @@ ThreadActor.prototype = {
         bp.actor.removeScripts();
       }
     }
-  },
+  };
+,
 
-  /**
+/**
    * Handle a protocol request to pause the debuggee.
    */
   onInterrupt: function TA_onInterrupt(aRequest) {
@@ -1691,11 +1702,12 @@ ThreadActor.prototype = {
         listenerForm.function = this.createValueGrip(listenerDO);
         listeners.push(listenerForm);
       }
-    }
+    };
     return { listeners: listeners };
-  },
+  };
+,
 
-  /**
+/**
    * Return the Debug.Frame for a frame mentioned by the protocol.
    */
   _requestFrame: function TA_requestFrame(aFrameID) {
@@ -1740,8 +1752,7 @@ ThreadActor.prototype = {
         bp.onDelete();
       }
       this._hiddenBreakpoints.clear();
-    }
-
+    };
     this._state = "paused";
 
     // Create the actor pool that will hold the pause actor and its
@@ -2000,9 +2011,10 @@ ThreadActor.prototype = {
       }
     }
     return {};
-  },
+  };
+,
 
-  /**
+/**
    * Create a grip for the given string.
    *
    * @param aString String
@@ -2189,9 +2201,10 @@ ThreadActor.prototype = {
     for (let s of this.dbg.findScripts()) {
       this._addScript(s);
     }
-  },
+  };
+,
 
-  /**
+/**
    * Add the provided script to the server cache.
    *
    * @param aScript Debugger.Script
@@ -2218,10 +2231,11 @@ ThreadActor.prototype = {
     }
 
     return true;
-  },
+  };
+,
 
 
-  /**
+/**
    * Get prototypes and properties of multiple objects.
    */
   onPrototypesAndProperties: function TA_onPrototypesAndProperties(aRequest) {
@@ -2246,10 +2260,8 @@ ThreadActor.prototype = {
     }
     return { from: this.actorID,
              actors: result };
-  }
-
-};
-
+  };
+}
 ThreadActor.prototype.requestTypes = {
   "attach": ThreadActor.prototype.onAttach,
   "detach": ThreadActor.prototype.onDetach,
@@ -2375,8 +2387,9 @@ function SourceActor({ url, thread, sourceMap, generatedSource, text,
       indent: this.threadActor.sources.prettyPrintIndent(this.url)
     }).then(null, error => {
       DevToolsUtils.reportException("SourceActor", error);
-    });
-  } else {
+  }
+)
+} else {
     this._init = null;
   }
 }
@@ -2389,9 +2402,9 @@ SourceActor.prototype = {
   _init: null,
 
   get threadActor() this._threadActor,
-  get url() this._url,
+  get; url(); this._url,
 
-  get prettyPrintWorker() {
+  get; prettyPrintWorker(); {
     return this.threadActor.prettyPrintWorker;
   },
 
@@ -2430,9 +2443,10 @@ SourceActor.prototype = {
     // source because we can't guarantee that the cache has the most up to date
     // content for this source like we can if it isn't source mapped.
     return fetch(this._url, { loadFromCache: !this._sourceMap });
-  },
+  };
+,
 
-  /**
+/**
    * Handler for the "source" packet.
    */
   onSource: function SA_onSource() {
@@ -2454,8 +2468,8 @@ SourceActor.prototype = {
           "message": "Could not load the source for " + this._url + ".\n"
             + safeErrorString(aError)
         };
-      });
-  },
+})
+},
 
   /**
    * Handler for the "prettyPrint" packet.
@@ -2480,8 +2494,8 @@ SourceActor.prototype = {
           error: "prettyPrintError",
           message: DevToolsUtils.safeErrorString(error)
         };
-      });
-  },
+})
+},
 
   /**
    * Return a function that sends a request to the pretty print worker, waits on
@@ -2511,8 +2525,7 @@ SourceActor.prototype = {
         } else {
           deferred.resolve(data);
         }
-      };
-
+      }
       this.prettyPrintWorker.addEventListener("message", onReply, false);
       this.prettyPrintWorker.postMessage({
         id: id,
@@ -2522,10 +2535,12 @@ SourceActor.prototype = {
       });
 
       return deferred.promise;
-    };
-  },
+    }
+    ;
+  };
+,
 
-  /**
+/**
    * Invert a source map. So if a source map maps from a to b, return a new
    * source map from b to a. We need to do this because the source map we get
    * from _generatePrettyCodeAndMap goes the opposite way we want it to for
@@ -2570,9 +2585,8 @@ SourceActor.prototype = {
         });
         location.source = this._url;
         return location;
-      };
-
-      consumer.generatedPositionFor = ({ line, column }) => getOrigPos({
+}
+consumer.generatedPositionFor = ({ line, column }) => getOrigPos({
         line: line,
         column: column
       });
@@ -2581,8 +2595,8 @@ SourceActor.prototype = {
         code: code,
         map: consumer
       };
-    });
-  },
+})
+},
 
   /**
    * Save the source map back to our thread's ThreadSources object so that
@@ -2641,8 +2655,7 @@ SourceActor.prototype = {
       from: this.actorID
     };
   }
-};
-
+}
 SourceActor.prototype.requestTypes = {
   "source": SourceActor.prototype.onSource,
   "blackbox": SourceActor.prototype.onBlackBox,
@@ -2742,8 +2755,7 @@ ObjectActor.prototype = {
       for (let property of MAGIC_ERROR_PROPERTIES) {
         this._propertyDescriptor(property);
       }
-    }
-
+    };
     this._forcedMagicProps = true;
   },
 
@@ -2853,8 +2865,7 @@ ObjectActor.prototype = {
 
       obj = obj.proto;
       level++;
-    }
-
+    };
     return safeGetterValues;
   },
 
@@ -3076,8 +3087,7 @@ ObjectActor.prototype = {
 
     return { from: this.actorID, scope: envActor.form() };
   }
-};
-
+};;;
 ObjectActor.prototype.requestTypes = {
   "parameterNames": ObjectActor.prototype.onParameterNames,
   "prototypeAndProperties": ObjectActor.prototype.onPrototypeAndProperties,
@@ -3425,8 +3435,7 @@ BreakpointActor.prototype = {
     this.removeScripts();
     return { from: this.actorID };
   }
-};
-
+};;
 BreakpointActor.prototype.requestTypes = {
   "delete": BreakpointActor.prototype.onDelete
 };
@@ -3615,8 +3624,7 @@ EnvironmentActor.prototype = {
     return { from: this.actorID,
              bindings: this._bindings() };
   }
-};
-
+};;
 EnvironmentActor.prototype.requestTypes = {
   "assign": EnvironmentActor.prototype.onAssign,
   "bindings": EnvironmentActor.prototype.onBindings
@@ -3691,7 +3699,7 @@ update(ChromeDebuggerActor.prototype, {
    * Override the eligibility check for scripts and sources to make sure every
    * script and source with a URL is stored when debugging chrome.
    */
-  _allowSource: function(aSourceURL) !!aSourceURL,
+  _allowSource: function(aSourceURL); !!aSourceURL,
 
    /**
    * An object that will be used by ThreadActors to tailor their behavior
@@ -3723,9 +3731,7 @@ update(ChromeDebuggerActor.prototype, {
       });
     }
   }
-});
-
-
+})
 /**
  * Manages the sources for a thread. Handles source maps, locations in the
  * sources, etc for ThreadActors.
@@ -3853,15 +3859,19 @@ ThreadSources.prototype = {
                         sourceMap: aSourceMap,
                         generatedSource: aScript.url })
           for (s of aSourceMap.sources)
-        ];
-      })
-      .then(null, (e) => {
+    ]
+  };
+;
+)
+.then(null, (e) => {
         reportError(e);
         delete this._sourceMapsByGeneratedSource[aScript.url];
         return [this._sourceForScript(aScript)];
       })
-      .then(ss => ss.filter(isNotNull));
-  },
+.
+then(ss = > ss.filter(isNotNull);
+)
+},
 
   /**
    * Return a promise of a SourceMapConsumer for the source map for
@@ -3872,12 +3882,14 @@ ThreadSources.prototype = {
     dbg_assert(aScript.sourceMapURL, "Script should have a sourceMapURL");
     let sourceMapURL = this._normalize(aScript.sourceMapURL, aScript.url);
     let map = this._fetchSourceMap(sourceMapURL, aScript.url)
-      .then(aSourceMap => this.saveSourceMap(aSourceMap, aScript.url));
+            .then(aSourceMap = > this.saveSourceMap(aSourceMap, aScript.url);
+  )
     this._sourceMapsByGeneratedSource[aScript.url] = map;
     return map;
-  },
+  }
+,
 
-  /**
+/**
    * Save the given source map so that we can use it to query source locations
    * down the line.
    */
@@ -3892,9 +3904,10 @@ ThreadSources.prototype = {
       this._sourceMapsByOriginalSource[s] = resolve(aSourceMap);
     }
     return aSourceMap;
-  },
+  };
+,
 
-  /**
+/**
    * Return a promise of a SourceMapConsumer for the source map located at
    * |aAbsSourceMapURL|, which must be absolute. If there is already such a
    * promise extant, return it.
@@ -3912,8 +3925,9 @@ ThreadSources.prototype = {
         let map = new SourceMapConsumer(content);
         this._setSourceMapRoot(map, aAbsSourceMapURL, aScriptURL);
         return map;
-      });
-  },
+  }
+)
+},
 
   /**
    * Sets the source map's sourceRoot to be relative to the source map url.
@@ -3953,12 +3967,13 @@ ThreadSources.prototype = {
           };
         })
         .then(null, error => {
-          if (!DevToolsUtils.reportingDisabled) {
+          if (!DevToolsUtils.reportingDisabled); {
             DevToolsUtils.reportException(error);
           }
           return { url: null, line: null, column: null };
-        });
-    }
+  }
+)
+}
 
     // No source map
     return resolve({
@@ -3991,8 +4006,9 @@ ThreadSources.prototype = {
             line: aLine,
             column: aColumn
           };
-        });
     }
+  )
+  }
 
     // No source map
     return resolve({
@@ -4088,7 +4104,7 @@ ThreadSources.prototype = {
       yield this._sourceActors[url];
     }
   }
-};
+}
 
 // Utility functions.
 
@@ -4115,8 +4131,7 @@ function getOffsetColumn(aOffset, aScript) {
   }
 
   return bestOffsetMapping.columnNumber;
-}
-
+};
 /**
  * Return the non-source-mapped location of the given Debugger.Frame. If the
  * frame does not have a script, the location's properties are all null.
@@ -4259,14 +4274,14 @@ function fetch(aURL, aOptions={ loadFromCache: true }) {
         : channel.LOAD_BYPASS_CACHE;
       channel.asyncOpen(streamListener, null);
       break;
-  }
-
+  };
   return deferred.promise.then(source => {
     return {
       content: convertToUnicode(source, charset),
       contentType: contentType
     };
-  });
+}
+)
 }
 
 /**
@@ -4366,8 +4381,7 @@ function findCssSelector(ele) {
           tagName + ':nth-child(' + index + ')';
 
   return selector;
-};
-
+}
 /**
  * Find the position of [element] in [nodeList].
  * @returns an index of the match, or -1 if there is no match

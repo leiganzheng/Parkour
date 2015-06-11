@@ -152,8 +152,7 @@ cc.glBlendFuncForParticle = function(sfactor, dfactor) {
 
 if(!cc.ENABLE_GL_STATE_CACHE){
     cc.glBlendFunc = cc.setBlending;
-};
-
+}
 /**
  * Resets the blending mode back to the cached state in case you used glBlendFuncSeparate() or glBlendEquation().<br/>
  * If CC_ENABLE_GL_STATE_CACHE is disabled, it will just set the default blending mode using GL_FUNC_ADD.

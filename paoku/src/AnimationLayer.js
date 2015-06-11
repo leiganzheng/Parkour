@@ -5,19 +5,23 @@ var AnimationLayer = cc.Layer.extend({
     spriteSheet:null,
     runningAction:null,
     sprite:null,
+    space:null,
+    body:null,
+    shape:null,
     ctor:function(space){
-        this._super()
-        this.space = space
-        this.init()
+        this._super();
+        this.space = space;
+        this.init();
         this._debugNode = cc.PhysicsDebugNode.create(this.space);
+        this._debugNode.setVisible(false);
         // Parallax ratio and offset
         this.addChild(this._debugNode, 10);
     },
     init:function(){
-        this._super()
+        this._super();
         // create sprite sheet
-        cc.spriteFrameCache.addSpriteFrame()
-        this.spriteSheet = cc.SpriteBatchNode.create(res.runner_png);
+        cc.spriteFrameCache.addSpriteFrames(res.runner_plist);
+        this.spriteSheet = new cc.SpriteBatchNode(res.runner_png);
         this.addChild(this.spriteSheet);
         //init runningAction
         var animFrames = [];
@@ -26,11 +30,11 @@ var AnimationLayer = cc.Layer.extend({
             var frame = cc.spriteFrameCache.getSpriteFrame(str);
             animFrames.push(frame);
         }
-        var animation = cc.Animation.create(animFrames, 0.1);
-        this.runningAction = cc.RepeatForever(cc.Animate(animation));
+        var animation = new cc.Animation(animFrames, 0.1);
+        this.runningAction = new cc.RepeatForever(new cc.Animate(animation));
 
         //1. create PhysicsSprite with a sprite frame name
-        this.sprite = cc.PhysicsSprite.create("#runner0.png");
+        this.sprite = new cc.PhysicsSprite("#runner0.png");
         var contentSize = this.sprite.getContentSize();
         // 2. init the runner physic body
         this.body = new cp.Body(1, cp.momentForBox(1, contentSize.width, contentSize.height));
@@ -46,9 +50,16 @@ var AnimationLayer = cc.Layer.extend({
         this.space.addShape(this.shape);
         //8. set body to the physic sprite
         this.sprite.setBody(this.body);
-        this.addChild(this.sprite)
+        this.sprite.runAction(this.runningAction);
+        this.spriteSheet.addChild(this.sprite);
+        this.scheduleUpdate()
     },
     getEyeX:function () {
         return this.sprite.getPositionX() - g_runnerStartX;
     },
+    update:function(){
+        // update meter
+        var statusLayer = this.getParent().getParent().getChildByTag(TagOfLayer.Status);
+        statusLayer.updateMeter(this.sprite.getPositionX() - g_runnerStartX);
+    }
 });

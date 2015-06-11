@@ -71,4 +71,4 @@ sp.SkeletonAnimation.prototype.setAnimationListener = function (target, callback
             this._callback.call(this._target, this, trackIndex, sp.ANIMATION_EVENT_TYPE.EVENT, event, 0);
         }
     });
-}
+};

@@ -330,7 +330,7 @@ cc.DOM.methods = /** @lends cc.DOM# */{
             this.dom.style.display = (x) ? 'block' : 'none';
     },
     _setLocalZOrder:function (z) {
-        this._localZOrder = z
+        this._localZOrder = z;
         this.setNodeDirty();
         if (this.dom)
             this.dom.zIndex = z;

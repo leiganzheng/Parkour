@@ -42,7 +42,8 @@ var Box2D = {};
         }
     }
 
-    function emptyFn() {};
+    function emptyFn() {
+    }
     a2j.inherit = function(cls, base) {
         var tmpCtr = cls;
         emptyFn.prototype = base.prototype;
@@ -96,566 +97,566 @@ if (typeof(Box2D.Dynamics.Joints) === "undefined") Box2D.Dynamics.Joints = {};
 
     function b2AABB() {
         b2AABB.b2AABB.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2AABB = b2AABB;
 
     function b2Bound() {
         b2Bound.b2Bound.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2Bound = b2Bound;
 
     function b2BoundValues() {
         b2BoundValues.b2BoundValues.apply(this, arguments);
         if (this.constructor === b2BoundValues) this.b2BoundValues.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2BoundValues = b2BoundValues;
 
     function b2Collision() {
         b2Collision.b2Collision.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2Collision = b2Collision;
 
     function b2ContactID() {
         b2ContactID.b2ContactID.apply(this, arguments);
         if (this.constructor === b2ContactID) this.b2ContactID.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2ContactID = b2ContactID;
 
     function b2ContactPoint() {
         b2ContactPoint.b2ContactPoint.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2ContactPoint = b2ContactPoint;
 
     function b2Distance() {
         b2Distance.b2Distance.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2Distance = b2Distance;
 
     function b2DistanceInput() {
         b2DistanceInput.b2DistanceInput.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2DistanceInput = b2DistanceInput;
 
     function b2DistanceOutput() {
         b2DistanceOutput.b2DistanceOutput.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2DistanceOutput = b2DistanceOutput;
 
     function b2DistanceProxy() {
         b2DistanceProxy.b2DistanceProxy.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2DistanceProxy = b2DistanceProxy;
 
     function b2DynamicTree() {
         b2DynamicTree.b2DynamicTree.apply(this, arguments);
         if (this.constructor === b2DynamicTree) this.b2DynamicTree.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2DynamicTree = b2DynamicTree;
 
     function b2DynamicTreeBroadPhase() {
         b2DynamicTreeBroadPhase.b2DynamicTreeBroadPhase.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2DynamicTreeBroadPhase = b2DynamicTreeBroadPhase;
 
     function b2DynamicTreeNode() {
         b2DynamicTreeNode.b2DynamicTreeNode.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2DynamicTreeNode = b2DynamicTreeNode;
 
     function b2DynamicTreePair() {
         b2DynamicTreePair.b2DynamicTreePair.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2DynamicTreePair = b2DynamicTreePair;
 
     function b2Manifold() {
         b2Manifold.b2Manifold.apply(this, arguments);
         if (this.constructor === b2Manifold) this.b2Manifold.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2Manifold = b2Manifold;
 
     function b2ManifoldPoint() {
         b2ManifoldPoint.b2ManifoldPoint.apply(this, arguments);
         if (this.constructor === b2ManifoldPoint) this.b2ManifoldPoint.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2ManifoldPoint = b2ManifoldPoint;
 
     function b2Point() {
         b2Point.b2Point.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2Point = b2Point;
 
     function b2RayCastInput() {
         b2RayCastInput.b2RayCastInput.apply(this, arguments);
         if (this.constructor === b2RayCastInput) this.b2RayCastInput.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2RayCastInput = b2RayCastInput;
 
     function b2RayCastOutput() {
         b2RayCastOutput.b2RayCastOutput.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2RayCastOutput = b2RayCastOutput;
 
     function b2Segment() {
         b2Segment.b2Segment.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2Segment = b2Segment;
 
     function b2SeparationFunction() {
         b2SeparationFunction.b2SeparationFunction.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2SeparationFunction = b2SeparationFunction;
 
     function b2Simplex() {
         b2Simplex.b2Simplex.apply(this, arguments);
         if (this.constructor === b2Simplex) this.b2Simplex.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2Simplex = b2Simplex;
 
     function b2SimplexCache() {
         b2SimplexCache.b2SimplexCache.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2SimplexCache = b2SimplexCache;
 
     function b2SimplexVertex() {
         b2SimplexVertex.b2SimplexVertex.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2SimplexVertex = b2SimplexVertex;
 
     function b2TimeOfImpact() {
         b2TimeOfImpact.b2TimeOfImpact.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2TimeOfImpact = b2TimeOfImpact;
 
     function b2TOIInput() {
         b2TOIInput.b2TOIInput.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2TOIInput = b2TOIInput;
 
     function b2WorldManifold() {
         b2WorldManifold.b2WorldManifold.apply(this, arguments);
         if (this.constructor === b2WorldManifold) this.b2WorldManifold.apply(this, arguments);
-    };
+    }
     Box2D.Collision.b2WorldManifold = b2WorldManifold;
 
     function ClipVertex() {
         ClipVertex.ClipVertex.apply(this, arguments);
-    };
+    }
     Box2D.Collision.ClipVertex = ClipVertex;
 
     function Features() {
         Features.Features.apply(this, arguments);
-    };
+    }
     Box2D.Collision.Features = Features;
 
     function b2CircleShape() {
         b2CircleShape.b2CircleShape.apply(this, arguments);
         if (this.constructor === b2CircleShape) this.b2CircleShape.apply(this, arguments);
-    };
+    }
     Box2D.Collision.Shapes.b2CircleShape = b2CircleShape;
 
     function b2EdgeChainDef() {
         b2EdgeChainDef.b2EdgeChainDef.apply(this, arguments);
         if (this.constructor === b2EdgeChainDef) this.b2EdgeChainDef.apply(this, arguments);
-    };
+    }
     Box2D.Collision.Shapes.b2EdgeChainDef = b2EdgeChainDef;
 
     function b2EdgeShape() {
         b2EdgeShape.b2EdgeShape.apply(this, arguments);
         if (this.constructor === b2EdgeShape) this.b2EdgeShape.apply(this, arguments);
-    };
+    }
     Box2D.Collision.Shapes.b2EdgeShape = b2EdgeShape;
 
     function b2MassData() {
         b2MassData.b2MassData.apply(this, arguments);
-    };
+    }
     Box2D.Collision.Shapes.b2MassData = b2MassData;
 
     function b2PolygonShape() {
         b2PolygonShape.b2PolygonShape.apply(this, arguments);
         if (this.constructor === b2PolygonShape) this.b2PolygonShape.apply(this, arguments);
-    };
+    }
     Box2D.Collision.Shapes.b2PolygonShape = b2PolygonShape;
 
     function b2Shape() {
         b2Shape.b2Shape.apply(this, arguments);
         if (this.constructor === b2Shape) this.b2Shape.apply(this, arguments);
-    };
+    }
     Box2D.Collision.Shapes.b2Shape = b2Shape;
     Box2D.Common.b2internal = 'Box2D.Common.b2internal';
 
     function b2Color() {
         b2Color.b2Color.apply(this, arguments);
         if (this.constructor === b2Color) this.b2Color.apply(this, arguments);
-    };
+    }
     Box2D.Common.b2Color = b2Color;
 
     function b2Settings() {
         b2Settings.b2Settings.apply(this, arguments);
-    };
+    }
     Box2D.Common.b2Settings = b2Settings;
 
     function b2Mat22() {
         b2Mat22.b2Mat22.apply(this, arguments);
         if (this.constructor === b2Mat22) this.b2Mat22.apply(this, arguments);
-    };
+    }
     Box2D.Common.Math.b2Mat22 = b2Mat22;
 
     function b2Mat33() {
         b2Mat33.b2Mat33.apply(this, arguments);
         if (this.constructor === b2Mat33) this.b2Mat33.apply(this, arguments);
-    };
+    }
     Box2D.Common.Math.b2Mat33 = b2Mat33;
 
     function b2Math() {
         b2Math.b2Math.apply(this, arguments);
-    };
+    }
     Box2D.Common.Math.b2Math = b2Math;
 
     function b2Sweep() {
         b2Sweep.b2Sweep.apply(this, arguments);
-    };
+    }
     Box2D.Common.Math.b2Sweep = b2Sweep;
 
     function b2Transform() {
         b2Transform.b2Transform.apply(this, arguments);
         if (this.constructor === b2Transform) this.b2Transform.apply(this, arguments);
-    };
+    }
     Box2D.Common.Math.b2Transform = b2Transform;
 
     function b2Vec2() {
         b2Vec2.b2Vec2.apply(this, arguments);
         if (this.constructor === b2Vec2) this.b2Vec2.apply(this, arguments);
-    };
+    }
     Box2D.Common.Math.b2Vec2 = b2Vec2;
 
     function b2Vec3() {
         b2Vec3.b2Vec3.apply(this, arguments);
         if (this.constructor === b2Vec3) this.b2Vec3.apply(this, arguments);
-    };
+    }
     Box2D.Common.Math.b2Vec3 = b2Vec3;
 
     function b2Body() {
         b2Body.b2Body.apply(this, arguments);
         if (this.constructor === b2Body) this.b2Body.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2Body = b2Body;
 
     function b2BodyDef() {
         b2BodyDef.b2BodyDef.apply(this, arguments);
         if (this.constructor === b2BodyDef) this.b2BodyDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2BodyDef = b2BodyDef;
 
     function b2ContactFilter() {
         b2ContactFilter.b2ContactFilter.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2ContactFilter = b2ContactFilter;
 
     function b2ContactImpulse() {
         b2ContactImpulse.b2ContactImpulse.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2ContactImpulse = b2ContactImpulse;
 
     function b2ContactListener() {
         b2ContactListener.b2ContactListener.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2ContactListener = b2ContactListener;
 
     function b2ContactManager() {
         b2ContactManager.b2ContactManager.apply(this, arguments);
         if (this.constructor === b2ContactManager) this.b2ContactManager.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2ContactManager = b2ContactManager;
 
     function b2DebugDraw() {
         b2DebugDraw.b2DebugDraw.apply(this, arguments);
         if (this.constructor === b2DebugDraw) this.b2DebugDraw.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2DebugDraw = b2DebugDraw;
 
     function b2DestructionListener() {
         b2DestructionListener.b2DestructionListener.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2DestructionListener = b2DestructionListener;
 
     function b2FilterData() {
         b2FilterData.b2FilterData.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2FilterData = b2FilterData;
 
     function b2Fixture() {
         b2Fixture.b2Fixture.apply(this, arguments);
         if (this.constructor === b2Fixture) this.b2Fixture.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2Fixture = b2Fixture;
 
     function b2FixtureDef() {
         b2FixtureDef.b2FixtureDef.apply(this, arguments);
         if (this.constructor === b2FixtureDef) this.b2FixtureDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2FixtureDef = b2FixtureDef;
 
     function b2Island() {
         b2Island.b2Island.apply(this, arguments);
         if (this.constructor === b2Island) this.b2Island.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2Island = b2Island;
 
     function b2TimeStep() {
         b2TimeStep.b2TimeStep.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2TimeStep = b2TimeStep;
 
     function b2World() {
         b2World.b2World.apply(this, arguments);
         if (this.constructor === b2World) this.b2World.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.b2World = b2World;
 
     function b2CircleContact() {
         b2CircleContact.b2CircleContact.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2CircleContact = b2CircleContact;
 
     function b2Contact() {
         b2Contact.b2Contact.apply(this, arguments);
         if (this.constructor === b2Contact) this.b2Contact.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2Contact = b2Contact;
 
     function b2ContactConstraint() {
         b2ContactConstraint.b2ContactConstraint.apply(this, arguments);
         if (this.constructor === b2ContactConstraint) this.b2ContactConstraint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2ContactConstraint = b2ContactConstraint;
 
     function b2ContactConstraintPoint() {
         b2ContactConstraintPoint.b2ContactConstraintPoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2ContactConstraintPoint = b2ContactConstraintPoint;
 
     function b2ContactEdge() {
         b2ContactEdge.b2ContactEdge.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2ContactEdge = b2ContactEdge;
 
     function b2ContactFactory() {
         b2ContactFactory.b2ContactFactory.apply(this, arguments);
         if (this.constructor === b2ContactFactory) this.b2ContactFactory.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2ContactFactory = b2ContactFactory;
 
     function b2ContactRegister() {
         b2ContactRegister.b2ContactRegister.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2ContactRegister = b2ContactRegister;
 
     function b2ContactResult() {
         b2ContactResult.b2ContactResult.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2ContactResult = b2ContactResult;
 
     function b2ContactSolver() {
         b2ContactSolver.b2ContactSolver.apply(this, arguments);
         if (this.constructor === b2ContactSolver) this.b2ContactSolver.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2ContactSolver = b2ContactSolver;
 
     function b2EdgeAndCircleContact() {
         b2EdgeAndCircleContact.b2EdgeAndCircleContact.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2EdgeAndCircleContact = b2EdgeAndCircleContact;
 
     function b2NullContact() {
         b2NullContact.b2NullContact.apply(this, arguments);
         if (this.constructor === b2NullContact) this.b2NullContact.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2NullContact = b2NullContact;
 
     function b2PolyAndCircleContact() {
         b2PolyAndCircleContact.b2PolyAndCircleContact.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2PolyAndCircleContact = b2PolyAndCircleContact;
 
     function b2PolyAndEdgeContact() {
         b2PolyAndEdgeContact.b2PolyAndEdgeContact.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2PolyAndEdgeContact = b2PolyAndEdgeContact;
 
     function b2PolygonContact() {
         b2PolygonContact.b2PolygonContact.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2PolygonContact = b2PolygonContact;
 
     function b2PositionSolverManifold() {
         b2PositionSolverManifold.b2PositionSolverManifold.apply(this, arguments);
         if (this.constructor === b2PositionSolverManifold) this.b2PositionSolverManifold.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Contacts.b2PositionSolverManifold = b2PositionSolverManifold;
 
     function b2BuoyancyController() {
         b2BuoyancyController.b2BuoyancyController.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Controllers.b2BuoyancyController = b2BuoyancyController;
 
     function b2ConstantAccelController() {
         b2ConstantAccelController.b2ConstantAccelController.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Controllers.b2ConstantAccelController = b2ConstantAccelController;
 
     function b2ConstantForceController() {
         b2ConstantForceController.b2ConstantForceController.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Controllers.b2ConstantForceController = b2ConstantForceController;
 
     function b2Controller() {
         b2Controller.b2Controller.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Controllers.b2Controller = b2Controller;
 
     function b2ControllerEdge() {
         b2ControllerEdge.b2ControllerEdge.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Controllers.b2ControllerEdge = b2ControllerEdge;
 
     function b2GravityController() {
         b2GravityController.b2GravityController.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Controllers.b2GravityController = b2GravityController;
 
     function b2TensorDampingController() {
         b2TensorDampingController.b2TensorDampingController.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Controllers.b2TensorDampingController = b2TensorDampingController;
 
     function b2DistanceJoint() {
         b2DistanceJoint.b2DistanceJoint.apply(this, arguments);
         if (this.constructor === b2DistanceJoint) this.b2DistanceJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2DistanceJoint = b2DistanceJoint;
 
     function b2DistanceJointDef() {
         b2DistanceJointDef.b2DistanceJointDef.apply(this, arguments);
         if (this.constructor === b2DistanceJointDef) this.b2DistanceJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2DistanceJointDef = b2DistanceJointDef;
 
     function b2FrictionJoint() {
         b2FrictionJoint.b2FrictionJoint.apply(this, arguments);
         if (this.constructor === b2FrictionJoint) this.b2FrictionJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2FrictionJoint = b2FrictionJoint;
 
     function b2FrictionJointDef() {
         b2FrictionJointDef.b2FrictionJointDef.apply(this, arguments);
         if (this.constructor === b2FrictionJointDef) this.b2FrictionJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2FrictionJointDef = b2FrictionJointDef;
 
     function b2GearJoint() {
         b2GearJoint.b2GearJoint.apply(this, arguments);
         if (this.constructor === b2GearJoint) this.b2GearJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2GearJoint = b2GearJoint;
 
     function b2GearJointDef() {
         b2GearJointDef.b2GearJointDef.apply(this, arguments);
         if (this.constructor === b2GearJointDef) this.b2GearJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2GearJointDef = b2GearJointDef;
 
     function b2Jacobian() {
         b2Jacobian.b2Jacobian.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2Jacobian = b2Jacobian;
 
     function b2Joint() {
         b2Joint.b2Joint.apply(this, arguments);
         if (this.constructor === b2Joint) this.b2Joint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2Joint = b2Joint;
 
     function b2JointDef() {
         b2JointDef.b2JointDef.apply(this, arguments);
         if (this.constructor === b2JointDef) this.b2JointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2JointDef = b2JointDef;
 
     function b2JointEdge() {
         b2JointEdge.b2JointEdge.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2JointEdge = b2JointEdge;
 
     function b2LineJoint() {
         b2LineJoint.b2LineJoint.apply(this, arguments);
         if (this.constructor === b2LineJoint) this.b2LineJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2LineJoint = b2LineJoint;
 
     function b2LineJointDef() {
         b2LineJointDef.b2LineJointDef.apply(this, arguments);
         if (this.constructor === b2LineJointDef) this.b2LineJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2LineJointDef = b2LineJointDef;
 
     function b2MouseJoint() {
         b2MouseJoint.b2MouseJoint.apply(this, arguments);
         if (this.constructor === b2MouseJoint) this.b2MouseJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2MouseJoint = b2MouseJoint;
 
     function b2MouseJointDef() {
         b2MouseJointDef.b2MouseJointDef.apply(this, arguments);
         if (this.constructor === b2MouseJointDef) this.b2MouseJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2MouseJointDef = b2MouseJointDef;
 
     function b2PrismaticJoint() {
         b2PrismaticJoint.b2PrismaticJoint.apply(this, arguments);
         if (this.constructor === b2PrismaticJoint) this.b2PrismaticJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2PrismaticJoint = b2PrismaticJoint;
 
     function b2PrismaticJointDef() {
         b2PrismaticJointDef.b2PrismaticJointDef.apply(this, arguments);
         if (this.constructor === b2PrismaticJointDef) this.b2PrismaticJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2PrismaticJointDef = b2PrismaticJointDef;
 
     function b2PulleyJoint() {
         b2PulleyJoint.b2PulleyJoint.apply(this, arguments);
         if (this.constructor === b2PulleyJoint) this.b2PulleyJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2PulleyJoint = b2PulleyJoint;
 
     function b2PulleyJointDef() {
         b2PulleyJointDef.b2PulleyJointDef.apply(this, arguments);
         if (this.constructor === b2PulleyJointDef) this.b2PulleyJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2PulleyJointDef = b2PulleyJointDef;
 
     function b2RevoluteJoint() {
         b2RevoluteJoint.b2RevoluteJoint.apply(this, arguments);
         if (this.constructor === b2RevoluteJoint) this.b2RevoluteJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2RevoluteJoint = b2RevoluteJoint;
 
     function b2RevoluteJointDef() {
         b2RevoluteJointDef.b2RevoluteJointDef.apply(this, arguments);
         if (this.constructor === b2RevoluteJointDef) this.b2RevoluteJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2RevoluteJointDef = b2RevoluteJointDef;
 
     function b2WeldJoint() {
         b2WeldJoint.b2WeldJoint.apply(this, arguments);
         if (this.constructor === b2WeldJoint) this.b2WeldJoint.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2WeldJoint = b2WeldJoint;
 
     function b2WeldJointDef() {
         b2WeldJointDef.b2WeldJointDef.apply(this, arguments);
         if (this.constructor === b2WeldJointDef) this.b2WeldJointDef.apply(this, arguments);
-    };
+    }
     Box2D.Dynamics.Joints.b2WeldJointDef = b2WeldJointDef;
 })(); //definitions
 Box2D.postDefs = [];
@@ -717,13 +718,13 @@ Box2D.postDefs = [];
         var valid = dX >= 0.0 && dY >= 0.0;
         valid = valid && this.lowerBound.IsValid() && this.upperBound.IsValid();
         return valid;
-    }
+    };
     b2AABB.prototype.GetCenter = function () {
         return new b2Vec2((this.lowerBound.x + this.upperBound.x) / 2, (this.lowerBound.y + this.upperBound.y) / 2);
-    }
+    };
     b2AABB.prototype.GetExtents = function () {
         return new b2Vec2((this.upperBound.x - this.lowerBound.x) / 2, (this.upperBound.y - this.lowerBound.y) / 2);
-    }
+    };
     b2AABB.prototype.Contains = function (aabb) {
         var result = true;
         result = result && this.lowerBound.x <= aabb.lowerBound.x;
@@ -731,7 +732,7 @@ Box2D.postDefs = [];
         result = result && aabb.upperBound.x <= this.upperBound.x;
         result = result && aabb.upperBound.y <= this.upperBound.y;
         return result;
-    }
+    };
     b2AABB.prototype.RayCast = function (output, input) {
         var tmin = (-Number.MAX_VALUE);
         var tmax = Number.MAX_VALUE;
@@ -795,7 +796,7 @@ Box2D.postDefs = [];
         }
         output.fraction = tmin;
         return true;
-    }
+    };
     b2AABB.prototype.TestOverlap = function (other) {
         var d1X = other.lowerBound.x - this.upperBound.x;
         var d1Y = other.lowerBound.y - this.upperBound.y;
@@ -804,25 +805,25 @@ Box2D.postDefs = [];
         if (d1X > 0.0 || d1Y > 0.0) return false;
         if (d2X > 0.0 || d2Y > 0.0) return false;
         return true;
-    }
+    };
     b2AABB.Combine = function (aabb1, aabb2) {
         var aabb = new b2AABB();
         aabb.Combine(aabb1, aabb2);
         return aabb;
-    }
+    };
     b2AABB.prototype.Combine = function (aabb1, aabb2) {
         this.lowerBound.x = Math.min(aabb1.lowerBound.x, aabb2.lowerBound.x);
         this.lowerBound.y = Math.min(aabb1.lowerBound.y, aabb2.lowerBound.y);
         this.upperBound.x = Math.max(aabb1.upperBound.x, aabb2.upperBound.x);
         this.upperBound.y = Math.max(aabb1.upperBound.y, aabb2.upperBound.y);
-    }
+    };
     b2Bound.b2Bound = function () {};
     b2Bound.prototype.IsLower = function () {
         return (this.value & 1) == 0;
-    }
+    };
     b2Bound.prototype.IsUpper = function () {
         return (this.value & 1) == 1;
-    }
+    };
     b2Bound.prototype.Swap = function (b) {
         var tempValue = this.value;
         var tempProxy = this.proxy;
@@ -833,7 +834,7 @@ Box2D.postDefs = [];
         b.value = tempValue;
         b.proxy = tempProxy;
         b.stabbingCount = tempStabbingCount;
-    }
+    };
     b2BoundValues.b2BoundValues = function () {};
     b2BoundValues.prototype.b2BoundValues = function () {
         this.lowerValues = new Vector_a2j_Number();
@@ -842,7 +843,7 @@ Box2D.postDefs = [];
         this.upperValues = new Vector_a2j_Number();
         this.upperValues[0] = 0.0;
         this.upperValues[1] = 0.0;
-    }
+    };
     b2Collision.b2Collision = function () {};
     b2Collision.ClipSegmentToLine = function (vOut, vIn, normal, offset) {
         if (offset === undefined) offset = 0;
@@ -874,7 +875,7 @@ Box2D.postDefs = [];
             }++numOut;
         }
         return numOut;
-    }
+    };
     b2Collision.EdgeSeparation = function (poly1, xf1, edge1, poly2, xf2) {
         if (edge1 === undefined) edge1 = 0;
         var count1 = parseInt(poly1.m_vertexCount);
@@ -913,7 +914,7 @@ Box2D.postDefs = [];
         v2Y -= v1Y;
         var separation = v2X * normal1WorldX + v2Y * normal1WorldY;
         return separation;
-    }
+    };
     b2Collision.FindMaxSeparation = function (edgeIndex, poly1, xf1, poly2, xf2) {
         var count1 = parseInt(poly1.m_vertexCount);
         var normals1 = poly1.m_normals;
@@ -974,7 +975,7 @@ Box2D.postDefs = [];
         }
         edgeIndex[0] = bestEdge;
         return bestSeparation;
-    }
+    };
     b2Collision.FindIncidentEdge = function (c, poly1, xf1, edge1, poly2, xf2) {
         if (edge1 === undefined) edge1 = 0;
         var count1 = parseInt(poly1.m_vertexCount);
@@ -1021,13 +1022,13 @@ Box2D.postDefs = [];
         tClip.id.features.referenceEdge = edge1;
         tClip.id.features.incidentEdge = i2;
         tClip.id.features.incidentVertex = 1;
-    }
+    };
     b2Collision.MakeClipPointVector = function () {
         var r = new Vector(2);
         r[0] = new ClipVertex();
         r[1] = new ClipVertex();
         return r;
-    }
+    };
     b2Collision.CollidePolygons = function (manifold, polyA, xfA, polyB, xfB) {
         var cv;
         manifold.m_pointCount = 0;
@@ -1134,7 +1135,7 @@ Box2D.postDefs = [];
             }
         }
         manifold.m_pointCount = pointCount;
-    }
+    };
     b2Collision.CollideCircles = function (manifold, circle1, xf1, circle2, xf2) {
         manifold.m_pointCount = 0;
         var tMat;
@@ -1160,7 +1161,7 @@ Box2D.postDefs = [];
         manifold.m_pointCount = 1;
         manifold.m_points[0].m_localPoint.SetV(circle2.m_p);
         manifold.m_points[0].m_id.key = 0;
-    }
+    };
     b2Collision.CollidePolygonAndCircle = function (manifold, polygon, xf1, circle, xf2) {
         manifold.m_pointCount = 0;
         var tPoint;
@@ -1252,7 +1253,7 @@ Box2D.postDefs = [];
             manifold.m_points[0].m_localPoint.SetV(circle.m_p);
             manifold.m_points[0].m_id.key = 0;
         }
-    }
+    };
     b2Collision.TestOverlap = function (a, b) {
         var t1 = b.lowerBound;
         var t2 = a.upperBound;
@@ -1265,7 +1266,7 @@ Box2D.postDefs = [];
         if (d1X > 0.0 || d1Y > 0.0) return false;
         if (d2X > 0.0 || d2Y > 0.0) return false;
         return true;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Collision.b2Collision.s_incidentEdge = b2Collision.MakeClipPointVector();
         Box2D.Collision.b2Collision.s_clipPoints1 = b2Collision.MakeClipPointVector();
@@ -1288,15 +1289,15 @@ Box2D.postDefs = [];
     };
     b2ContactID.prototype.b2ContactID = function () {
         this.features._m_id = this;
-    }
+    };
     b2ContactID.prototype.Set = function (id) {
         this.key = id._key;
-    }
+    };
     b2ContactID.prototype.Copy = function () {
         var id = new b2ContactID();
         id.key = this.key;
         return id;
-    }
+    };
     Object.defineProperty(b2ContactID.prototype, 'key', {
         enumerable: false,
         configurable: true,
@@ -1418,7 +1419,7 @@ Box2D.postDefs = [];
                 output.distance = 0.0;
             }
         }
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Collision.b2Distance.s_simplex = new b2Simplex();
         Box2D.Collision.b2Distance.s_saveA = new Vector_a2j_Number(3);
@@ -1452,7 +1453,7 @@ Box2D.postDefs = [];
             default:
                 b2Settings.b2Assert(false);
         }
-    }
+    };
     b2DistanceProxy.prototype.GetSupport = function (d) {
         var bestIndex = 0;
         var bestValue = this.m_vertices[0].x * d.x + this.m_vertices[0].y * d.y;
@@ -1464,7 +1465,7 @@ Box2D.postDefs = [];
             }
         }
         return bestIndex;
-    }
+    };
     b2DistanceProxy.prototype.GetSupportVertex = function (d) {
         var bestIndex = 0;
         var bestValue = this.m_vertices[0].x * d.x + this.m_vertices[0].y * d.y;
@@ -1476,22 +1477,22 @@ Box2D.postDefs = [];
             }
         }
         return this.m_vertices[bestIndex];
-    }
+    };
     b2DistanceProxy.prototype.GetVertexCount = function () {
         return this.m_count;
-    }
+    };
     b2DistanceProxy.prototype.GetVertex = function (index) {
         if (index === undefined) index = 0;
         b2Settings.b2Assert(0 <= index && index < this.m_count);
         return this.m_vertices[index];
-    }
+    };
     b2DynamicTree.b2DynamicTree = function () {};
     b2DynamicTree.prototype.b2DynamicTree = function () {
         this.m_root = null;
         this.m_freeList = null;
         this.m_path = 0;
         this.m_insertionCount = 0;
-    }
+    };
     b2DynamicTree.prototype.CreateProxy = function (aabb, userData) {
         var node = this.AllocateNode();
         var extendX = b2Settings.b2_aabbExtension;
@@ -1503,11 +1504,11 @@ Box2D.postDefs = [];
         node.userData = userData;
         this.InsertLeaf(node);
         return node;
-    }
+    };
     b2DynamicTree.prototype.DestroyProxy = function (proxy) {
         this.RemoveLeaf(proxy);
         this.FreeNode(proxy);
-    }
+    };
     b2DynamicTree.prototype.MoveProxy = function (proxy, aabb, displacement) {
         b2Settings.b2Assert(proxy.IsLeaf());
         if (proxy.aabb.Contains(aabb)) {
@@ -1522,7 +1523,7 @@ Box2D.postDefs = [];
         proxy.aabb.upperBound.y = aabb.upperBound.y + extendY;
         this.InsertLeaf(proxy);
         return true;
-    }
+    };
     b2DynamicTree.prototype.Rebalance = function (iterations) {
         if (iterations === undefined) iterations = 0;
         if (this.m_root == null) return;
@@ -1536,13 +1537,13 @@ Box2D.postDefs = [];
             this.RemoveLeaf(node);
             this.InsertLeaf(node);
         }
-    }
+    };
     b2DynamicTree.prototype.GetFatAABB = function (proxy) {
         return proxy.aabb;
-    }
+    };
     b2DynamicTree.prototype.GetUserData = function (proxy) {
         return proxy.userData;
-    }
+    };
     b2DynamicTree.prototype.Query = function (callback, aabb) {
         if (this.m_root == null) return;
         var stack = new Vector();
@@ -1561,7 +1562,7 @@ Box2D.postDefs = [];
                 }
             }
         }
-    }
+    };
     b2DynamicTree.prototype.RayCast = function (callback, input) {
         if (this.m_root == null) return;
         var p1 = input.p1;
@@ -1614,7 +1615,7 @@ Box2D.postDefs = [];
                 stack[count++] = node.child2;
             }
         }
-    }
+    };
     b2DynamicTree.prototype.AllocateNode = function () {
         if (this.m_freeList) {
             var node = this.m_freeList;
@@ -1625,11 +1626,11 @@ Box2D.postDefs = [];
             return node;
         }
         return new b2DynamicTreeNode();
-    }
+    };
     b2DynamicTree.prototype.FreeNode = function (node) {
         node.parent = this.m_freeList;
         this.m_freeList = node;
-    }
+    };
     b2DynamicTree.prototype.InsertLeaf = function (leaf) {
         ++this.m_insertionCount;
         if (this.m_root == null) {
@@ -1685,7 +1686,7 @@ Box2D.postDefs = [];
             leaf.parent = node2;
             this.m_root = node2;
         }
-    }
+    };
     b2DynamicTree.prototype.RemoveLeaf = function (leaf) {
         if (leaf == this.m_root) {
             this.m_root = null;
@@ -1721,7 +1722,7 @@ Box2D.postDefs = [];
             sibling.parent = null;
             this.FreeNode(node2);
         }
-    }
+    };
     b2DynamicTreeBroadPhase.b2DynamicTreeBroadPhase = function () {
         this.m_tree = new b2DynamicTree();
         this.m_moveBuffer = new Vector();
@@ -1733,32 +1734,32 @@ Box2D.postDefs = [];
         ++this.m_proxyCount;
         this.BufferMove(proxy);
         return proxy;
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.DestroyProxy = function (proxy) {
         this.UnBufferMove(proxy);
         --this.m_proxyCount;
         this.m_tree.DestroyProxy(proxy);
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.MoveProxy = function (proxy, aabb, displacement) {
         var buffer = this.m_tree.MoveProxy(proxy, aabb, displacement);
         if (buffer) {
             this.BufferMove(proxy);
         }
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.TestOverlap = function (proxyA, proxyB) {
         var aabbA = this.m_tree.GetFatAABB(proxyA);
         var aabbB = this.m_tree.GetFatAABB(proxyB);
         return aabbA.TestOverlap(aabbB);
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.GetUserData = function (proxy) {
         return this.m_tree.GetUserData(proxy);
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.GetFatAABB = function (proxy) {
         return this.m_tree.GetFatAABB(proxy);
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.GetProxyCount = function () {
         return this.m_proxyCount;
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.UpdatePairs = function (callback) {
         var __this = this;
         __this.m_pairCount = 0;
@@ -1777,7 +1778,7 @@ Box2D.postDefs = [];
                 pair.proxyA = proxy < queryProxy ? proxy : queryProxy;
                 pair.proxyB = proxy >= queryProxy ? proxy : queryProxy;++__this.m_pairCount;
                 return true;
-            };
+            }
             var fatAABB = __this.m_tree.GetFatAABB(queryProxy);
             __this.m_tree.Query(QueryCallback, fatAABB);
         }
@@ -1795,28 +1796,28 @@ Box2D.postDefs = [];
                 }++i;
             }
         }
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.Query = function (callback, aabb) {
         this.m_tree.Query(callback, aabb);
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.RayCast = function (callback, input) {
         this.m_tree.RayCast(callback, input);
-    }
-    b2DynamicTreeBroadPhase.prototype.Validate = function () {}
+    };
+    b2DynamicTreeBroadPhase.prototype.Validate = function () {};
     b2DynamicTreeBroadPhase.prototype.Rebalance = function (iterations) {
         if (iterations === undefined) iterations = 0;
         this.m_tree.Rebalance(iterations);
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.BufferMove = function (proxy) {
         this.m_moveBuffer[this.m_moveBuffer.length] = proxy;
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.UnBufferMove = function (proxy) {
         var i = parseInt(this.m_moveBuffer.indexOf(proxy));
         this.m_moveBuffer.splice(i, 1);
-    }
+    };
     b2DynamicTreeBroadPhase.prototype.ComparePairs = function (pair1, pair2) {
         return 0;
-    }
+    };
     b2DynamicTreeBroadPhase.__implements = {};
     b2DynamicTreeBroadPhase.__implements[IBroadPhase] = true;
     b2DynamicTreeNode.b2DynamicTreeNode = function () {
@@ -1824,7 +1825,7 @@ Box2D.postDefs = [];
     };
     b2DynamicTreeNode.prototype.IsLeaf = function () {
         return this.child1 == null;
-    }
+    };
     b2DynamicTreePair.b2DynamicTreePair = function () {};
     b2Manifold.b2Manifold = function () {
         this.m_pointCount = 0;
@@ -1836,7 +1837,7 @@ Box2D.postDefs = [];
         }
         this.m_localPlaneNormal = new b2Vec2();
         this.m_localPoint = new b2Vec2();
-    }
+    };
     b2Manifold.prototype.Reset = function () {
         for (var i = 0; i < b2Settings.b2_maxManifoldPoints; i++) {
             ((this.m_points[i] instanceof b2ManifoldPoint ? this.m_points[i] : null)).Reset();
@@ -1845,7 +1846,7 @@ Box2D.postDefs = [];
         this.m_localPoint.SetZero();
         this.m_type = 0;
         this.m_pointCount = 0;
-    }
+    };
     b2Manifold.prototype.Set = function (m) {
         this.m_pointCount = m.m_pointCount;
         for (var i = 0; i < b2Settings.b2_maxManifoldPoints; i++) {
@@ -1854,12 +1855,12 @@ Box2D.postDefs = [];
         this.m_localPlaneNormal.SetV(m.m_localPlaneNormal);
         this.m_localPoint.SetV(m.m_localPoint);
         this.m_type = m.m_type;
-    }
+    };
     b2Manifold.prototype.Copy = function () {
         var copy = new b2Manifold();
         copy.Set(this);
         return copy;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Collision.b2Manifold.e_circles = 0x0001;
         Box2D.Collision.b2Manifold.e_faceA = 0x0002;
@@ -1871,19 +1872,19 @@ Box2D.postDefs = [];
     };
     b2ManifoldPoint.prototype.b2ManifoldPoint = function () {
         this.Reset();
-    }
+    };
     b2ManifoldPoint.prototype.Reset = function () {
         this.m_localPoint.SetZero();
         this.m_normalImpulse = 0.0;
         this.m_tangentImpulse = 0.0;
         this.m_id.key = 0;
-    }
+    };
     b2ManifoldPoint.prototype.Set = function (m) {
         this.m_localPoint.SetV(m.m_localPoint);
         this.m_normalImpulse = m.m_normalImpulse;
         this.m_tangentImpulse = m.m_tangentImpulse;
         this.m_id.Set(m.m_id);
-    }
+    };
     b2Point.b2Point = function () {
         this.p = new b2Vec2();
     };
@@ -1891,10 +1892,10 @@ Box2D.postDefs = [];
         if (vX === undefined) vX = 0;
         if (vY === undefined) vY = 0;
         return this.p;
-    }
+    };
     b2Point.prototype.GetFirstVertex = function (xf) {
         return this.p;
-    }
+    };
     b2RayCastInput.b2RayCastInput = function () {
         this.p1 = new b2Vec2();
         this.p2 = new b2Vec2();
@@ -1906,7 +1907,7 @@ Box2D.postDefs = [];
         if (p1) this.p1.SetV(p1);
         if (p2) this.p2.SetV(p2);
         this.maxFraction = maxFraction;
-    }
+    };
     b2RayCastOutput.b2RayCastOutput = function () {
         this.normal = new b2Vec2();
     };
@@ -1943,11 +1944,11 @@ Box2D.postDefs = [];
             }
         }
         return false;
-    }
+    };
     b2Segment.prototype.Extend = function (aabb) {
         this.ExtendForward(aabb);
         this.ExtendBackward(aabb);
-    }
+    };
     b2Segment.prototype.ExtendForward = function (aabb) {
         var dX = this.p2.x - this.p1.x;
         var dY = this.p2.y - this.p1.y;
@@ -1955,7 +1956,7 @@ Box2D.postDefs = [];
             dY > 0 ? (aabb.upperBound.y - this.p1.y) / dY : dY < 0 ? (aabb.lowerBound.y - this.p1.y) / dY : Number.POSITIVE_INFINITY);
         this.p2.x = this.p1.x + dX * lambda;
         this.p2.y = this.p1.y + dY * lambda;
-    }
+    };
     b2Segment.prototype.ExtendBackward = function (aabb) {
         var dX = (-this.p2.x) + this.p1.x;
         var dY = (-this.p2.y) + this.p1.y;
@@ -1963,7 +1964,7 @@ Box2D.postDefs = [];
             dY > 0 ? (aabb.upperBound.y - this.p2.y) / dY : dY < 0 ? (aabb.lowerBound.y - this.p2.y) / dY : Number.POSITIVE_INFINITY);
         this.p1.x = this.p2.x + dX * lambda;
         this.p1.y = this.p2.y + dY * lambda;
-    }
+    };
     b2SeparationFunction.b2SeparationFunction = function () {
         this.m_localPoint = new b2Vec2();
         this.m_axis = new b2Vec2();
@@ -2132,7 +2133,7 @@ Box2D.postDefs = [];
                 }
             }
         }
-    }
+    };
     b2SeparationFunction.prototype.Evaluate = function (transformA, transformB) {
         var axisA;
         var axisB;
@@ -2178,7 +2179,7 @@ Box2D.postDefs = [];
                 b2Settings.b2Assert(false);
                 return 0.0;
         }
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Collision.b2SeparationFunction.e_points = 0x01;
         Box2D.Collision.b2SeparationFunction.e_faceA = 0x02;
@@ -2194,7 +2195,7 @@ Box2D.postDefs = [];
         this.m_vertices[0] = this.m_v1;
         this.m_vertices[1] = this.m_v2;
         this.m_vertices[2] = this.m_v3;
-    }
+    };
     b2Simplex.prototype.ReadCache = function (cache, proxyA, transformA, proxyB, transformB) {
         b2Settings.b2Assert(0 <= cache.count && cache.count <= 3);
         var wALocal;
@@ -2230,7 +2231,7 @@ Box2D.postDefs = [];
             v.w = b2Math.SubtractVV(v.wB, v.wA);
             this.m_count = 1;
         }
-    }
+    };
     b2Simplex.prototype.WriteCache = function (cache) {
         cache.metric = this.GetMetric();
         cache.count = Box2D.parseUInt(this.m_count);
@@ -2239,7 +2240,7 @@ Box2D.postDefs = [];
             cache.indexA[i] = Box2D.parseUInt(vertices[i].indexA);
             cache.indexB[i] = Box2D.parseUInt(vertices[i].indexB);
         }
-    }
+    };
     b2Simplex.prototype.GetSearchDirection = function () {
         switch (this.m_count) {
             case 1:
@@ -2259,7 +2260,7 @@ Box2D.postDefs = [];
                 b2Settings.b2Assert(false);
                 return new b2Vec2();
         }
-    }
+    };
     b2Simplex.prototype.GetClosestPoint = function () {
         switch (this.m_count) {
             case 0:
@@ -2273,7 +2274,7 @@ Box2D.postDefs = [];
                 b2Settings.b2Assert(false);
                 return new b2Vec2();
         }
-    }
+    };
     b2Simplex.prototype.GetWitnessPoints = function (pA, pB) {
         switch (this.m_count) {
             case 0:
@@ -2297,7 +2298,7 @@ Box2D.postDefs = [];
                 b2Settings.b2Assert(false);
                 break;
         }
-    }
+    };
     b2Simplex.prototype.GetMetric = function () {
         switch (this.m_count) {
             case 0:
@@ -2313,7 +2314,7 @@ Box2D.postDefs = [];
                 b2Settings.b2Assert(false);
                 return 0.0;
         }
-    }
+    };
     b2Simplex.prototype.Solve2 = function () {
         var w1 = this.m_v1.w;
         var w2 = this.m_v2.w;
@@ -2335,7 +2336,7 @@ Box2D.postDefs = [];
         this.m_v1.a = d12_1 * inv_d12;
         this.m_v2.a = d12_2 * inv_d12;
         this.m_count = 2;
-    }
+    };
     b2Simplex.prototype.Solve3 = function () {
         var w1 = this.m_v1.w;
         var w2 = this.m_v2.w;
@@ -2404,7 +2405,7 @@ Box2D.postDefs = [];
         this.m_v2.a = d123_2 * inv_d123;
         this.m_v3.a = d123_3 * inv_d123;
         this.m_count = 3;
-    }
+    };
     b2SimplexCache.b2SimplexCache = function () {
         this.indexA = new Vector_a2j_Number(3);
         this.indexB = new Vector_a2j_Number(3);
@@ -2417,7 +2418,7 @@ Box2D.postDefs = [];
         this.a = other.a;
         this.indexA = other.indexA;
         this.indexB = other.indexB;
-    }
+    };
     b2TimeOfImpact.b2TimeOfImpact = function () {};
     b2TimeOfImpact.TimeOfImpact = function (input) {
         ++b2TimeOfImpact.b2_toiCalls;
@@ -2522,7 +2523,7 @@ Box2D.postDefs = [];
         }
         b2TimeOfImpact.b2_toiMaxIters = b2Math.Max(b2TimeOfImpact.b2_toiMaxIters, iter);
         return alpha;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Collision.b2TimeOfImpact.b2_toiCalls = 0;
         Box2D.Collision.b2TimeOfImpact.b2_toiIters = 0;
@@ -2550,7 +2551,7 @@ Box2D.postDefs = [];
         for (var i = 0; i < b2Settings.b2_maxManifoldPoints; i++) {
             this.m_points[i] = new b2Vec2();
         }
-    }
+    };
     b2WorldManifold.prototype.Initialize = function (manifold, xfA, radiusA, xfB, radiusB) {
         if (radiusA === undefined) radiusA = 0;
         if (radiusB === undefined) radiusB = 0;
@@ -2644,7 +2645,7 @@ Box2D.postDefs = [];
             }
                 break;
         }
-    }
+    };
     ClipVertex.ClipVertex = function () {
         this.v = new b2Vec2();
         this.id = new b2ContactID();
@@ -2652,7 +2653,7 @@ Box2D.postDefs = [];
     ClipVertex.prototype.Set = function (other) {
         this.v.SetV(other.v);
         this.id.Set(other.id);
-    }
+    };
     Features.Features = function () {};
     Object.defineProperty(Features.prototype, 'referenceEdge', {
         enumerable: false,
@@ -2791,14 +2792,14 @@ Box2D.postDefs = [];
         var s = new b2CircleShape();
         s.Set(this);
         return s;
-    }
+    };
     b2CircleShape.prototype.Set = function (other) {
         this.__super.Set.call(this, other);
         if (Box2D.is(other, b2CircleShape)) {
             var other2 = (other instanceof b2CircleShape ? other : null);
             this.m_p.SetV(other2.m_p);
         }
-    }
+    };
     b2CircleShape.prototype.TestPoint = function (transform, p) {
         var tMat = transform.R;
         var dX = transform.position.x + (tMat.col1.x * this.m_p.x + tMat.col2.x * this.m_p.y);
@@ -2806,7 +2807,7 @@ Box2D.postDefs = [];
         dX = p.x - dX;
         dY = p.y - dY;
         return (dX * dX + dY * dY) <= this.m_radius * this.m_radius;
-    }
+    };
     b2CircleShape.prototype.RayCast = function (output, input, transform) {
         var tMat = transform.R;
         var positionX = transform.position.x + (tMat.col1.x * this.m_p.x + tMat.col2.x * this.m_p.y);
@@ -2832,20 +2833,20 @@ Box2D.postDefs = [];
             return true;
         }
         return false;
-    }
+    };
     b2CircleShape.prototype.ComputeAABB = function (aabb, transform) {
         var tMat = transform.R;
         var pX = transform.position.x + (tMat.col1.x * this.m_p.x + tMat.col2.x * this.m_p.y);
         var pY = transform.position.y + (tMat.col1.y * this.m_p.x + tMat.col2.y * this.m_p.y);
         aabb.lowerBound.Set(pX - this.m_radius, pY - this.m_radius);
         aabb.upperBound.Set(pX + this.m_radius, pY + this.m_radius);
-    }
+    };
     b2CircleShape.prototype.ComputeMass = function (massData, density) {
         if (density === undefined) density = 0;
         massData.mass = density * b2Settings.b2_pi * this.m_radius * this.m_radius;
         massData.center.SetV(this.m_p);
         massData.I = massData.mass * (0.5 * this.m_radius * this.m_radius + (this.m_p.x * this.m_p.x + this.m_p.y * this.m_p.y));
-    }
+    };
     b2CircleShape.prototype.ComputeSubmergedArea = function (normal, offset, xf, c) {
         if (offset === undefined) offset = 0;
         var p = b2Math.MulX(xf, this.m_p);
@@ -2864,32 +2865,32 @@ Box2D.postDefs = [];
         c.x = p.x + normal.x * com;
         c.y = p.y + normal.y * com;
         return area;
-    }
+    };
     b2CircleShape.prototype.GetLocalPosition = function () {
         return this.m_p;
-    }
+    };
     b2CircleShape.prototype.SetLocalPosition = function (position) {
         this.m_p.SetV(position);
-    }
+    };
     b2CircleShape.prototype.GetRadius = function () {
         return this.m_radius;
-    }
+    };
     b2CircleShape.prototype.SetRadius = function (radius) {
         if (radius === undefined) radius = 0;
         this.m_radius = radius;
-    }
+    };
     b2CircleShape.prototype.b2CircleShape = function (radius) {
         if (radius === undefined) radius = 0;
         this.__super.b2Shape.call(this);
         this.m_type = b2Shape.e_circleShape;
         this.m_radius = radius;
-    }
+    };
     b2EdgeChainDef.b2EdgeChainDef = function () {};
     b2EdgeChainDef.prototype.b2EdgeChainDef = function () {
         this.vertexCount = 0;
         this.isALoop = true;
         this.vertices = [];
-    }
+    };
     Box2D.inherit(b2EdgeShape, Box2D.Collision.Shapes.b2Shape);
     b2EdgeShape.prototype.__super = Box2D.Collision.Shapes.b2Shape.prototype;
     b2EdgeShape.b2EdgeShape = function () {
@@ -2906,7 +2907,7 @@ Box2D.postDefs = [];
     };
     b2EdgeShape.prototype.TestPoint = function (transform, p) {
         return false;
-    }
+    };
     b2EdgeShape.prototype.RayCast = function (output, input, transform) {
         var tMat;
         var rX = input.p2.x - input.p1.x;
@@ -2935,7 +2936,7 @@ Box2D.postDefs = [];
             }
         }
         return false;
-    }
+    };
     b2EdgeShape.prototype.ComputeAABB = function (aabb, transform) {
         var tMat = transform.R;
         var v1X = transform.position.x + (tMat.col1.x * this.m_v1.x + tMat.col2.x * this.m_v1.y);
@@ -2958,13 +2959,13 @@ Box2D.postDefs = [];
             aabb.lowerBound.y = v2Y;
             aabb.upperBound.y = v1Y;
         }
-    }
+    };
     b2EdgeShape.prototype.ComputeMass = function (massData, density) {
         if (density === undefined) density = 0;
         massData.mass = 0;
         massData.center.SetV(this.m_v1);
         massData.I = 0;
-    }
+    };
     b2EdgeShape.prototype.ComputeSubmergedArea = function (normal, offset, xf, c) {
         if (offset === undefined) offset = 0;
         var v0 = new b2Vec2(normal.x * offset, normal.y * offset);
@@ -2991,50 +2992,50 @@ Box2D.postDefs = [];
         c.x = (v0.x + v1.x + v2.x) / 3;
         c.y = (v0.y + v1.y + v2.y) / 3;
         return 0.5 * ((v1.x - v0.x) * (v2.y - v0.y) - (v1.y - v0.y) * (v2.x - v0.x));
-    }
+    };
     b2EdgeShape.prototype.GetLength = function () {
         return this.m_length;
-    }
+    };
     b2EdgeShape.prototype.GetVertex1 = function () {
         return this.m_v1;
-    }
+    };
     b2EdgeShape.prototype.GetVertex2 = function () {
         return this.m_v2;
-    }
+    };
     b2EdgeShape.prototype.GetCoreVertex1 = function () {
         return this.m_coreV1;
-    }
+    };
     b2EdgeShape.prototype.GetCoreVertex2 = function () {
         return this.m_coreV2;
-    }
+    };
     b2EdgeShape.prototype.GetNormalVector = function () {
         return this.m_normal;
-    }
+    };
     b2EdgeShape.prototype.GetDirectionVector = function () {
         return this.m_direction;
-    }
+    };
     b2EdgeShape.prototype.GetCorner1Vector = function () {
         return this.m_cornerDir1;
-    }
+    };
     b2EdgeShape.prototype.GetCorner2Vector = function () {
         return this.m_cornerDir2;
-    }
+    };
     b2EdgeShape.prototype.Corner1IsConvex = function () {
         return this.m_cornerConvex1;
-    }
+    };
     b2EdgeShape.prototype.Corner2IsConvex = function () {
         return this.m_cornerConvex2;
-    }
+    };
     b2EdgeShape.prototype.GetFirstVertex = function (xf) {
         var tMat = xf.R;
         return new b2Vec2(xf.position.x + (tMat.col1.x * this.m_coreV1.x + tMat.col2.x * this.m_coreV1.y), xf.position.y + (tMat.col1.y * this.m_coreV1.x + tMat.col2.y * this.m_coreV1.y));
-    }
+    };
     b2EdgeShape.prototype.GetNextEdge = function () {
         return this.m_nextEdge;
-    }
+    };
     b2EdgeShape.prototype.GetPrevEdge = function () {
         return this.m_prevEdge;
-    }
+    };
     b2EdgeShape.prototype.Support = function (xf, dX, dY) {
         if (dX === undefined) dX = 0;
         if (dY === undefined) dY = 0;
@@ -3052,7 +3053,7 @@ Box2D.postDefs = [];
             this.s_supportVec.y = v2Y;
         }
         return this.s_supportVec;
-    }
+    };
     b2EdgeShape.prototype.b2EdgeShape = function (v1, v2) {
         this.__super.b2Shape.call(this);
         this.m_type = b2Shape.e_edgeShape;
@@ -3067,19 +3068,19 @@ Box2D.postDefs = [];
         this.m_coreV2.Set((-b2Settings.b2_toiSlop * (this.m_normal.x + this.m_direction.x)) + this.m_v2.x, (-b2Settings.b2_toiSlop * (this.m_normal.y + this.m_direction.y)) + this.m_v2.y);
         this.m_cornerDir1 = this.m_normal;
         this.m_cornerDir2.Set((-this.m_normal.x), (-this.m_normal.y));
-    }
+    };
     b2EdgeShape.prototype.SetPrevEdge = function (edge, core, cornerDir, convex) {
         this.m_prevEdge = edge;
         this.m_coreV1 = core;
         this.m_cornerDir1 = cornerDir;
         this.m_cornerConvex1 = convex;
-    }
+    };
     b2EdgeShape.prototype.SetNextEdge = function (edge, core, cornerDir, convex) {
         this.m_nextEdge = edge;
         this.m_coreV2 = core;
         this.m_cornerDir2 = cornerDir;
         this.m_cornerConvex2 = convex;
-    }
+    };
     b2MassData.b2MassData = function () {
         this.mass = 0.0;
         this.center = new b2Vec2(0, 0);
@@ -3094,7 +3095,7 @@ Box2D.postDefs = [];
         var s = new b2PolygonShape();
         s.Set(this);
         return s;
-    }
+    };
     b2PolygonShape.prototype.Set = function (other) {
         this.__super.Set.call(this, other);
         if (Box2D.is(other, b2PolygonShape)) {
@@ -3107,7 +3108,7 @@ Box2D.postDefs = [];
                 this.m_normals[i].SetV(other2.m_normals[i]);
             }
         }
-    }
+    };
     b2PolygonShape.prototype.SetAsArray = function (vertices, vertexCount) {
         if (vertexCount === undefined) vertexCount = 0;
         var v = new Vector();
@@ -3119,13 +3120,13 @@ Box2D.postDefs = [];
             v.push(tVec);
         }
         this.SetAsVector(v, vertexCount);
-    }
+    };
     b2PolygonShape.AsArray = function (vertices, vertexCount) {
         if (vertexCount === undefined) vertexCount = 0;
         var polygonShape = new b2PolygonShape();
         polygonShape.SetAsArray(vertices, vertexCount);
         return polygonShape;
-    }
+    };
     b2PolygonShape.prototype.SetAsVector = function (vertices, vertexCount) {
         if (vertexCount === undefined) vertexCount = 0;
         if (vertexCount == 0) vertexCount = vertices.length;
@@ -3147,13 +3148,13 @@ Box2D.postDefs = [];
             this.m_normals[i].Normalize();
         }
         this.m_centroid = b2PolygonShape.ComputeCentroid(this.m_vertices, this.m_vertexCount);
-    }
+    };
     b2PolygonShape.AsVector = function (vertices, vertexCount) {
         if (vertexCount === undefined) vertexCount = 0;
         var polygonShape = new b2PolygonShape();
         polygonShape.SetAsVector(vertices, vertexCount);
         return polygonShape;
-    }
+    };
     b2PolygonShape.prototype.SetAsBox = function (hx, hy) {
         if (hx === undefined) hx = 0;
         if (hy === undefined) hy = 0;
@@ -3168,14 +3169,14 @@ Box2D.postDefs = [];
         this.m_normals[2].Set(0.0, 1.0);
         this.m_normals[3].Set((-1.0), 0.0);
         this.m_centroid.SetZero();
-    }
+    };
     b2PolygonShape.AsBox = function (hx, hy) {
         if (hx === undefined) hx = 0;
         if (hy === undefined) hy = 0;
         var polygonShape = new b2PolygonShape();
         polygonShape.SetAsBox(hx, hy);
         return polygonShape;
-    }
+    };
     b2PolygonShape.prototype.SetAsOrientedBox = function (hx, hy, center, angle) {
         if (hx === undefined) hx = 0;
         if (hy === undefined) hy = 0;
@@ -3199,7 +3200,7 @@ Box2D.postDefs = [];
             this.m_vertices[i] = b2Math.MulX(xf, this.m_vertices[i]);
             this.m_normals[i] = b2Math.MulMV(xf.R, this.m_normals[i]);
         }
-    }
+    };
     b2PolygonShape.AsOrientedBox = function (hx, hy, center, angle) {
         if (hx === undefined) hx = 0;
         if (hy === undefined) hy = 0;
@@ -3208,7 +3209,7 @@ Box2D.postDefs = [];
         var polygonShape = new b2PolygonShape();
         polygonShape.SetAsOrientedBox(hx, hy, center, angle);
         return polygonShape;
-    }
+    };
     b2PolygonShape.prototype.SetAsEdge = function (v1, v2) {
         this.m_vertexCount = 2;
         this.Reserve(2);
@@ -3220,12 +3221,12 @@ Box2D.postDefs = [];
         this.m_normals[0].Normalize();
         this.m_normals[1].x = (-this.m_normals[0].x);
         this.m_normals[1].y = (-this.m_normals[0].y);
-    }
+    };
     b2PolygonShape.AsEdge = function (v1, v2) {
         var polygonShape = new b2PolygonShape();
         polygonShape.SetAsEdge(v1, v2);
         return polygonShape;
-    }
+    };
     b2PolygonShape.prototype.TestPoint = function (xf, p) {
         var tVec;
         var tMat = xf.R;
@@ -3244,7 +3245,7 @@ Box2D.postDefs = [];
             }
         }
         return true;
-    }
+    };
     b2PolygonShape.prototype.RayCast = function (output, input, transform) {
         var lower = 0.0;
         var upper = input.maxFraction;
@@ -3299,7 +3300,7 @@ Box2D.postDefs = [];
             return true;
         }
         return false;
-    }
+    };
     b2PolygonShape.prototype.ComputeAABB = function (aabb, xf) {
         var tMat = xf.R;
         var tVec = this.m_vertices[0];
@@ -3320,7 +3321,7 @@ Box2D.postDefs = [];
         aabb.lowerBound.y = lowerY - this.m_radius;
         aabb.upperBound.x = upperX + this.m_radius;
         aabb.upperBound.y = upperY + this.m_radius;
-    }
+    };
     b2PolygonShape.prototype.ComputeMass = function (massData, density) {
         if (density === undefined) density = 0;
         if (this.m_vertexCount == 2) {
@@ -3362,7 +3363,7 @@ Box2D.postDefs = [];
         centerY *= 1.0 / area;
         massData.center.Set(centerX, centerY);
         massData.I = density * I;
-    }
+    };
     b2PolygonShape.prototype.ComputeSubmergedArea = function (normal, offset, xf, c) {
         if (offset === undefined) offset = 0;
         var normalL = b2Math.MulTMV(xf.R, normal);
@@ -3438,16 +3439,16 @@ Box2D.postDefs = [];
         center.Multiply(1 / area);
         c.SetV(b2Math.MulX(xf, center));
         return area;
-    }
+    };
     b2PolygonShape.prototype.GetVertexCount = function () {
         return this.m_vertexCount;
-    }
+    };
     b2PolygonShape.prototype.GetVertices = function () {
         return this.m_vertices;
-    }
+    };
     b2PolygonShape.prototype.GetNormals = function () {
         return this.m_normals;
-    }
+    };
     b2PolygonShape.prototype.GetSupport = function (d) {
         var bestIndex = 0;
         var bestValue = this.m_vertices[0].x * d.x + this.m_vertices[0].y * d.y;
@@ -3459,7 +3460,7 @@ Box2D.postDefs = [];
             }
         }
         return bestIndex;
-    }
+    };
     b2PolygonShape.prototype.GetSupportVertex = function (d) {
         var bestIndex = 0;
         var bestValue = this.m_vertices[0].x * d.x + this.m_vertices[0].y * d.y;
@@ -3471,24 +3472,24 @@ Box2D.postDefs = [];
             }
         }
         return this.m_vertices[bestIndex];
-    }
+    };
     b2PolygonShape.prototype.Validate = function () {
         return false;
-    }
+    };
     b2PolygonShape.prototype.b2PolygonShape = function () {
         this.__super.b2Shape.call(this);
         this.m_type = b2Shape.e_polygonShape;
         this.m_centroid = new b2Vec2();
         this.m_vertices = new Vector();
         this.m_normals = new Vector();
-    }
+    };
     b2PolygonShape.prototype.Reserve = function (count) {
         if (count === undefined) count = 0;
         for (var i = parseInt(this.m_vertices.length); i < count; i++) {
             this.m_vertices[i] = new b2Vec2();
             this.m_normals[i] = new b2Vec2();
         }
-    }
+    };
     b2PolygonShape.ComputeCentroid = function (vs, count) {
         if (count === undefined) count = 0;
         var c = new b2Vec2();
@@ -3511,7 +3512,7 @@ Box2D.postDefs = [];
         c.x *= 1.0 / area;
         c.y *= 1.0 / area;
         return c;
-    }
+    };
     b2PolygonShape.ComputeOBB = function (obb, vs, count) {
         if (count === undefined) count = 0;
         var i = 0;
@@ -3562,34 +3563,34 @@ Box2D.postDefs = [];
                 obb.extents.y = 0.5 * (upperY - lowerY);
             }
         }
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Collision.Shapes.b2PolygonShape.s_mat = new b2Mat22();
     });
     b2Shape.b2Shape = function () {};
     b2Shape.prototype.Copy = function () {
         return null;
-    }
+    };
     b2Shape.prototype.Set = function (other) {
         this.m_radius = other.m_radius;
-    }
+    };
     b2Shape.prototype.GetType = function () {
         return this.m_type;
-    }
+    };
     b2Shape.prototype.TestPoint = function (xf, p) {
         return false;
-    }
+    };
     b2Shape.prototype.RayCast = function (output, input, transform) {
         return false;
-    }
-    b2Shape.prototype.ComputeAABB = function (aabb, xf) {}
+    };
+    b2Shape.prototype.ComputeAABB = function (aabb, xf) {};
     b2Shape.prototype.ComputeMass = function (massData, density) {
         if (density === undefined) density = 0;
-    }
+    };
     b2Shape.prototype.ComputeSubmergedArea = function (normal, offset, xf, c) {
         if (offset === undefined) offset = 0;
         return 0;
-    }
+    };
     b2Shape.TestOverlap = function (shape1, transform1, shape2, transform2) {
         var input = new b2DistanceInput();
         input.proxyA = new b2DistanceProxy();
@@ -3604,11 +3605,11 @@ Box2D.postDefs = [];
         var output = new b2DistanceOutput();
         b2Distance.Distance(output, simplexCache, input);
         return output.distance < 10.0 * Number.MIN_VALUE;
-    }
+    };
     b2Shape.prototype.b2Shape = function () {
         this.m_type = b2Shape.e_unknownShape;
         this.m_radius = b2Settings.b2_linearSlop;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Collision.Shapes.b2Shape.e_unknownShape = parseInt((-1));
         Box2D.Collision.Shapes.b2Shape.e_circleShape = 0;
@@ -3644,7 +3645,7 @@ Box2D.postDefs = [];
         this._r = Box2D.parseUInt(255 * b2Math.Clamp(rr, 0.0, 1.0));
         this._g = Box2D.parseUInt(255 * b2Math.Clamp(gg, 0.0, 1.0));
         this._b = Box2D.parseUInt(255 * b2Math.Clamp(bb, 0.0, 1.0));
-    }
+    };
     b2Color.prototype.Set = function (rr, gg, bb) {
         if (rr === undefined) rr = 0;
         if (gg === undefined) gg = 0;
@@ -3652,7 +3653,7 @@ Box2D.postDefs = [];
         this._r = Box2D.parseUInt(255 * b2Math.Clamp(rr, 0.0, 1.0));
         this._g = Box2D.parseUInt(255 * b2Math.Clamp(gg, 0.0, 1.0));
         this._b = Box2D.parseUInt(255 * b2Math.Clamp(bb, 0.0, 1.0));
-    }
+    };
     Object.defineProperty(b2Color.prototype, 'r', {
         enumerable: false,
         configurable: true,
@@ -3689,17 +3690,17 @@ Box2D.postDefs = [];
         if (friction1 === undefined) friction1 = 0;
         if (friction2 === undefined) friction2 = 0;
         return Math.sqrt(friction1 * friction2);
-    }
+    };
     b2Settings.b2MixRestitution = function (restitution1, restitution2) {
         if (restitution1 === undefined) restitution1 = 0;
         if (restitution2 === undefined) restitution2 = 0;
         return restitution1 > restitution2 ? restitution1 : restitution2;
-    }
+    };
     b2Settings.b2Assert = function (a) {
         if (!a) {
             throw "Assertion Failed";
         }
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Common.b2Settings.VERSION = "2.1alpha";
         Box2D.Common.b2Settings.USHRT_MAX = 0x0000ffff;
@@ -3745,18 +3746,18 @@ Box2D.postDefs = [];
     };
     b2Mat22.prototype.b2Mat22 = function () {
         this.SetIdentity();
-    }
+    };
     b2Mat22.FromAngle = function (angle) {
         if (angle === undefined) angle = 0;
         var mat = new b2Mat22();
         mat.Set(angle);
         return mat;
-    }
+    };
     b2Mat22.FromVV = function (c1, c2) {
         var mat = new b2Mat22();
         mat.SetVV(c1, c2);
         return mat;
-    }
+    };
     b2Mat22.prototype.Set = function (angle) {
         if (angle === undefined) angle = 0;
         var c = Math.cos(angle);
@@ -3765,41 +3766,41 @@ Box2D.postDefs = [];
         this.col2.x = (-s);
         this.col1.y = s;
         this.col2.y = c;
-    }
+    };
     b2Mat22.prototype.SetVV = function (c1, c2) {
         this.col1.SetV(c1);
         this.col2.SetV(c2);
-    }
+    };
     b2Mat22.prototype.Copy = function () {
         var mat = new b2Mat22();
         mat.SetM(this);
         return mat;
-    }
+    };
     b2Mat22.prototype.SetM = function (m) {
         this.col1.SetV(m.col1);
         this.col2.SetV(m.col2);
-    }
+    };
     b2Mat22.prototype.AddM = function (m) {
         this.col1.x += m.col1.x;
         this.col1.y += m.col1.y;
         this.col2.x += m.col2.x;
         this.col2.y += m.col2.y;
-    }
+    };
     b2Mat22.prototype.SetIdentity = function () {
         this.col1.x = 1.0;
         this.col2.x = 0.0;
         this.col1.y = 0.0;
         this.col2.y = 1.0;
-    }
+    };
     b2Mat22.prototype.SetZero = function () {
         this.col1.x = 0.0;
         this.col2.x = 0.0;
         this.col1.y = 0.0;
         this.col2.y = 0.0;
-    }
+    };
     b2Mat22.prototype.GetAngle = function () {
         return Math.atan2(this.col1.y, this.col1.x);
-    }
+    };
     b2Mat22.prototype.GetInverse = function (out) {
         var a = this.col1.x;
         var b = this.col2.x;
@@ -3814,7 +3815,7 @@ Box2D.postDefs = [];
         out.col1.y = (-det * c);
         out.col2.y = det * a;
         return out;
-    }
+    };
     b2Mat22.prototype.Solve = function (out, bX, bY) {
         if (bX === undefined) bX = 0;
         if (bY === undefined) bY = 0;
@@ -3829,11 +3830,11 @@ Box2D.postDefs = [];
         out.x = det * (a22 * bX - a12 * bY);
         out.y = det * (a11 * bY - a21 * bX);
         return out;
-    }
+    };
     b2Mat22.prototype.Abs = function () {
         this.col1.Abs();
         this.col2.Abs();
-    }
+    };
     b2Mat33.b2Mat33 = function () {
         this.col1 = new b2Vec3();
         this.col2 = new b2Vec3();
@@ -3853,20 +3854,20 @@ Box2D.postDefs = [];
             this.col2.SetV(c2);
             this.col3.SetV(c3);
         }
-    }
+    };
     b2Mat33.prototype.SetVVV = function (c1, c2, c3) {
         this.col1.SetV(c1);
         this.col2.SetV(c2);
         this.col3.SetV(c3);
-    }
+    };
     b2Mat33.prototype.Copy = function () {
         return new b2Mat33(this.col1, this.col2, this.col3);
-    }
+    };
     b2Mat33.prototype.SetM = function (m) {
         this.col1.SetV(m.col1);
         this.col2.SetV(m.col2);
         this.col3.SetV(m.col3);
-    }
+    };
     b2Mat33.prototype.AddM = function (m) {
         this.col1.x += m.col1.x;
         this.col1.y += m.col1.y;
@@ -3877,7 +3878,7 @@ Box2D.postDefs = [];
         this.col3.x += m.col3.x;
         this.col3.y += m.col3.y;
         this.col3.z += m.col3.z;
-    }
+    };
     b2Mat33.prototype.SetIdentity = function () {
         this.col1.x = 1.0;
         this.col2.x = 0.0;
@@ -3888,7 +3889,7 @@ Box2D.postDefs = [];
         this.col1.z = 0.0;
         this.col2.z = 0.0;
         this.col3.z = 1.0;
-    }
+    };
     b2Mat33.prototype.SetZero = function () {
         this.col1.x = 0.0;
         this.col2.x = 0.0;
@@ -3899,7 +3900,7 @@ Box2D.postDefs = [];
         this.col1.z = 0.0;
         this.col2.z = 0.0;
         this.col3.z = 0.0;
-    }
+    };
     b2Mat33.prototype.Solve22 = function (out, bX, bY) {
         if (bX === undefined) bX = 0;
         if (bY === undefined) bY = 0;
@@ -3914,7 +3915,7 @@ Box2D.postDefs = [];
         out.x = det * (a22 * bX - a12 * bY);
         out.y = det * (a11 * bY - a21 * bX);
         return out;
-    }
+    };
     b2Mat33.prototype.Solve33 = function (out, bX, bY, bZ) {
         if (bX === undefined) bX = 0;
         if (bY === undefined) bY = 0;
@@ -3936,140 +3937,140 @@ Box2D.postDefs = [];
         out.y = det * (a11 * (bY * a33 - bZ * a23) + a21 * (bZ * a13 - bX * a33) + a31 * (bX * a23 - bY * a13));
         out.z = det * (a11 * (a22 * bZ - a32 * bY) + a21 * (a32 * bX - a12 * bZ) + a31 * (a12 * bY - a22 * bX));
         return out;
-    }
+    };
     b2Math.b2Math = function () {};
     b2Math.IsValid = function (x) {
         if (x === undefined) x = 0;
         return isFinite(x);
-    }
+    };
     b2Math.Dot = function (a, b) {
         return a.x * b.x + a.y * b.y;
-    }
+    };
     b2Math.CrossVV = function (a, b) {
         return a.x * b.y - a.y * b.x;
-    }
+    };
     b2Math.CrossVF = function (a, s) {
         if (s === undefined) s = 0;
         var v = new b2Vec2(s * a.y, (-s * a.x));
         return v;
-    }
+    };
     b2Math.CrossFV = function (s, a) {
         if (s === undefined) s = 0;
         var v = new b2Vec2((-s * a.y), s * a.x);
         return v;
-    }
+    };
     b2Math.MulMV = function (A, v) {
         var u = new b2Vec2(A.col1.x * v.x + A.col2.x * v.y, A.col1.y * v.x + A.col2.y * v.y);
         return u;
-    }
+    };
     b2Math.MulTMV = function (A, v) {
         var u = new b2Vec2(b2Math.Dot(v, A.col1), b2Math.Dot(v, A.col2));
         return u;
-    }
+    };
     b2Math.MulX = function (T, v) {
         var a = b2Math.MulMV(T.R, v);
         a.x += T.position.x;
         a.y += T.position.y;
         return a;
-    }
+    };
     b2Math.MulXT = function (T, v) {
         var a = b2Math.SubtractVV(v, T.position);
         var tX = (a.x * T.R.col1.x + a.y * T.R.col1.y);
         a.y = (a.x * T.R.col2.x + a.y * T.R.col2.y);
         a.x = tX;
         return a;
-    }
+    };
     b2Math.AddVV = function (a, b) {
         var v = new b2Vec2(a.x + b.x, a.y + b.y);
         return v;
-    }
+    };
     b2Math.SubtractVV = function (a, b) {
         var v = new b2Vec2(a.x - b.x, a.y - b.y);
         return v;
-    }
+    };
     b2Math.Distance = function (a, b) {
         var cX = a.x - b.x;
         var cY = a.y - b.y;
         return Math.sqrt(cX * cX + cY * cY);
-    }
+    };
     b2Math.DistanceSquared = function (a, b) {
         var cX = a.x - b.x;
         var cY = a.y - b.y;
         return (cX * cX + cY * cY);
-    }
+    };
     b2Math.MulFV = function (s, a) {
         if (s === undefined) s = 0;
         var v = new b2Vec2(s * a.x, s * a.y);
         return v;
-    }
+    };
     b2Math.AddMM = function (A, B) {
         var C = b2Mat22.FromVV(b2Math.AddVV(A.col1, B.col1), b2Math.AddVV(A.col2, B.col2));
         return C;
-    }
+    };
     b2Math.MulMM = function (A, B) {
         var C = b2Mat22.FromVV(b2Math.MulMV(A, B.col1), b2Math.MulMV(A, B.col2));
         return C;
-    }
+    };
     b2Math.MulTMM = function (A, B) {
         var c1 = new b2Vec2(b2Math.Dot(A.col1, B.col1), b2Math.Dot(A.col2, B.col1));
         var c2 = new b2Vec2(b2Math.Dot(A.col1, B.col2), b2Math.Dot(A.col2, B.col2));
         var C = b2Mat22.FromVV(c1, c2);
         return C;
-    }
+    };
     b2Math.Abs = function (a) {
         if (a === undefined) a = 0;
         return a > 0.0 ? a : (-a);
-    }
+    };
     b2Math.AbsV = function (a) {
         var b = new b2Vec2(b2Math.Abs(a.x), b2Math.Abs(a.y));
         return b;
-    }
+    };
     b2Math.AbsM = function (A) {
         var B = b2Mat22.FromVV(b2Math.AbsV(A.col1), b2Math.AbsV(A.col2));
         return B;
-    }
+    };
     b2Math.Min = function (a, b) {
         if (a === undefined) a = 0;
         if (b === undefined) b = 0;
         return a < b ? a : b;
-    }
+    };
     b2Math.MinV = function (a, b) {
         var c = new b2Vec2(b2Math.Min(a.x, b.x), b2Math.Min(a.y, b.y));
         return c;
-    }
+    };
     b2Math.Max = function (a, b) {
         if (a === undefined) a = 0;
         if (b === undefined) b = 0;
         return a > b ? a : b;
-    }
+    };
     b2Math.MaxV = function (a, b) {
         var c = new b2Vec2(b2Math.Max(a.x, b.x), b2Math.Max(a.y, b.y));
         return c;
-    }
+    };
     b2Math.Clamp = function (a, low, high) {
         if (a === undefined) a = 0;
         if (low === undefined) low = 0;
         if (high === undefined) high = 0;
         return a < low ? low : a > high ? high : a;
-    }
+    };
     b2Math.ClampV = function (a, low, high) {
         return b2Math.MaxV(low, b2Math.MinV(a, high));
-    }
+    };
     b2Math.Swap = function (a, b) {
         var tmp = a[0];
         a[0] = b[0];
         b[0] = tmp;
-    }
+    };
     b2Math.Random = function () {
         return Math.random() * 2 - 1;
-    }
+    };
     b2Math.RandomRange = function (lo, hi) {
         if (lo === undefined) lo = 0;
         if (hi === undefined) hi = 0;
         var r = Math.random();
         r = (hi - lo) * r + lo;
         return r;
-    }
+    };
     b2Math.NextPowerOfTwo = function (x) {
         if (x === undefined) x = 0;
         x |= (x >> 1) & 0x7FFFFFFF;
@@ -4078,12 +4079,12 @@ Box2D.postDefs = [];
         x |= (x >> 8) & 0x00FFFFFF;
         x |= (x >> 16) & 0x0000FFFF;
         return x + 1;
-    }
+    };
     b2Math.IsPowerOfTwo = function (x) {
         if (x === undefined) x = 0;
         var result = x > 0 && (x & (x - 1)) == 0;
         return result;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Common.Math.b2Math.b2Vec2_zero = new b2Vec2(0.0, 0.0);
         Box2D.Common.Math.b2Math.b2Mat22_identity = b2Mat22.FromVV(new b2Vec2(1.0, 0.0), new b2Vec2(0.0, 1.0));
@@ -4101,7 +4102,7 @@ Box2D.postDefs = [];
         this.a0 = other.a0;
         this.a = other.a;
         this.t0 = other.t0;
-    }
+    };
     b2Sweep.prototype.Copy = function () {
         var copy = new b2Sweep();
         copy.localCenter.SetV(this.localCenter);
@@ -4111,7 +4112,7 @@ Box2D.postDefs = [];
         copy.a = this.a;
         copy.t0 = this.t0;
         return copy;
-    }
+    };
     b2Sweep.prototype.GetTransform = function (xf, alpha) {
         if (alpha === undefined) alpha = 0;
         xf.position.x = (1.0 - alpha) * this.c0.x + alpha * this.c.x;
@@ -4121,7 +4122,7 @@ Box2D.postDefs = [];
         var tMat = xf.R;
         xf.position.x -= (tMat.col1.x * this.localCenter.x + tMat.col2.x * this.localCenter.y);
         xf.position.y -= (tMat.col1.y * this.localCenter.x + tMat.col2.y * this.localCenter.y);
-    }
+    };
     b2Sweep.prototype.Advance = function (t) {
         if (t === undefined) t = 0;
         if (this.t0 < t && 1.0 - this.t0 > Number.MIN_VALUE) {
@@ -4131,7 +4132,7 @@ Box2D.postDefs = [];
             this.a0 = (1.0 - alpha) * this.a0 + alpha * this.a;
             this.t0 = t;
         }
-    }
+    };
     b2Transform.b2Transform = function () {
         this.position = new b2Vec2;
         this.R = new b2Mat22();
@@ -4143,111 +4144,111 @@ Box2D.postDefs = [];
             this.position.SetV(pos);
             this.R.SetM(r);
         }
-    }
+    };
     b2Transform.prototype.Initialize = function (pos, r) {
         this.position.SetV(pos);
         this.R.SetM(r);
-    }
+    };
     b2Transform.prototype.SetIdentity = function () {
         this.position.SetZero();
         this.R.SetIdentity();
-    }
+    };
     b2Transform.prototype.Set = function (x) {
         this.position.SetV(x.position);
         this.R.SetM(x.R);
-    }
+    };
     b2Transform.prototype.GetAngle = function () {
         return Math.atan2(this.R.col1.y, this.R.col1.x);
-    }
+    };
     b2Vec2.b2Vec2 = function () {};
     b2Vec2.prototype.b2Vec2 = function (x_, y_) {
         if (x_ === undefined) x_ = 0;
         if (y_ === undefined) y_ = 0;
         this.x = x_;
         this.y = y_;
-    }
+    };
     b2Vec2.prototype.SetZero = function () {
         this.x = 0.0;
         this.y = 0.0;
-    }
+    };
     b2Vec2.prototype.Set = function (x_, y_) {
         if (x_ === undefined) x_ = 0;
         if (y_ === undefined) y_ = 0;
         this.x = x_;
         this.y = y_;
-    }
+    };
     b2Vec2.prototype.SetV = function (v) {
         this.x = v.x;
         this.y = v.y;
-    }
+    };
     b2Vec2.prototype.GetNegative = function () {
         return new b2Vec2((-this.x), (-this.y));
-    }
+    };
     b2Vec2.prototype.NegativeSelf = function () {
         this.x = (-this.x);
         this.y = (-this.y);
-    }
+    };
     b2Vec2.Make = function (x_, y_) {
         if (x_ === undefined) x_ = 0;
         if (y_ === undefined) y_ = 0;
         return new b2Vec2(x_, y_);
-    }
+    };
     b2Vec2.prototype.Copy = function () {
         return new b2Vec2(this.x, this.y);
-    }
+    };
     b2Vec2.prototype.Add = function (v) {
         this.x += v.x;
         this.y += v.y;
-    }
+    };
     b2Vec2.prototype.Subtract = function (v) {
         this.x -= v.x;
         this.y -= v.y;
-    }
+    };
     b2Vec2.prototype.Multiply = function (a) {
         if (a === undefined) a = 0;
         this.x *= a;
         this.y *= a;
-    }
+    };
     b2Vec2.prototype.MulM = function (A) {
         var tX = this.x;
         this.x = A.col1.x * tX + A.col2.x * this.y;
         this.y = A.col1.y * tX + A.col2.y * this.y;
-    }
+    };
     b2Vec2.prototype.MulTM = function (A) {
         var tX = b2Math.Dot(this, A.col1);
         this.y = b2Math.Dot(this, A.col2);
         this.x = tX;
-    }
+    };
     b2Vec2.prototype.CrossVF = function (s) {
         if (s === undefined) s = 0;
         var tX = this.x;
         this.x = s * this.y;
         this.y = (-s * tX);
-    }
+    };
     b2Vec2.prototype.CrossFV = function (s) {
         if (s === undefined) s = 0;
         var tX = this.x;
         this.x = (-s * this.y);
         this.y = s * tX;
-    }
+    };
     b2Vec2.prototype.MinV = function (b) {
         this.x = this.x < b.x ? this.x : b.x;
         this.y = this.y < b.y ? this.y : b.y;
-    }
+    };
     b2Vec2.prototype.MaxV = function (b) {
         this.x = this.x > b.x ? this.x : b.x;
         this.y = this.y > b.y ? this.y : b.y;
-    }
+    };
     b2Vec2.prototype.Abs = function () {
         if (this.x < 0) this.x = (-this.x);
         if (this.y < 0) this.y = (-this.y);
-    }
+    };
     b2Vec2.prototype.Length = function () {
         return Math.sqrt(this.x * this.x + this.y * this.y);
-    }
+    };
     b2Vec2.prototype.LengthSquared = function () {
         return (this.x * this.x + this.y * this.y);
-    }
+    };
     b2Vec2.prototype.Normalize = function () {
         var length = Math.sqrt(this.x * this.x + this.y * this.y);
         if (length < Number.MIN_VALUE) {
@@ -4257,10 +4258,10 @@ Box2D.postDefs = [];
         this.x *= invLength;
         this.y *= invLength;
         return length;
-    }
+    };
     b2Vec2.prototype.IsValid = function () {
         return b2Math.IsValid(this.x) && b2Math.IsValid(this.y);
-    }
+    };
     b2Vec3.b2Vec3 = function () {};
     b2Vec3.prototype.b2Vec3 = function (x, y, z) {
         if (x === undefined) x = 0;
@@ -4269,10 +4270,10 @@ Box2D.postDefs = [];
         this.x = x;
         this.y = y;
         this.z = z;
-    }
+    };
     b2Vec3.prototype.SetZero = function () {
         this.x = this.y = this.z = 0.0;
-    }
+    };
     b2Vec3.prototype.Set = function (x, y, z) {
         if (x === undefined) x = 0;
         if (y === undefined) y = 0;
@@ -4280,33 +4281,33 @@ Box2D.postDefs = [];
         this.x = x;
         this.y = y;
         this.z = z;
-    }
+    };
     b2Vec3.prototype.SetV = function (v) {
         this.x = v.x;
         this.y = v.y;
         this.z = v.z;
-    }
+    };
     b2Vec3.prototype.GetNegative = function () {
         return new b2Vec3((-this.x), (-this.y), (-this.z));
-    }
+    };
     b2Vec3.prototype.NegativeSelf = function () {
         this.x = (-this.x);
         this.y = (-this.y);
         this.z = (-this.z);
-    }
+    };
     b2Vec3.prototype.Copy = function () {
         return new b2Vec3(this.x, this.y, this.z);
-    }
+    };
     b2Vec3.prototype.Add = function (v) {
         this.x += v.x;
         this.y += v.y;
         this.z += v.z;
-    }
+    };
     b2Vec3.prototype.Subtract = function (v) {
         this.x -= v.x;
         this.y -= v.y;
         this.z -= v.z;
-    }
+    };
     b2Vec3.prototype.Multiply = function (a) {
         if (a === undefined) a = 0;
         this.x *= a;
@@ -4435,7 +4436,7 @@ Box2D.postDefs = [];
         s1.SetNextEdge(s2, core, cornerDir, convex);
         s2.SetPrevEdge(s1, core, cornerDir, convex);
         return angle2;
-    }
+    };
     b2Body.prototype.CreateFixture = function (def) {
         if (this.m_world.IsLocked() == true) {
             return null;
@@ -4455,14 +4456,14 @@ Box2D.postDefs = [];
         }
         this.m_world.m_flags |= b2World.e_newFixture;
         return fixture;
-    }
+    };
     b2Body.prototype.CreateFixture2 = function (shape, density) {
         if (density === undefined) density = 0.0;
         var def = new b2FixtureDef();
         def.shape = shape;
         def.density = density;
         return this.CreateFixture(def);
-    }
+    };
     b2Body.prototype.DestroyFixture = function (fixture) {
         if (this.m_world.IsLocked() == true) {
             return;
@@ -4500,7 +4501,7 @@ Box2D.postDefs = [];
         fixture.m_next = null;
         --this.m_fixtureCount;
         this.ResetMassData();
-    }
+    };
     b2Body.prototype.SetPositionAndAngle = function (position, angle) {
         if (angle === undefined) angle = 0;
         var f;
@@ -4523,51 +4524,51 @@ Box2D.postDefs = [];
             f.Synchronize(broadPhase, this.m_xf, this.m_xf);
         }
         this.m_world.m_contactManager.FindNewContacts();
-    }
+    };
     b2Body.prototype.SetTransform = function (xf) {
         this.SetPositionAndAngle(xf.position, xf.GetAngle());
-    }
+    };
     b2Body.prototype.GetTransform = function () {
         return this.m_xf;
-    }
+    };
     b2Body.prototype.GetPosition = function () {
         return this.m_xf.position;
-    }
+    };
     b2Body.prototype.SetPosition = function (position) {
         this.SetPositionAndAngle(position, this.GetAngle());
-    }
+    };
     b2Body.prototype.GetAngle = function () {
         return this.m_sweep.a;
-    }
+    };
     b2Body.prototype.SetAngle = function (angle) {
         if (angle === undefined) angle = 0;
         this.SetPositionAndAngle(this.GetPosition(), angle);
-    }
+    };
     b2Body.prototype.GetWorldCenter = function () {
         return this.m_sweep.c;
-    }
+    };
     b2Body.prototype.GetLocalCenter = function () {
         return this.m_sweep.localCenter;
-    }
+    };
     b2Body.prototype.SetLinearVelocity = function (v) {
         if (this.m_type == b2Body.b2_staticBody) {
             return;
         }
         this.m_linearVelocity.SetV(v);
-    }
+    };
     b2Body.prototype.GetLinearVelocity = function () {
         return this.m_linearVelocity;
-    }
+    };
     b2Body.prototype.SetAngularVelocity = function (omega) {
         if (omega === undefined) omega = 0;
         if (this.m_type == b2Body.b2_staticBody) {
             return;
         }
         this.m_angularVelocity = omega;
-    }
+    };
     b2Body.prototype.GetAngularVelocity = function () {
         return this.m_angularVelocity;
-    }
+    };
     b2Body.prototype.GetDefinition = function () {
         var bd = new b2BodyDef();
         bd.type = this.GetType();
@@ -4583,7 +4584,7 @@ Box2D.postDefs = [];
         bd.position = this.GetPosition();
         bd.userData = this.GetUserData();
         return bd;
-    }
+    };
     b2Body.prototype.ApplyForce = function (force, point) {
         if (this.m_type != b2Body.b2_dynamicBody) {
             return;
@@ -4594,7 +4595,7 @@ Box2D.postDefs = [];
         this.m_force.x += force.x;
         this.m_force.y += force.y;
         this.m_torque += ((point.x - this.m_sweep.c.x) * force.y - (point.y - this.m_sweep.c.y) * force.x);
-    }
+    };
     b2Body.prototype.ApplyTorque = function (torque) {
         if (torque === undefined) torque = 0;
         if (this.m_type != b2Body.b2_dynamicBody) {
@@ -4604,7 +4605,7 @@ Box2D.postDefs = [];
             this.SetAwake(true);
         }
         this.m_torque += torque;
-    }
+    };
     b2Body.prototype.ApplyImpulse = function (impulse, point) {
         if (this.m_type != b2Body.b2_dynamicBody) {
             return;
@@ -4615,7 +4616,7 @@ Box2D.postDefs = [];
         this.m_linearVelocity.x += this.m_invMass * impulse.x;
         this.m_linearVelocity.y += this.m_invMass * impulse.y;
         this.m_angularVelocity += this.m_invI * ((point.x - this.m_sweep.c.x) * impulse.y - (point.y - this.m_sweep.c.y) * impulse.x);
-    }
+    };
     b2Body.prototype.Split = function (callback) {
         var linearVelocity = this.GetLinearVelocity().Copy();
         var angularVelocity = this.GetAngularVelocity();
@@ -4657,7 +4658,7 @@ Box2D.postDefs = [];
         body1.SynchronizeFixtures();
         body2.SynchronizeFixtures();
         return body2;
-    }
+    };
     b2Body.prototype.Merge = function (other) {
         var f;
         for (f = other.m_fixtureList;
@@ -4681,18 +4682,18 @@ Box2D.postDefs = [];
         var angular = body2.GetAngularVelocity();
         body1.ResetMassData();
         this.SynchronizeFixtures();
-    }
+    };
     b2Body.prototype.GetMass = function () {
         return this.m_mass;
-    }
+    };
     b2Body.prototype.GetInertia = function () {
         return this.m_I;
-    }
+    };
     b2Body.prototype.GetMassData = function (data) {
         data.mass = this.m_mass;
         data.I = this.m_I;
         data.center.SetV(this.m_sweep.localCenter);
-    }
+    };
     b2Body.prototype.SetMassData = function (massData) {
         b2Settings.b2Assert(this.m_world.IsLocked() == false);
         if (this.m_world.IsLocked() == true) {
@@ -4719,7 +4720,7 @@ Box2D.postDefs = [];
         this.m_sweep.c.SetV(this.m_sweep.c0);
         this.m_linearVelocity.x += this.m_angularVelocity * (-(this.m_sweep.c.y - oldCenter.y));
         this.m_linearVelocity.y += this.m_angularVelocity * (+(this.m_sweep.c.x - oldCenter.x));
-    }
+    };
     b2Body.prototype.ResetMassData = function () {
         this.m_mass = 0.0;
         this.m_invMass = 0.0;
@@ -4765,47 +4766,47 @@ Box2D.postDefs = [];
         this.m_sweep.c.SetV(this.m_sweep.c0);
         this.m_linearVelocity.x += this.m_angularVelocity * (-(this.m_sweep.c.y - oldCenter.y));
         this.m_linearVelocity.y += this.m_angularVelocity * (+(this.m_sweep.c.x - oldCenter.x));
-    }
+    };
     b2Body.prototype.GetWorldPoint = function (localPoint) {
         var A = this.m_xf.R;
         var u = new b2Vec2(A.col1.x * localPoint.x + A.col2.x * localPoint.y, A.col1.y * localPoint.x + A.col2.y * localPoint.y);
         u.x += this.m_xf.position.x;
         u.y += this.m_xf.position.y;
         return u;
-    }
+    };
     b2Body.prototype.GetWorldVector = function (localVector) {
         return b2Math.MulMV(this.m_xf.R, localVector);
-    }
+    };
     b2Body.prototype.GetLocalPoint = function (worldPoint) {
         return b2Math.MulXT(this.m_xf, worldPoint);
-    }
+    };
     b2Body.prototype.GetLocalVector = function (worldVector) {
         return b2Math.MulTMV(this.m_xf.R, worldVector);
-    }
+    };
     b2Body.prototype.GetLinearVelocityFromWorldPoint = function (worldPoint) {
         return new b2Vec2(this.m_linearVelocity.x - this.m_angularVelocity * (worldPoint.y - this.m_sweep.c.y), this.m_linearVelocity.y + this.m_angularVelocity * (worldPoint.x - this.m_sweep.c.x));
-    }
+    };
     b2Body.prototype.GetLinearVelocityFromLocalPoint = function (localPoint) {
         var A = this.m_xf.R;
         var worldPoint = new b2Vec2(A.col1.x * localPoint.x + A.col2.x * localPoint.y, A.col1.y * localPoint.x + A.col2.y * localPoint.y);
         worldPoint.x += this.m_xf.position.x;
         worldPoint.y += this.m_xf.position.y;
         return new b2Vec2(this.m_linearVelocity.x - this.m_angularVelocity * (worldPoint.y - this.m_sweep.c.y), this.m_linearVelocity.y + this.m_angularVelocity * (worldPoint.x - this.m_sweep.c.x));
-    }
+    };
     b2Body.prototype.GetLinearDamping = function () {
         return this.m_linearDamping;
-    }
+    };
     b2Body.prototype.SetLinearDamping = function (linearDamping) {
         if (linearDamping === undefined) linearDamping = 0;
         this.m_linearDamping = linearDamping;
-    }
+    };
     b2Body.prototype.GetAngularDamping = function () {
         return this.m_angularDamping;
-    }
+    };
     b2Body.prototype.SetAngularDamping = function (angularDamping) {
         if (angularDamping === undefined) angularDamping = 0;
         this.m_angularDamping = angularDamping;
-    }
+    };
     b2Body.prototype.SetType = function (type) {
         if (type === undefined) type = 0;
         if (this.m_type == type) {
@@ -4823,10 +4824,10 @@ Box2D.postDefs = [];
         for (var ce = this.m_contactList; ce; ce = ce.next) {
             ce.contact.FlagForFiltering();
         }
-    }
+    };
     b2Body.prototype.GetType = function () {
         return this.m_type;
-    }
+    };
     b2Body.prototype.SetBullet = function (flag) {
         if (flag) {
             this.m_flags |= b2Body.e_bulletFlag;
@@ -4834,10 +4835,10 @@ Box2D.postDefs = [];
         else {
             this.m_flags &= ~b2Body.e_bulletFlag;
         }
-    }
+    };
     b2Body.prototype.IsBullet = function () {
         return (this.m_flags & b2Body.e_bulletFlag) == b2Body.e_bulletFlag;
-    }
+    };
     b2Body.prototype.SetSleepingAllowed = function (flag) {
         if (flag) {
             this.m_flags |= b2Body.e_allowSleepFlag;
@@ -4846,7 +4847,7 @@ Box2D.postDefs = [];
             this.m_flags &= ~b2Body.e_allowSleepFlag;
             this.SetAwake(true);
         }
-    }
+    };
     b2Body.prototype.SetAwake = function (flag) {
         if (flag) {
             this.m_flags |= b2Body.e_awakeFlag;
@@ -4860,10 +4861,10 @@ Box2D.postDefs = [];
             this.m_force.SetZero();
             this.m_torque = 0.0;
         }
-    }
+    };
     b2Body.prototype.IsAwake = function () {
         return (this.m_flags & b2Body.e_awakeFlag) == b2Body.e_awakeFlag;
-    }
+    };
     b2Body.prototype.SetFixedRotation = function (fixed) {
         if (fixed) {
             this.m_flags |= b2Body.e_fixedRotationFlag;
@@ -4872,10 +4873,10 @@ Box2D.postDefs = [];
             this.m_flags &= ~b2Body.e_fixedRotationFlag;
         }
         this.ResetMassData();
-    }
+    };
     b2Body.prototype.IsFixedRotation = function () {
         return (this.m_flags & b2Body.e_fixedRotationFlag) == b2Body.e_fixedRotationFlag;
-    }
+    };
     b2Body.prototype.SetActive = function (flag) {
         if (flag == this.IsActive()) {
             return;
@@ -4905,37 +4906,37 @@ Box2D.postDefs = [];
             }
             this.m_contactList = null;
         }
-    }
+    };
     b2Body.prototype.IsActive = function () {
         return (this.m_flags & b2Body.e_activeFlag) == b2Body.e_activeFlag;
-    }
+    };
     b2Body.prototype.IsSleepingAllowed = function () {
         return (this.m_flags & b2Body.e_allowSleepFlag) == b2Body.e_allowSleepFlag;
-    }
+    };
     b2Body.prototype.GetFixtureList = function () {
         return this.m_fixtureList;
-    }
+    };
     b2Body.prototype.GetJointList = function () {
         return this.m_jointList;
-    }
+    };
     b2Body.prototype.GetControllerList = function () {
         return this.m_controllerList;
-    }
+    };
     b2Body.prototype.GetContactList = function () {
         return this.m_contactList;
-    }
+    };
     b2Body.prototype.GetNext = function () {
         return this.m_next;
-    }
+    };
     b2Body.prototype.GetUserData = function () {
         return this.m_userData;
-    }
+    };
     b2Body.prototype.SetUserData = function (data) {
         this.m_userData = data;
-    }
+    };
     b2Body.prototype.GetWorld = function () {
         return this.m_world;
-    }
+    };
     b2Body.prototype.b2Body = function (bd, world) {
         this.m_flags = 0;
         if (bd.bullet) {
@@ -4994,7 +4995,7 @@ Box2D.postDefs = [];
         this.m_userData = bd.userData;
         this.m_fixtureList = null;
         this.m_fixtureCount = 0;
-    }
+    };
     b2Body.prototype.SynchronizeFixtures = function () {
         var xf1 = b2Body.s_xf1;
         xf1.R.Set(this.m_sweep.a0);
@@ -5008,14 +5009,14 @@ Box2D.postDefs = [];
              f; f = f.m_next) {
             f.Synchronize(broadPhase, xf1, this.m_xf);
         }
-    }
+    };
     b2Body.prototype.SynchronizeTransform = function () {
         this.m_xf.R.Set(this.m_sweep.a);
         var tMat = this.m_xf.R;
         var tVec = this.m_sweep.localCenter;
         this.m_xf.position.x = this.m_sweep.c.x - (tMat.col1.x * tVec.x + tMat.col2.x * tVec.y);
         this.m_xf.position.y = this.m_sweep.c.y - (tMat.col1.y * tVec.x + tMat.col2.y * tVec.y);
-    }
+    };
     b2Body.prototype.ShouldCollide = function (other) {
         if (this.m_type != b2Body.b2_dynamicBody && other.m_type != b2Body.b2_dynamicBody) {
             return false;
@@ -5026,14 +5027,14 @@ Box2D.postDefs = [];
             }
         }
         return true;
-    }
+    };
     b2Body.prototype.Advance = function (t) {
         if (t === undefined) t = 0;
         this.m_sweep.Advance(t);
         this.m_sweep.c.SetV(this.m_sweep.c0);
         this.m_sweep.a = this.m_sweep.a0;
         this.SynchronizeTransform();
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.b2Body.s_xf1 = new b2Transform();
         Box2D.Dynamics.b2Body.e_islandFlag = 0x0001;
@@ -5065,7 +5066,7 @@ Box2D.postDefs = [];
         this.type = b2Body.b2_staticBody;
         this.active = true;
         this.inertiaScale = 1.0;
-    }
+    };
     b2ContactFilter.b2ContactFilter = function () {};
     b2ContactFilter.prototype.ShouldCollide = function (fixtureA, fixtureB) {
         var filter1 = fixtureA.GetFilterData();
@@ -5075,11 +5076,11 @@ Box2D.postDefs = [];
         }
         var collide = (filter1.maskBits & filter2.categoryBits) != 0 && (filter1.categoryBits & filter2.maskBits) != 0;
         return collide;
-    }
+    };
     b2ContactFilter.prototype.RayCollide = function (userData, fixture) {
         if (!userData) return true;
         return this.ShouldCollide((userData instanceof b2Fixture ? userData : null), fixture);
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.b2ContactFilter.b2_defaultFilter = new b2ContactFilter();
     });
@@ -5088,10 +5089,10 @@ Box2D.postDefs = [];
         this.tangentImpulses = new Vector_a2j_Number(b2Settings.b2_maxManifoldPoints);
     };
     b2ContactListener.b2ContactListener = function () {};
-    b2ContactListener.prototype.BeginContact = function (contact) {}
-    b2ContactListener.prototype.EndContact = function (contact) {}
-    b2ContactListener.prototype.PreSolve = function (contact, oldManifold) {}
-    b2ContactListener.prototype.PostSolve = function (contact, impulse) {}
+    b2ContactListener.prototype.BeginContact = function (contact) {};
+    b2ContactListener.prototype.EndContact = function (contact) {};
+    b2ContactListener.prototype.PreSolve = function (contact, oldManifold) {};
+    b2ContactListener.prototype.PostSolve = function (contact, impulse) {};
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.b2ContactListener.b2_defaultListener = new b2ContactListener();
     });
@@ -5103,7 +5104,7 @@ Box2D.postDefs = [];
         this.m_contactListener = b2ContactListener.b2_defaultListener;
         this.m_contactFactory = new b2ContactFactory(this.m_allocator);
         this.m_broadPhase = new b2DynamicTreeBroadPhase();
-    }
+    };
     b2ContactManager.prototype.AddPair = function (proxyUserDataA, proxyUserDataB) {
         var fixtureA = (proxyUserDataA instanceof b2Fixture ? proxyUserDataA : null);
         var fixtureB = (proxyUserDataB instanceof b2Fixture ? proxyUserDataB : null);
@@ -5154,11 +5155,11 @@ Box2D.postDefs = [];
         }
         bodyB.m_contactList = c.m_nodeB;
         ++this.m_world.m_contactCount;
-        return;
-    }
+
+    };
     b2ContactManager.prototype.FindNewContacts = function () {
         this.m_broadPhase.UpdatePairs(Box2D.generateCallback(this, this.AddPair));
-    }
+    };
     b2ContactManager.prototype.Destroy = function (c) {
         var fixtureA = c.GetFixtureA();
         var fixtureB = c.GetFixtureB();
@@ -5196,7 +5197,7 @@ Box2D.postDefs = [];
         }
         this.m_contactFactory.Destroy(c);
         --this.m_contactCount;
-    }
+    };
     b2ContactManager.prototype.Collide = function () {
         var c = this.m_world.m_contactList;
         while (c) {
@@ -5235,58 +5236,58 @@ Box2D.postDefs = [];
             c.Update(this.m_contactListener);
             c = c.GetNext();
         }
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.b2ContactManager.s_evalCP = new b2ContactPoint();
     });
     b2DebugDraw.b2DebugDraw = function () {};
-    b2DebugDraw.prototype.b2DebugDraw = function () {}
+    b2DebugDraw.prototype.b2DebugDraw = function () {};
     b2DebugDraw.prototype.SetFlags = function (flags) {
         if (flags === undefined) flags = 0;
-    }
-    b2DebugDraw.prototype.GetFlags = function () {}
+    };
+    b2DebugDraw.prototype.GetFlags = function () {};
     b2DebugDraw.prototype.AppendFlags = function (flags) {
         if (flags === undefined) flags = 0;
-    }
+    };
     b2DebugDraw.prototype.ClearFlags = function (flags) {
         if (flags === undefined) flags = 0;
-    }
-    b2DebugDraw.prototype.SetSprite = function (sprite) {}
-    b2DebugDraw.prototype.GetSprite = function () {}
+    };
+    b2DebugDraw.prototype.SetSprite = function (sprite) {};
+    b2DebugDraw.prototype.GetSprite = function () {};
     b2DebugDraw.prototype.SetDrawScale = function (drawScale) {
         if (drawScale === undefined) drawScale = 0;
-    }
-    b2DebugDraw.prototype.GetDrawScale = function () {}
+    };
+    b2DebugDraw.prototype.GetDrawScale = function () {};
     b2DebugDraw.prototype.SetLineThickness = function (lineThickness) {
         if (lineThickness === undefined) lineThickness = 0;
-    }
-    b2DebugDraw.prototype.GetLineThickness = function () {}
+    };
+    b2DebugDraw.prototype.GetLineThickness = function () {};
     b2DebugDraw.prototype.SetAlpha = function (alpha) {
         if (alpha === undefined) alpha = 0;
-    }
-    b2DebugDraw.prototype.GetAlpha = function () {}
+    };
+    b2DebugDraw.prototype.GetAlpha = function () {};
     b2DebugDraw.prototype.SetFillAlpha = function (alpha) {
         if (alpha === undefined) alpha = 0;
-    }
-    b2DebugDraw.prototype.GetFillAlpha = function () {}
+    };
+    b2DebugDraw.prototype.GetFillAlpha = function () {};
     b2DebugDraw.prototype.SetXFormScale = function (xformScale) {
         if (xformScale === undefined) xformScale = 0;
-    }
-    b2DebugDraw.prototype.GetXFormScale = function () {}
+    };
+    b2DebugDraw.prototype.GetXFormScale = function () {};
     b2DebugDraw.prototype.DrawPolygon = function (vertices, vertexCount, color) {
         if (vertexCount === undefined) vertexCount = 0;
-    }
+    };
     b2DebugDraw.prototype.DrawSolidPolygon = function (vertices, vertexCount, color) {
         if (vertexCount === undefined) vertexCount = 0;
-    }
+    };
     b2DebugDraw.prototype.DrawCircle = function (center, radius, color) {
         if (radius === undefined) radius = 0;
-    }
+    };
     b2DebugDraw.prototype.DrawSolidCircle = function (center, radius, axis, color) {
         if (radius === undefined) radius = 0;
-    }
-    b2DebugDraw.prototype.DrawSegment = function (p1, p2, color) {}
-    b2DebugDraw.prototype.DrawTransform = function (xf) {}
+    };
+    b2DebugDraw.prototype.DrawSegment = function (p1, p2, color) {};
+    b2DebugDraw.prototype.DrawTransform = function (xf) {};
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.b2DebugDraw.e_shapeBit = 0x0001;
         Box2D.Dynamics.b2DebugDraw.e_jointBit = 0x0002;
@@ -5296,8 +5297,8 @@ Box2D.postDefs = [];
         Box2D.Dynamics.b2DebugDraw.e_controllerBit = 0x0020;
     });
     b2DestructionListener.b2DestructionListener = function () {};
-    b2DestructionListener.prototype.SayGoodbyeJoint = function (joint) {}
-    b2DestructionListener.prototype.SayGoodbyeFixture = function (fixture) {}
+    b2DestructionListener.prototype.SayGoodbyeJoint = function (joint) {};
+    b2DestructionListener.prototype.SayGoodbyeFixture = function (fixture) {};
     b2FilterData.b2FilterData = function () {
         this.categoryBits = 0x0001;
         this.maskBits = 0xFFFF;
@@ -5309,16 +5310,16 @@ Box2D.postDefs = [];
         copy.maskBits = this.maskBits;
         copy.groupIndex = this.groupIndex;
         return copy;
-    }
+    };
     b2Fixture.b2Fixture = function () {
         this.m_filter = new b2FilterData();
     };
     b2Fixture.prototype.GetType = function () {
         return this.m_shape.GetType();
-    }
+    };
     b2Fixture.prototype.GetShape = function () {
         return this.m_shape;
-    }
+    };
     b2Fixture.prototype.SetSensor = function (sensor) {
         if (this.m_isSensor == sensor) return;
         this.m_isSensor = sensor;
@@ -5331,10 +5332,10 @@ Box2D.postDefs = [];
             if (fixtureA == this || fixtureB == this) contact.SetSensor(fixtureA.IsSensor() || fixtureB.IsSensor());
             edge = edge.next;
         }
-    }
+    };
     b2Fixture.prototype.IsSensor = function () {
         return this.m_isSensor;
-    }
+    };
     b2Fixture.prototype.SetFilterData = function (filter) {
         this.m_filter = filter.Copy();
         if (this.m_body) return;
@@ -5346,28 +5347,28 @@ Box2D.postDefs = [];
             if (fixtureA == this || fixtureB == this) contact.FlagForFiltering();
             edge = edge.next;
         }
-    }
+    };
     b2Fixture.prototype.GetFilterData = function () {
         return this.m_filter.Copy();
-    }
+    };
     b2Fixture.prototype.GetBody = function () {
         return this.m_body;
-    }
+    };
     b2Fixture.prototype.GetNext = function () {
         return this.m_next;
-    }
+    };
     b2Fixture.prototype.GetUserData = function () {
         return this.m_userData;
-    }
+    };
     b2Fixture.prototype.SetUserData = function (data) {
         this.m_userData = data;
-    }
+    };
     b2Fixture.prototype.TestPoint = function (p) {
         return this.m_shape.TestPoint(this.m_body.GetTransform(), p);
-    }
+    };
     b2Fixture.prototype.RayCast = function (output, input) {
         return this.m_shape.RayCast(output, input, this.m_body.GetTransform());
-    }
+    };
     b2Fixture.prototype.GetMassData = function (massData) {
         if (massData === undefined) massData = null;
         if (massData == null) {
@@ -5375,31 +5376,31 @@ Box2D.postDefs = [];
         }
         this.m_shape.ComputeMass(massData, this.m_density);
         return massData;
-    }
+    };
     b2Fixture.prototype.SetDensity = function (density) {
         if (density === undefined) density = 0;
         this.m_density = density;
-    }
+    };
     b2Fixture.prototype.GetDensity = function () {
         return this.m_density;
-    }
+    };
     b2Fixture.prototype.GetFriction = function () {
         return this.m_friction;
-    }
+    };
     b2Fixture.prototype.SetFriction = function (friction) {
         if (friction === undefined) friction = 0;
         this.m_friction = friction;
-    }
+    };
     b2Fixture.prototype.GetRestitution = function () {
         return this.m_restitution;
-    }
+    };
     b2Fixture.prototype.SetRestitution = function (restitution) {
         if (restitution === undefined) restitution = 0;
         this.m_restitution = restitution;
-    }
+    };
     b2Fixture.prototype.GetAABB = function () {
         return this.m_aabb;
-    }
+    };
     b2Fixture.prototype.b2Fixture = function () {
         this.m_aabb = new b2AABB();
         this.m_userData = null;
@@ -5409,7 +5410,7 @@ Box2D.postDefs = [];
         this.m_density = 0.0;
         this.m_friction = 0.0;
         this.m_restitution = 0.0;
-    }
+    };
     b2Fixture.prototype.Create = function (body, xf, def) {
         this.m_userData = def.userData;
         this.m_friction = def.friction;
@@ -5420,21 +5421,21 @@ Box2D.postDefs = [];
         this.m_isSensor = def.isSensor;
         this.m_shape = def.shape.Copy();
         this.m_density = def.density;
-    }
+    };
     b2Fixture.prototype.Destroy = function () {
         this.m_shape = null;
-    }
+    };
     b2Fixture.prototype.CreateProxy = function (broadPhase, xf) {
         this.m_shape.ComputeAABB(this.m_aabb, xf);
         this.m_proxy = broadPhase.CreateProxy(this.m_aabb, this);
-    }
+    };
     b2Fixture.prototype.DestroyProxy = function (broadPhase) {
         if (this.m_proxy == null) {
             return;
         }
         broadPhase.DestroyProxy(this.m_proxy);
         this.m_proxy = null;
-    }
+    };
     b2Fixture.prototype.Synchronize = function (broadPhase, transform1, transform2) {
         if (!this.m_proxy) return;
         var aabb1 = new b2AABB();
@@ -5444,7 +5445,7 @@ Box2D.postDefs = [];
         this.m_aabb.Combine(aabb1, aabb2);
         var displacement = b2Math.SubtractVV(transform2.position, transform1.position);
         broadPhase.MoveProxy(this.m_proxy, this.m_aabb, displacement);
-    }
+    };
     b2FixtureDef.b2FixtureDef = function () {
         this.filter = new b2FilterData();
     };
@@ -5458,13 +5459,13 @@ Box2D.postDefs = [];
         this.filter.maskBits = 0xFFFF;
         this.filter.groupIndex = 0;
         this.isSensor = false;
-    }
+    };
     b2Island.b2Island = function () {};
     b2Island.prototype.b2Island = function () {
         this.m_bodies = new Vector();
         this.m_contacts = new Vector();
         this.m_joints = new Vector();
-    }
+    };
     b2Island.prototype.Initialize = function (bodyCapacity, contactCapacity, jointCapacity, allocator, listener, contactSolver) {
         if (bodyCapacity === undefined) bodyCapacity = 0;
         if (contactCapacity === undefined) contactCapacity = 0;
@@ -5488,12 +5489,12 @@ Box2D.postDefs = [];
         for (i = this.m_joints.length;
              i < jointCapacity; i++)
             this.m_joints[i] = null;
-    }
+    };
     b2Island.prototype.Clear = function () {
         this.m_bodyCount = 0;
         this.m_contactCount = 0;
         this.m_jointCount = 0;
-    }
+    };
     b2Island.prototype.Solve = function (step, gravity, allowSleep) {
         var i = 0;
         var j = 0;
@@ -5605,7 +5606,7 @@ Box2D.postDefs = [];
                 }
             }
         }
-    }
+    };
     b2Island.prototype.SolveTOI = function (subStep) {
         var i = 0;
         var j = 0;
@@ -5665,7 +5666,7 @@ Box2D.postDefs = [];
             }
         }
         this.Report(contactSolver.m_constraints);
-    }
+    };
     b2Island.prototype.Report = function (constraints) {
         if (this.m_listener == null) {
             return;
@@ -5679,17 +5680,17 @@ Box2D.postDefs = [];
             }
             this.m_listener.PostSolve(c, b2Island.s_impulse);
         }
-    }
+    };
     b2Island.prototype.AddBody = function (body) {
         body.m_islandIndex = this.m_bodyCount;
         this.m_bodies[this.m_bodyCount++] = body;
-    }
+    };
     b2Island.prototype.AddContact = function (contact) {
         this.m_contacts[this.m_contactCount++] = contact;
-    }
+    };
     b2Island.prototype.AddJoint = function (joint) {
         this.m_joints[this.m_jointCount++] = joint;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.b2Island.s_impulse = new b2ContactImpulse();
     });
@@ -5700,7 +5701,7 @@ Box2D.postDefs = [];
         this.positionIterations = step.positionIterations;
         this.velocityIterations = step.velocityIterations;
         this.warmStarting = step.warmStarting;
-    }
+    };
     b2World.b2World = function () {
         this.s_stack = new Vector();
         this.m_contactManager = new b2ContactManager();
@@ -5727,19 +5728,19 @@ Box2D.postDefs = [];
         this.m_contactManager.m_world = this;
         var bd = new b2BodyDef();
         this.m_groundBody = this.CreateBody(bd);
-    }
+    };
     b2World.prototype.SetDestructionListener = function (listener) {
         this.m_destructionListener = listener;
-    }
+    };
     b2World.prototype.SetContactFilter = function (filter) {
         this.m_contactManager.m_contactFilter = filter;
-    }
+    };
     b2World.prototype.SetContactListener = function (listener) {
         this.m_contactManager.m_contactListener = listener;
-    }
+    };
     b2World.prototype.SetDebugDraw = function (debugDraw) {
         this.m_debugDraw = debugDraw;
-    }
+    };
     b2World.prototype.SetBroadPhase = function (broadPhase) {
         var oldBroadPhase = this.m_contactManager.m_broadPhase;
         this.m_contactManager.m_broadPhase = broadPhase;
@@ -5748,13 +5749,13 @@ Box2D.postDefs = [];
                 f.m_proxy = broadPhase.CreateProxy(oldBroadPhase.GetFatAABB(f.m_proxy), f);
             }
         }
-    }
+    };
     b2World.prototype.Validate = function () {
         this.m_contactManager.m_broadPhase.Validate();
-    }
+    };
     b2World.prototype.GetProxyCount = function () {
         return this.m_contactManager.m_broadPhase.GetProxyCount();
-    }
+    };
     b2World.prototype.CreateBody = function (def) {
         if (this.IsLocked() == true) {
             return null;
@@ -5768,7 +5769,7 @@ Box2D.postDefs = [];
         this.m_bodyList = b;
         ++this.m_bodyCount;
         return b;
-    }
+    };
     b2World.prototype.DestroyBody = function (b) {
         if (this.IsLocked() == true) {
             return;
@@ -5816,7 +5817,7 @@ Box2D.postDefs = [];
         if (b == this.m_bodyList) {
             this.m_bodyList = b.m_next;
         }--this.m_bodyCount;
-    }
+    };
     b2World.prototype.CreateJoint = function (def) {
         var j = b2Joint.Create(def, null);
         j.m_prev = null;
@@ -5850,7 +5851,7 @@ Box2D.postDefs = [];
             }
         }
         return j;
-    }
+    };
     b2World.prototype.DestroyJoint = function (j) {
         var collideConnected = j.m_collideConnected;
         if (j.m_prev) {
@@ -5899,7 +5900,7 @@ Box2D.postDefs = [];
                 edge = edge.next;
             }
         }
-    }
+    };
     b2World.prototype.AddController = function (c) {
         c.m_next = this.m_controllerList;
         c.m_prev = null;
@@ -5907,13 +5908,13 @@ Box2D.postDefs = [];
         c.m_world = this;
         this.m_controllerCount++;
         return c;
-    }
+    };
     b2World.prototype.RemoveController = function (c) {
         if (c.m_prev) c.m_prev.m_next = c.m_next;
         if (c.m_next) c.m_next.m_prev = c.m_prev;
         if (this.m_controllerList == c) this.m_controllerList = c.m_next;
         this.m_controllerCount--;
-    }
+    };
     b2World.prototype.CreateController = function (controller) {
         if (controller.m_world != this) throw new Error("Controller can only be a member of one world");
         controller.m_next = this.m_controllerList;
@@ -5923,38 +5924,38 @@ Box2D.postDefs = [];
         ++this.m_controllerCount;
         controller.m_world = this;
         return controller;
-    }
+    };
     b2World.prototype.DestroyController = function (controller) {
         controller.Clear();
         if (controller.m_next) controller.m_next.m_prev = controller.m_prev;
         if (controller.m_prev) controller.m_prev.m_next = controller.m_next;
         if (controller == this.m_controllerList) this.m_controllerList = controller.m_next;
         --this.m_controllerCount;
-    }
+    };
     b2World.prototype.SetWarmStarting = function (flag) {
         b2World.m_warmStarting = flag;
-    }
+    };
     b2World.prototype.SetContinuousPhysics = function (flag) {
         b2World.m_continuousPhysics = flag;
-    }
+    };
     b2World.prototype.GetBodyCount = function () {
         return this.m_bodyCount;
-    }
+    };
     b2World.prototype.GetJointCount = function () {
         return this.m_jointCount;
-    }
+    };
     b2World.prototype.GetContactCount = function () {
         return this.m_contactCount;
-    }
+    };
     b2World.prototype.SetGravity = function (gravity) {
         this.m_gravity = gravity;
-    }
+    };
     b2World.prototype.GetGravity = function () {
         return this.m_gravity;
-    }
+    };
     b2World.prototype.GetGroundBody = function () {
         return this.m_groundBody;
-    }
+    };
     b2World.prototype.Step = function (dt, velocityIterations, positionIterations) {
         if (dt === undefined) dt = 0;
         if (velocityIterations === undefined) velocityIterations = 0;
@@ -5987,13 +5988,13 @@ Box2D.postDefs = [];
             this.m_inv_dt0 = step.inv_dt;
         }
         this.m_flags &= ~b2World.e_locked;
-    }
+    };
     b2World.prototype.ClearForces = function () {
         for (var body = this.m_bodyList; body; body = body.m_next) {
             body.m_force.SetZero();
             body.m_torque = 0.0;
         }
-    }
+    };
     b2World.prototype.DrawDebugData = function () {
         if (this.m_debugDraw == null) {
             return;
@@ -6093,16 +6094,16 @@ Box2D.postDefs = [];
                 this.m_debugDraw.DrawTransform(xf);
             }
         }
-    }
+    };
     b2World.prototype.QueryAABB = function (callback, aabb) {
         var __this = this;
         var broadPhase = __this.m_contactManager.m_broadPhase;
 
         function WorldQueryWrapper(proxy) {
             return callback(broadPhase.GetUserData(proxy));
-        };
+        }
         broadPhase.Query(WorldQueryWrapper, aabb);
-    }
+    };
     b2World.prototype.QueryShape = function (callback, shape, transform) {
         var __this = this;
         if (transform === undefined) transform = null;
@@ -6116,11 +6117,11 @@ Box2D.postDefs = [];
             var fixture = (broadPhase.GetUserData(proxy) instanceof b2Fixture ? broadPhase.GetUserData(proxy) : null);
             if (b2Shape.TestOverlap(shape, transform, fixture.GetShape(), fixture.GetBody().GetTransform())) return callback(fixture);
             return true;
-        };
+        }
         var aabb = new b2AABB();
         shape.ComputeAABB(aabb, transform);
         broadPhase.Query(WorldQueryWrapper, aabb);
-    }
+    };
     b2World.prototype.QueryPoint = function (callback, p) {
         var __this = this;
         var broadPhase = __this.m_contactManager.m_broadPhase;
@@ -6129,12 +6130,12 @@ Box2D.postDefs = [];
             var fixture = (broadPhase.GetUserData(proxy) instanceof b2Fixture ? broadPhase.GetUserData(proxy) : null);
             if (fixture.TestPoint(p)) return callback(fixture);
             return true;
-        };
+        }
         var aabb = new b2AABB();
         aabb.lowerBound.Set(p.x - b2Settings.b2_linearSlop, p.y - b2Settings.b2_linearSlop);
         aabb.upperBound.Set(p.x + b2Settings.b2_linearSlop, p.y + b2Settings.b2_linearSlop);
         broadPhase.Query(WorldQueryWrapper, aabb);
-    }
+    };
     b2World.prototype.RayCast = function (callback, point1, point2) {
         var __this = this;
         var broadPhase = __this.m_contactManager.m_broadPhase;
@@ -6150,10 +6151,10 @@ Box2D.postDefs = [];
                 return callback(fixture, point, output.normal, fraction);
             }
             return input.maxFraction;
-        };
+        }
         var input = new b2RayCastInput(point1, point2);
         broadPhase.RayCast(RayCastWrapper, input);
-    }
+    };
     b2World.prototype.RayCastOne = function (point1, point2) {
         var __this = this;
         var result;
@@ -6162,10 +6163,10 @@ Box2D.postDefs = [];
             if (fraction === undefined) fraction = 0;
             result = fixture;
             return fraction;
-        };
+        }
         __this.RayCast(RayCastOneWrapper, point1, point2);
         return result;
-    }
+    };
     b2World.prototype.RayCastAll = function (point1, point2) {
         var __this = this;
         var result = new Vector();
@@ -6174,22 +6175,22 @@ Box2D.postDefs = [];
             if (fraction === undefined) fraction = 0;
             result[result.length] = fixture;
             return 1;
-        };
+        }
         __this.RayCast(RayCastAllWrapper, point1, point2);
         return result;
-    }
+    };
     b2World.prototype.GetBodyList = function () {
         return this.m_bodyList;
-    }
+    };
     b2World.prototype.GetJointList = function () {
         return this.m_jointList;
-    }
+    };
     b2World.prototype.GetContactList = function () {
         return this.m_contactList;
-    }
+    };
     b2World.prototype.IsLocked = function () {
         return (this.m_flags & b2World.e_locked) > 0;
-    }
+    };
     b2World.prototype.Solve = function (step) {
         var b;
         for (var controller = this.m_controllerList; controller; controller = controller.m_next) {
@@ -6290,7 +6291,7 @@ Box2D.postDefs = [];
             b.SynchronizeFixtures();
         }
         this.m_contactManager.FindNewContacts();
-    }
+    };
     b2World.prototype.SolveTOI = function (step) {
         var b;
         var fA;
@@ -6482,7 +6483,7 @@ Box2D.postDefs = [];
             }
             this.m_contactManager.FindNewContacts();
         }
-    }
+    };
     b2World.prototype.DrawJoint = function (joint) {
         var b1 = joint.GetBodyA();
         var b2 = joint.GetBodyB();
@@ -6515,7 +6516,7 @@ Box2D.postDefs = [];
                 this.m_debugDraw.DrawSegment(p1, p2, color);
                 if (b2 != this.m_groundBody) this.m_debugDraw.DrawSegment(x2, p2, color);
         }
-    }
+    };
     b2World.prototype.DrawShape = function (shape, xf, color) {
         switch (shape.m_type) {
             case b2Shape.e_circleShape:
@@ -6548,7 +6549,7 @@ Box2D.postDefs = [];
             }
                 break;
         }
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.b2World.s_timestep2 = new b2TimeStep();
         Box2D.Dynamics.b2World.s_xf = new b2Transform();
@@ -6645,16 +6646,16 @@ Box2D.postDefs = [];
     };
     b2CircleContact.Create = function (allocator) {
         return new b2CircleContact();
-    }
-    b2CircleContact.Destroy = function (contact, allocator) {}
+    };
+    b2CircleContact.Destroy = function (contact, allocator) {};
     b2CircleContact.prototype.Reset = function (fixtureA, fixtureB) {
         this.__super.Reset.call(this, fixtureA, fixtureB);
-    }
+    };
     b2CircleContact.prototype.Evaluate = function () {
         var bA = this.m_fixtureA.GetBody();
         var bB = this.m_fixtureB.GetBody();
         b2Collision.CollideCircles(this.m_manifold, (this.m_fixtureA.GetShape() instanceof b2CircleShape ? this.m_fixtureA.GetShape() : null), bA.m_xf, (this.m_fixtureB.GetShape() instanceof b2CircleShape ? this.m_fixtureB.GetShape() : null), bB.m_xf);
-    }
+    };
     b2Contact.b2Contact = function () {
         this.m_nodeA = new b2ContactEdge();
         this.m_nodeB = new b2ContactEdge();
@@ -6663,20 +6664,20 @@ Box2D.postDefs = [];
     };
     b2Contact.prototype.GetManifold = function () {
         return this.m_manifold;
-    }
+    };
     b2Contact.prototype.GetWorldManifold = function (worldManifold) {
         var bodyA = this.m_fixtureA.GetBody();
         var bodyB = this.m_fixtureB.GetBody();
         var shapeA = this.m_fixtureA.GetShape();
         var shapeB = this.m_fixtureB.GetShape();
         worldManifold.Initialize(this.m_manifold, bodyA.GetTransform(), shapeA.m_radius, bodyB.GetTransform(), shapeB.m_radius);
-    }
+    };
     b2Contact.prototype.IsTouching = function () {
         return (this.m_flags & b2Contact.e_touchingFlag) == b2Contact.e_touchingFlag;
-    }
+    };
     b2Contact.prototype.IsContinuous = function () {
         return (this.m_flags & b2Contact.e_continuousFlag) == b2Contact.e_continuousFlag;
-    }
+    };
     b2Contact.prototype.SetSensor = function (sensor) {
         if (sensor) {
             this.m_flags |= b2Contact.e_sensorFlag;
@@ -6684,10 +6685,10 @@ Box2D.postDefs = [];
         else {
             this.m_flags &= ~b2Contact.e_sensorFlag;
         }
-    }
+    };
     b2Contact.prototype.IsSensor = function () {
         return (this.m_flags & b2Contact.e_sensorFlag) == b2Contact.e_sensorFlag;
-    }
+    };
     b2Contact.prototype.SetEnabled = function (flag) {
         if (flag) {
             this.m_flags |= b2Contact.e_enabledFlag;
@@ -6695,23 +6696,23 @@ Box2D.postDefs = [];
         else {
             this.m_flags &= ~b2Contact.e_enabledFlag;
         }
-    }
+    };
     b2Contact.prototype.IsEnabled = function () {
         return (this.m_flags & b2Contact.e_enabledFlag) == b2Contact.e_enabledFlag;
-    }
+    };
     b2Contact.prototype.GetNext = function () {
         return this.m_next;
-    }
+    };
     b2Contact.prototype.GetFixtureA = function () {
         return this.m_fixtureA;
-    }
+    };
     b2Contact.prototype.GetFixtureB = function () {
         return this.m_fixtureB;
-    }
+    };
     b2Contact.prototype.FlagForFiltering = function () {
         this.m_flags |= b2Contact.e_filterFlag;
-    }
-    b2Contact.prototype.b2Contact = function () {}
+    };
+    b2Contact.prototype.b2Contact = function () {};
     b2Contact.prototype.Reset = function (fixtureA, fixtureB) {
         if (fixtureA === undefined) fixtureA = null;
         if (fixtureB === undefined) fixtureB = null;
@@ -6742,7 +6743,7 @@ Box2D.postDefs = [];
         this.m_nodeB.prev = null;
         this.m_nodeB.next = null;
         this.m_nodeB.other = null;
-    }
+    };
     b2Contact.prototype.Update = function (listener) {
         var tManifold = this.m_oldManifold;
         this.m_oldManifold = this.m_manifold;
@@ -6811,8 +6812,8 @@ Box2D.postDefs = [];
         if ((this.m_flags & b2Contact.e_sensorFlag) == 0) {
             listener.PreSolve(this, this.m_oldManifold);
         }
-    }
-    b2Contact.prototype.Evaluate = function () {}
+    };
+    b2Contact.prototype.Evaluate = function () {};
     b2Contact.prototype.ComputeTOI = function (sweepA, sweepB) {
         b2Contact.s_input.proxyA.Set(this.m_fixtureA.GetShape());
         b2Contact.s_input.proxyB.Set(this.m_fixtureB.GetShape());
@@ -6820,7 +6821,7 @@ Box2D.postDefs = [];
         b2Contact.s_input.sweepB = sweepB;
         b2Contact.s_input.tolerance = b2Settings.b2_linearSlop;
         return b2TimeOfImpact.TimeOfImpact(b2Contact.s_input);
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.Contacts.b2Contact.e_sensorFlag = 0x0001;
         Box2D.Dynamics.Contacts.b2Contact.e_continuousFlag = 0x0002;
@@ -6843,7 +6844,7 @@ Box2D.postDefs = [];
         for (var i = 0; i < b2Settings.b2_maxManifoldPoints; i++) {
             this.points[i] = new b2ContactConstraintPoint();
         }
-    }
+    };
     b2ContactConstraintPoint.b2ContactConstraintPoint = function () {
         this.localPoint = new b2Vec2();
         this.rA = new b2Vec2();
@@ -6854,7 +6855,7 @@ Box2D.postDefs = [];
     b2ContactFactory.prototype.b2ContactFactory = function (allocator) {
         this.m_allocator = allocator;
         this.InitializeRegisters();
-    }
+    };
     b2ContactFactory.prototype.AddType = function (createFcn, destroyFcn, type1, type2) {
         if (type1 === undefined) type1 = 0;
         if (type2 === undefined) type2 = 0;
@@ -6866,7 +6867,7 @@ Box2D.postDefs = [];
             this.m_registers[type2][type1].destroyFcn = destroyFcn;
             this.m_registers[type2][type1].primary = false;
         }
-    }
+    };
     b2ContactFactory.prototype.InitializeRegisters = function () {
         this.m_registers = new Vector(b2Shape.e_shapeTypeCount);
         for (var i = 0; i < b2Shape.e_shapeTypeCount; i++) {
@@ -6880,7 +6881,7 @@ Box2D.postDefs = [];
         this.AddType(b2PolygonContact.Create, b2PolygonContact.Destroy, b2Shape.e_polygonShape, b2Shape.e_polygonShape);
         this.AddType(b2EdgeAndCircleContact.Create, b2EdgeAndCircleContact.Destroy, b2Shape.e_edgeShape, b2Shape.e_circleShape);
         this.AddType(b2PolyAndEdgeContact.Create, b2PolyAndEdgeContact.Destroy, b2Shape.e_polygonShape, b2Shape.e_edgeShape);
-    }
+    };
     b2ContactFactory.prototype.Create = function (fixtureA, fixtureB) {
         var type1 = parseInt(fixtureA.GetType());
         var type2 = parseInt(fixtureB.GetType());
@@ -6909,7 +6910,7 @@ Box2D.postDefs = [];
         else {
             return null;
         }
-    }
+    };
     b2ContactFactory.prototype.Destroy = function (contact) {
         if (contact.m_manifold.m_pointCount > 0) {
             contact.m_fixtureA.m_body.SetAwake(true);
@@ -6925,7 +6926,7 @@ Box2D.postDefs = [];
         }
         var destroyFcn = reg.destroyFcn;
         destroyFcn(contact, this.m_allocator);
-    }
+    };
     b2ContactRegister.b2ContactRegister = function () {};
     b2ContactResult.b2ContactResult = function () {
         this.position = new b2Vec2();
@@ -6936,7 +6937,7 @@ Box2D.postDefs = [];
         this.m_step = new b2TimeStep();
         this.m_constraints = new Vector();
     };
-    b2ContactSolver.prototype.b2ContactSolver = function () {}
+    b2ContactSolver.prototype.b2ContactSolver = function () {};
     b2ContactSolver.prototype.Initialize = function (step, contacts, contactCount, allocator) {
         if (contactCount === undefined) contactCount = 0;
         var contact;
@@ -7048,7 +7049,7 @@ Box2D.postDefs = [];
                 }
             }
         }
-    }
+    };
     b2ContactSolver.prototype.InitVelocityConstraints = function (step) {
         var tVec;
         var tVec2;
@@ -7095,7 +7096,7 @@ Box2D.postDefs = [];
                 }
             }
         }
-    }
+    };
     b2ContactSolver.prototype.SolveVelocityConstraints = function () {
         var j = 0;
         var ccp;
@@ -7285,7 +7286,7 @@ Box2D.postDefs = [];
             bodyA.m_angularVelocity = wA;
             bodyB.m_angularVelocity = wB;
         }
-    }
+    };
     b2ContactSolver.prototype.FinalizeVelocityConstraints = function () {
         for (var i = 0; i < this.m_constraintCount; ++i) {
             var c = this.m_constraints[i];
@@ -7297,7 +7298,7 @@ Box2D.postDefs = [];
                 point1.m_tangentImpulse = point2.tangentImpulse;
             }
         }
-    }
+    };
     b2ContactSolver.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         var minSeparation = 0.0;
@@ -7334,7 +7335,7 @@ Box2D.postDefs = [];
             }
         }
         return minSeparation > (-1.5 * b2Settings.b2_linearSlop);
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.Contacts.b2ContactSolver.s_worldManifold = new b2WorldManifold();
         Box2D.Dynamics.Contacts.b2ContactSolver.s_psm = new b2PositionSolverManifold();
@@ -7346,17 +7347,17 @@ Box2D.postDefs = [];
     };
     b2EdgeAndCircleContact.Create = function (allocator) {
         return new b2EdgeAndCircleContact();
-    }
-    b2EdgeAndCircleContact.Destroy = function (contact, allocator) {}
+    };
+    b2EdgeAndCircleContact.Destroy = function (contact, allocator) {};
     b2EdgeAndCircleContact.prototype.Reset = function (fixtureA, fixtureB) {
         this.__super.Reset.call(this, fixtureA, fixtureB);
-    }
+    };
     b2EdgeAndCircleContact.prototype.Evaluate = function () {
         var bA = this.m_fixtureA.GetBody();
         var bB = this.m_fixtureB.GetBody();
         this.b2CollideEdgeAndCircle(this.m_manifold, (this.m_fixtureA.GetShape() instanceof b2EdgeShape ? this.m_fixtureA.GetShape() : null), bA.m_xf, (this.m_fixtureB.GetShape() instanceof b2CircleShape ? this.m_fixtureB.GetShape() : null), bB.m_xf);
-    }
-    b2EdgeAndCircleContact.prototype.b2CollideEdgeAndCircle = function (manifold, edge, xf1, circle, xf2) {}
+    };
+    b2EdgeAndCircleContact.prototype.b2CollideEdgeAndCircle = function (manifold, edge, xf1, circle, xf2) {};
     Box2D.inherit(b2NullContact, Box2D.Dynamics.Contacts.b2Contact);
     b2NullContact.prototype.__super = Box2D.Dynamics.Contacts.b2Contact.prototype;
     b2NullContact.b2NullContact = function () {
@@ -7364,8 +7365,8 @@ Box2D.postDefs = [];
     };
     b2NullContact.prototype.b2NullContact = function () {
         this.__super.b2Contact.call(this);
-    }
-    b2NullContact.prototype.Evaluate = function () {}
+    };
+    b2NullContact.prototype.Evaluate = function () {};
     Box2D.inherit(b2PolyAndCircleContact, Box2D.Dynamics.Contacts.b2Contact);
     b2PolyAndCircleContact.prototype.__super = Box2D.Dynamics.Contacts.b2Contact.prototype;
     b2PolyAndCircleContact.b2PolyAndCircleContact = function () {
@@ -7373,18 +7374,18 @@ Box2D.postDefs = [];
     };
     b2PolyAndCircleContact.Create = function (allocator) {
         return new b2PolyAndCircleContact();
-    }
-    b2PolyAndCircleContact.Destroy = function (contact, allocator) {}
+    };
+    b2PolyAndCircleContact.Destroy = function (contact, allocator) {};
     b2PolyAndCircleContact.prototype.Reset = function (fixtureA, fixtureB) {
         this.__super.Reset.call(this, fixtureA, fixtureB);
         b2Settings.b2Assert(fixtureA.GetType() == b2Shape.e_polygonShape);
         b2Settings.b2Assert(fixtureB.GetType() == b2Shape.e_circleShape);
-    }
+    };
     b2PolyAndCircleContact.prototype.Evaluate = function () {
         var bA = this.m_fixtureA.m_body;
         var bB = this.m_fixtureB.m_body;
         b2Collision.CollidePolygonAndCircle(this.m_manifold, (this.m_fixtureA.GetShape() instanceof b2PolygonShape ? this.m_fixtureA.GetShape() : null), bA.m_xf, (this.m_fixtureB.GetShape() instanceof b2CircleShape ? this.m_fixtureB.GetShape() : null), bB.m_xf);
-    }
+    };
     Box2D.inherit(b2PolyAndEdgeContact, Box2D.Dynamics.Contacts.b2Contact);
     b2PolyAndEdgeContact.prototype.__super = Box2D.Dynamics.Contacts.b2Contact.prototype;
     b2PolyAndEdgeContact.b2PolyAndEdgeContact = function () {
@@ -7392,19 +7393,19 @@ Box2D.postDefs = [];
     };
     b2PolyAndEdgeContact.Create = function (allocator) {
         return new b2PolyAndEdgeContact();
-    }
-    b2PolyAndEdgeContact.Destroy = function (contact, allocator) {}
+    };
+    b2PolyAndEdgeContact.Destroy = function (contact, allocator) {};
     b2PolyAndEdgeContact.prototype.Reset = function (fixtureA, fixtureB) {
         this.__super.Reset.call(this, fixtureA, fixtureB);
         b2Settings.b2Assert(fixtureA.GetType() == b2Shape.e_polygonShape);
         b2Settings.b2Assert(fixtureB.GetType() == b2Shape.e_edgeShape);
-    }
+    };
     b2PolyAndEdgeContact.prototype.Evaluate = function () {
         var bA = this.m_fixtureA.GetBody();
         var bB = this.m_fixtureB.GetBody();
         this.b2CollidePolyAndEdge(this.m_manifold, (this.m_fixtureA.GetShape() instanceof b2PolygonShape ? this.m_fixtureA.GetShape() : null), bA.m_xf, (this.m_fixtureB.GetShape() instanceof b2EdgeShape ? this.m_fixtureB.GetShape() : null), bB.m_xf);
-    }
-    b2PolyAndEdgeContact.prototype.b2CollidePolyAndEdge = function (manifold, polygon, xf1, edge, xf2) {}
+    };
+    b2PolyAndEdgeContact.prototype.b2CollidePolyAndEdge = function (manifold, polygon, xf1, edge, xf2) {};
     Box2D.inherit(b2PolygonContact, Box2D.Dynamics.Contacts.b2Contact);
     b2PolygonContact.prototype.__super = Box2D.Dynamics.Contacts.b2Contact.prototype;
     b2PolygonContact.b2PolygonContact = function () {
@@ -7412,16 +7413,16 @@ Box2D.postDefs = [];
     };
     b2PolygonContact.Create = function (allocator) {
         return new b2PolygonContact();
-    }
-    b2PolygonContact.Destroy = function (contact, allocator) {}
+    };
+    b2PolygonContact.Destroy = function (contact, allocator) {};
     b2PolygonContact.prototype.Reset = function (fixtureA, fixtureB) {
         this.__super.Reset.call(this, fixtureA, fixtureB);
-    }
+    };
     b2PolygonContact.prototype.Evaluate = function () {
         var bA = this.m_fixtureA.GetBody();
         var bB = this.m_fixtureB.GetBody();
         b2Collision.CollidePolygons(this.m_manifold, (this.m_fixtureA.GetShape() instanceof b2PolygonShape ? this.m_fixtureA.GetShape() : null), bA.m_xf, (this.m_fixtureB.GetShape() instanceof b2PolygonShape ? this.m_fixtureB.GetShape() : null), bB.m_xf);
-    }
+    };
     b2PositionSolverManifold.b2PositionSolverManifold = function () {};
     b2PositionSolverManifold.prototype.b2PositionSolverManifold = function () {
         this.m_normal = new b2Vec2();
@@ -7430,7 +7431,7 @@ Box2D.postDefs = [];
         for (var i = 0; i < b2Settings.b2_maxManifoldPoints; i++) {
             this.m_points[i] = new b2Vec2();
         }
-    }
+    };
     b2PositionSolverManifold.prototype.Initialize = function (cc) {
         b2Settings.b2Assert(cc.pointCount > 0);
         var i = 0;
@@ -7514,7 +7515,7 @@ Box2D.postDefs = [];
             }
                 break;
         }
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.Contacts.b2PositionSolverManifold.circlePointA = new b2Vec2();
         Box2D.Dynamics.Contacts.b2PositionSolverManifold.circlePointB = new b2Vec2();
@@ -7618,7 +7619,7 @@ Box2D.postDefs = [];
             body.ApplyForce(dragForce, areac);
             body.ApplyTorque((-body.GetInertia() / body.GetMass() * area * body.GetAngularVelocity() * this.angularDrag));
         }
-    }
+    };
     b2BuoyancyController.prototype.Draw = function (debugDraw) {
         var r = 1000;
         var p1 = new b2Vec2();
@@ -7629,7 +7630,7 @@ Box2D.postDefs = [];
         p2.y = this.normal.y * this.offset + this.normal.x * r;
         var color = new b2Color(0, 0, 1);
         debugDraw.DrawSegment(p1, p2, color);
-    }
+    };
     Box2D.inherit(b2ConstantAccelController, Box2D.Dynamics.Controllers.b2Controller);
     b2ConstantAccelController.prototype.__super = Box2D.Dynamics.Controllers.b2Controller.prototype;
     b2ConstantAccelController.b2ConstantAccelController = function () {
@@ -7643,7 +7644,7 @@ Box2D.postDefs = [];
             if (!body.IsAwake()) continue;
             body.SetLinearVelocity(new b2Vec2(body.GetLinearVelocity().x + smallA.x, body.GetLinearVelocity().y + smallA.y));
         }
-    }
+    };
     Box2D.inherit(b2ConstantForceController, Box2D.Dynamics.Controllers.b2Controller);
     b2ConstantForceController.prototype.__super = Box2D.Dynamics.Controllers.b2Controller.prototype;
     b2ConstantForceController.b2ConstantForceController = function () {
@@ -7656,10 +7657,10 @@ Box2D.postDefs = [];
             if (!body.IsAwake()) continue;
             body.ApplyForce(this.F, body.GetWorldCenter());
         }
-    }
+    };
     b2Controller.b2Controller = function () {};
-    b2Controller.prototype.Step = function (step) {}
-    b2Controller.prototype.Draw = function (debugDraw) {}
+    b2Controller.prototype.Step = function (step) {};
+    b2Controller.prototype.Draw = function (debugDraw) {};
     b2Controller.prototype.AddBody = function (body) {
         var edge = new b2ControllerEdge();
         edge.controller = this;
@@ -7674,7 +7675,7 @@ Box2D.postDefs = [];
         body.m_controllerList = edge;
         if (edge.nextController) edge.nextController.prevController = edge;
         body.m_controllerCount++;
-    }
+    };
     b2Controller.prototype.RemoveBody = function (body) {
         var edge = body.m_controllerList;
         while (edge && edge.controller != this)
@@ -7687,20 +7688,20 @@ Box2D.postDefs = [];
         if (body.m_controllerList == edge) body.m_controllerList = edge.nextController;
         body.m_controllerCount--;
         this.m_bodyCount--;
-    }
+    };
     b2Controller.prototype.Clear = function () {
         while (this.m_bodyList)
             this.RemoveBody(this.m_bodyList.body);
-    }
+    };
     b2Controller.prototype.GetNext = function () {
         return this.m_next;
-    }
+    };
     b2Controller.prototype.GetWorld = function () {
         return this.m_world;
-    }
+    };
     b2Controller.prototype.GetBodyList = function () {
         return this.m_bodyList;
-    }
+    };
     b2ControllerEdge.b2ControllerEdge = function () {};
     Box2D.inherit(b2GravityController, Box2D.Dynamics.Controllers.b2Controller);
     b2GravityController.prototype.__super = Box2D.Dynamics.Controllers.b2Controller.prototype;
@@ -7765,7 +7766,7 @@ Box2D.postDefs = [];
                 }
             }
         }
-    }
+    };
     Box2D.inherit(b2TensorDampingController, Box2D.Dynamics.Controllers.b2Controller);
     b2TensorDampingController.prototype.__super = Box2D.Dynamics.Controllers.b2Controller.prototype;
     b2TensorDampingController.b2TensorDampingController = function () {
@@ -7786,7 +7787,7 @@ Box2D.postDefs = [];
         else {
             this.maxTimestep = 0;
         }
-    }
+    };
     b2TensorDampingController.prototype.Step = function (step) {
         var timestep = step.dt;
         if (timestep <= Number.MIN_VALUE) return;
@@ -7859,39 +7860,39 @@ Box2D.postDefs = [];
     };
     b2DistanceJoint.prototype.GetAnchorA = function () {
         return this.m_bodyA.GetWorldPoint(this.m_localAnchor1);
-    }
+    };
     b2DistanceJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchor2);
-    }
+    };
     b2DistanceJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * this.m_impulse * this.m_u.x, inv_dt * this.m_impulse * this.m_u.y);
-    }
+    };
     b2DistanceJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return 0.0;
-    }
+    };
     b2DistanceJoint.prototype.GetLength = function () {
         return this.m_length;
-    }
+    };
     b2DistanceJoint.prototype.SetLength = function (length) {
         if (length === undefined) length = 0;
         this.m_length = length;
-    }
+    };
     b2DistanceJoint.prototype.GetFrequency = function () {
         return this.m_frequencyHz;
-    }
+    };
     b2DistanceJoint.prototype.SetFrequency = function (hz) {
         if (hz === undefined) hz = 0;
         this.m_frequencyHz = hz;
-    }
+    };
     b2DistanceJoint.prototype.GetDampingRatio = function () {
         return this.m_dampingRatio;
-    }
+    };
     b2DistanceJoint.prototype.SetDampingRatio = function (ratio) {
         if (ratio === undefined) ratio = 0;
         this.m_dampingRatio = ratio;
-    }
+    };
     b2DistanceJoint.prototype.b2DistanceJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         var tMat;
@@ -7905,7 +7906,7 @@ Box2D.postDefs = [];
         this.m_impulse = 0.0;
         this.m_gamma = 0.0;
         this.m_bias = 0.0;
-    }
+    };
     b2DistanceJoint.prototype.InitVelocityConstraints = function (step) {
         var tMat;
         var tX = 0;
@@ -7961,7 +7962,7 @@ Box2D.postDefs = [];
         else {
             this.m_impulse = 0.0;
         }
-    }
+    };
     b2DistanceJoint.prototype.SolveVelocityConstraints = function (step) {
         var tMat;
         var bA = this.m_bodyA;
@@ -7993,7 +7994,7 @@ Box2D.postDefs = [];
         bB.m_linearVelocity.x += bB.m_invMass * PX;
         bB.m_linearVelocity.y += bB.m_invMass * PY;
         bB.m_angularVelocity += bB.m_invI * (r2X * PY - r2Y * PX);
-    }
+    };
     b2DistanceJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         var tMat;
@@ -8034,7 +8035,7 @@ Box2D.postDefs = [];
         bA.SynchronizeTransform();
         bB.SynchronizeTransform();
         return b2Math.Abs(C) < b2Settings.b2_linearSlop;
-    }
+    };
     Box2D.inherit(b2DistanceJointDef, Box2D.Dynamics.Joints.b2JointDef);
     b2DistanceJointDef.prototype.__super = Box2D.Dynamics.Joints.b2JointDef.prototype;
     b2DistanceJointDef.b2DistanceJointDef = function () {
@@ -8048,7 +8049,7 @@ Box2D.postDefs = [];
         this.length = 1.0;
         this.frequencyHz = 0.0;
         this.dampingRatio = 0.0;
-    }
+    };
     b2DistanceJointDef.prototype.Initialize = function (bA, bB, anchorA, anchorB) {
         this.bodyA = bA;
         this.bodyB = bB;
@@ -8059,7 +8060,7 @@ Box2D.postDefs = [];
         this.length = Math.sqrt(dX * dX + dY * dY);
         this.frequencyHz = 0.0;
         this.dampingRatio = 0.0;
-    }
+    };
     Box2D.inherit(b2FrictionJoint, Box2D.Dynamics.Joints.b2Joint);
     b2FrictionJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
     b2FrictionJoint.b2FrictionJoint = function () {
@@ -8071,32 +8072,32 @@ Box2D.postDefs = [];
     };
     b2FrictionJoint.prototype.GetAnchorA = function () {
         return this.m_bodyA.GetWorldPoint(this.m_localAnchorA);
-    }
+    };
     b2FrictionJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchorB);
-    }
+    };
     b2FrictionJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * this.m_linearImpulse.x, inv_dt * this.m_linearImpulse.y);
-    }
+    };
     b2FrictionJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return inv_dt * this.m_angularImpulse;
-    }
+    };
     b2FrictionJoint.prototype.SetMaxForce = function (force) {
         if (force === undefined) force = 0;
         this.m_maxForce = force;
-    }
+    };
     b2FrictionJoint.prototype.GetMaxForce = function () {
         return this.m_maxForce;
-    }
+    };
     b2FrictionJoint.prototype.SetMaxTorque = function (torque) {
         if (torque === undefined) torque = 0;
         this.m_maxTorque = torque;
-    }
+    };
     b2FrictionJoint.prototype.GetMaxTorque = function () {
         return this.m_maxTorque;
-    }
+    };
     b2FrictionJoint.prototype.b2FrictionJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         this.m_localAnchorA.SetV(def.localAnchorA);
@@ -8107,7 +8108,7 @@ Box2D.postDefs = [];
         this.m_angularImpulse = 0.0;
         this.m_maxForce = def.maxForce;
         this.m_maxTorque = def.maxTorque;
-    }
+    };
     b2FrictionJoint.prototype.InitVelocityConstraints = function (step) {
         var tMat;
         var tX = 0;
@@ -8163,7 +8164,7 @@ Box2D.postDefs = [];
             this.m_linearImpulse.SetZero();
             this.m_angularImpulse = 0.0;
         }
-    }
+    };
     b2FrictionJoint.prototype.SolveVelocityConstraints = function (step) {
         var tMat;
         var tX = 0;
@@ -8219,11 +8220,11 @@ Box2D.postDefs = [];
         }
         bA.m_angularVelocity = wA;
         bB.m_angularVelocity = wB;
-    }
+    };
     b2FrictionJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         return true;
-    }
+    };
     Box2D.inherit(b2FrictionJointDef, Box2D.Dynamics.Joints.b2JointDef);
     b2FrictionJointDef.prototype.__super = Box2D.Dynamics.Joints.b2JointDef.prototype;
     b2FrictionJointDef.b2FrictionJointDef = function () {
@@ -8236,13 +8237,13 @@ Box2D.postDefs = [];
         this.type = b2Joint.e_frictionJoint;
         this.maxForce = 0.0;
         this.maxTorque = 0.0;
-    }
+    };
     b2FrictionJointDef.prototype.Initialize = function (bA, bB, anchor) {
         this.bodyA = bA;
         this.bodyB = bB;
         this.localAnchorA.SetV(this.bodyA.GetLocalPoint(anchor));
         this.localAnchorB.SetV(this.bodyB.GetLocalPoint(anchor));
-    }
+    };
     Box2D.inherit(b2GearJoint, Box2D.Dynamics.Joints.b2Joint);
     b2GearJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
     b2GearJoint.b2GearJoint = function () {
@@ -8255,14 +8256,14 @@ Box2D.postDefs = [];
     };
     b2GearJoint.prototype.GetAnchorA = function () {
         return this.m_bodyA.GetWorldPoint(this.m_localAnchor1);
-    }
+    };
     b2GearJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchor2);
-    }
+    };
     b2GearJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * this.m_impulse * this.m_J.linearB.x, inv_dt * this.m_impulse * this.m_J.linearB.y);
-    }
+    };
     b2GearJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         var tMat = this.m_bodyB.m_xf.R;
@@ -8274,14 +8275,14 @@ Box2D.postDefs = [];
         var PX = this.m_impulse * this.m_J.linearB.x;
         var PY = this.m_impulse * this.m_J.linearB.y;
         return inv_dt * (this.m_impulse * this.m_J.angularB - rX * PY + rY * PX);
-    }
+    };
     b2GearJoint.prototype.GetRatio = function () {
         return this.m_ratio;
-    }
+    };
     b2GearJoint.prototype.SetRatio = function (ratio) {
         if (ratio === undefined) ratio = 0;
         this.m_ratio = ratio;
-    }
+    };
     b2GearJoint.prototype.b2GearJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         var type1 = parseInt(def.joint1.m_type);
@@ -8323,7 +8324,7 @@ Box2D.postDefs = [];
         this.m_ratio = def.ratio;
         this.m_constant = coordinate1 + this.m_ratio * coordinate2;
         this.m_impulse = 0.0;
-    }
+    };
     b2GearJoint.prototype.InitVelocityConstraints = function (step) {
         var g1 = this.m_ground1;
         var g2 = this.m_ground2;
@@ -8391,7 +8392,7 @@ Box2D.postDefs = [];
         else {
             this.m_impulse = 0.0;
         }
-    }
+    };
     b2GearJoint.prototype.SolveVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -8404,7 +8405,7 @@ Box2D.postDefs = [];
         bB.m_linearVelocity.x += bB.m_invMass * impulse * this.m_J.linearB.x;
         bB.m_linearVelocity.y += bB.m_invMass * impulse * this.m_J.linearB.y;
         bB.m_angularVelocity += bB.m_invI * impulse * this.m_J.angularB;
-    }
+    };
     b2GearJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         var linearError = 0.0;
@@ -8435,7 +8436,7 @@ Box2D.postDefs = [];
         bA.SynchronizeTransform();
         bB.SynchronizeTransform();
         return linearError < b2Settings.b2_linearSlop;
-    }
+    };
     Box2D.inherit(b2GearJointDef, Box2D.Dynamics.Joints.b2JointDef);
     b2GearJointDef.prototype.__super = Box2D.Dynamics.Joints.b2JointDef.prototype;
     b2GearJointDef.b2GearJointDef = function () {
@@ -8447,7 +8448,7 @@ Box2D.postDefs = [];
         this.joint1 = null;
         this.joint2 = null;
         this.ratio = 1.0;
-    }
+    };
     b2Jacobian.b2Jacobian = function () {
         this.linearA = new b2Vec2();
         this.linearB = new b2Vec2();
@@ -8457,7 +8458,7 @@ Box2D.postDefs = [];
         this.angularA = 0.0;
         this.linearB.SetZero();
         this.angularB = 0.0;
-    }
+    };
     b2Jacobian.prototype.Set = function (x1, a1, x2, a2) {
         if (a1 === undefined) a1 = 0;
         if (a2 === undefined) a2 = 0;
@@ -8465,12 +8466,12 @@ Box2D.postDefs = [];
         this.angularA = a1;
         this.linearB.SetV(x2);
         this.angularB = a2;
-    }
+    };
     b2Jacobian.prototype.Compute = function (x1, a1, x2, a2) {
         if (a1 === undefined) a1 = 0;
         if (a2 === undefined) a2 = 0;
         return (this.linearA.x * x1.x + this.linearA.y * x1.y) + this.angularA * a1 + (this.linearB.x * x2.x + this.linearB.y * x2.y) + this.angularB * a2;
-    }
+    };
     b2Joint.b2Joint = function () {
         this.m_edgeA = new b2JointEdge();
         this.m_edgeB = new b2JointEdge();
@@ -8479,39 +8480,39 @@ Box2D.postDefs = [];
     };
     b2Joint.prototype.GetType = function () {
         return this.m_type;
-    }
+    };
     b2Joint.prototype.GetAnchorA = function () {
         return null;
-    }
+    };
     b2Joint.prototype.GetAnchorB = function () {
         return null;
-    }
+    };
     b2Joint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return null;
-    }
+    };
     b2Joint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return 0.0;
-    }
+    };
     b2Joint.prototype.GetBodyA = function () {
         return this.m_bodyA;
-    }
+    };
     b2Joint.prototype.GetBodyB = function () {
         return this.m_bodyB;
-    }
+    };
     b2Joint.prototype.GetNext = function () {
         return this.m_next;
-    }
+    };
     b2Joint.prototype.GetUserData = function () {
         return this.m_userData;
-    }
+    };
     b2Joint.prototype.SetUserData = function (data) {
         this.m_userData = data;
-    }
+    };
     b2Joint.prototype.IsActive = function () {
         return this.m_bodyA.IsActive() && this.m_bodyB.IsActive();
-    }
+    };
     b2Joint.Create = function (def, allocator) {
         var joint = null;
         switch (def.type) {
@@ -8564,8 +8565,8 @@ Box2D.postDefs = [];
                 break;
         }
         return joint;
-    }
-    b2Joint.Destroy = function (joint, allocator) {}
+    };
+    b2Joint.Destroy = function (joint, allocator) {};
     b2Joint.prototype.b2Joint = function (def) {
         b2Settings.b2Assert(def.bodyA != def.bodyB);
         this.m_type = def.type;
@@ -8576,14 +8577,14 @@ Box2D.postDefs = [];
         this.m_collideConnected = def.collideConnected;
         this.m_islandFlag = false;
         this.m_userData = def.userData;
-    }
-    b2Joint.prototype.InitVelocityConstraints = function (step) {}
-    b2Joint.prototype.SolveVelocityConstraints = function (step) {}
-    b2Joint.prototype.FinalizeVelocityConstraints = function () {}
+    };
+    b2Joint.prototype.InitVelocityConstraints = function (step) {};
+    b2Joint.prototype.SolveVelocityConstraints = function (step) {};
+    b2Joint.prototype.FinalizeVelocityConstraints = function () {};
     b2Joint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         return false;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.Joints.b2Joint.e_unknownJoint = 0;
         Box2D.Dynamics.Joints.b2Joint.e_revoluteJoint = 1;
@@ -8607,7 +8608,7 @@ Box2D.postDefs = [];
         this.bodyA = null;
         this.bodyB = null;
         this.collideConnected = false;
-    }
+    };
     b2JointEdge.b2JointEdge = function () {};
     Box2D.inherit(b2LineJoint, Box2D.Dynamics.Joints.b2Joint);
     b2LineJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
@@ -8624,18 +8625,18 @@ Box2D.postDefs = [];
     };
     b2LineJoint.prototype.GetAnchorA = function () {
         return this.m_bodyA.GetWorldPoint(this.m_localAnchor1);
-    }
+    };
     b2LineJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchor2);
-    }
+    };
     b2LineJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * (this.m_impulse.x * this.m_perp.x + (this.m_motorImpulse + this.m_impulse.y) * this.m_axis.x), inv_dt * (this.m_impulse.x * this.m_perp.y + (this.m_motorImpulse + this.m_impulse.y) * this.m_axis.y));
-    }
+    };
     b2LineJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return inv_dt * this.m_impulse.y;
-    }
+    };
     b2LineJoint.prototype.GetJointTranslation = function () {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -8647,7 +8648,7 @@ Box2D.postDefs = [];
         var axis = bA.GetWorldVector(this.m_localXAxis1);
         var translation = axis.x * dX + axis.y * dY;
         return translation;
-    }
+    };
     b2LineJoint.prototype.GetJointSpeed = function () {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -8677,21 +8678,21 @@ Box2D.postDefs = [];
         var w2 = bB.m_angularVelocity;
         var speed = (dX * ((-w1 * axis.y)) + dY * (w1 * axis.x)) + (axis.x * (((v2.x + ((-w2 * r2Y))) - v1.x) - ((-w1 * r1Y))) + axis.y * (((v2.y + (w2 * r2X)) - v1.y) - (w1 * r1X)));
         return speed;
-    }
+    };
     b2LineJoint.prototype.IsLimitEnabled = function () {
         return this.m_enableLimit;
-    }
+    };
     b2LineJoint.prototype.EnableLimit = function (flag) {
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_enableLimit = flag;
-    }
+    };
     b2LineJoint.prototype.GetLowerLimit = function () {
         return this.m_lowerTranslation;
-    }
+    };
     b2LineJoint.prototype.GetUpperLimit = function () {
         return this.m_upperTranslation;
-    }
+    };
     b2LineJoint.prototype.SetLimits = function (lower, upper) {
         if (lower === undefined) lower = 0;
         if (upper === undefined) upper = 0;
@@ -8699,36 +8700,36 @@ Box2D.postDefs = [];
         this.m_bodyB.SetAwake(true);
         this.m_lowerTranslation = lower;
         this.m_upperTranslation = upper;
-    }
+    };
     b2LineJoint.prototype.IsMotorEnabled = function () {
         return this.m_enableMotor;
-    }
+    };
     b2LineJoint.prototype.EnableMotor = function (flag) {
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_enableMotor = flag;
-    }
+    };
     b2LineJoint.prototype.SetMotorSpeed = function (speed) {
         if (speed === undefined) speed = 0;
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_motorSpeed = speed;
-    }
+    };
     b2LineJoint.prototype.GetMotorSpeed = function () {
         return this.m_motorSpeed;
-    }
+    };
     b2LineJoint.prototype.SetMaxMotorForce = function (force) {
         if (force === undefined) force = 0;
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_maxMotorForce = force;
-    }
+    };
     b2LineJoint.prototype.GetMaxMotorForce = function () {
         return this.m_maxMotorForce;
-    }
+    };
     b2LineJoint.prototype.GetMotorForce = function () {
         return this.m_motorImpulse;
-    }
+    };
     b2LineJoint.prototype.b2LineJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         var tMat;
@@ -8751,7 +8752,7 @@ Box2D.postDefs = [];
         this.m_limitState = b2Joint.e_inactiveLimit;
         this.m_axis.SetZero();
         this.m_perp.SetZero();
-    }
+    };
     b2LineJoint.prototype.InitVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -8844,7 +8845,7 @@ Box2D.postDefs = [];
             this.m_impulse.SetZero();
             this.m_motorImpulse = 0.0;
         }
-    }
+    };
     b2LineJoint.prototype.SolveVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -8932,7 +8933,7 @@ Box2D.postDefs = [];
         bA.m_angularVelocity = w1;
         bB.m_linearVelocity.SetV(v2);
         bB.m_angularVelocity = w2;
-    }
+    };
     b2LineJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         var limitC = 0;
@@ -9039,7 +9040,7 @@ Box2D.postDefs = [];
         bA.SynchronizeTransform();
         bB.SynchronizeTransform();
         return linearError <= b2Settings.b2_linearSlop && angularError <= b2Settings.b2_angularSlop;
-    }
+    };
     Box2D.inherit(b2LineJointDef, Box2D.Dynamics.Joints.b2JointDef);
     b2LineJointDef.prototype.__super = Box2D.Dynamics.Joints.b2JointDef.prototype;
     b2LineJointDef.b2LineJointDef = function () {
@@ -9058,14 +9059,14 @@ Box2D.postDefs = [];
         this.enableMotor = false;
         this.maxMotorForce = 0.0;
         this.motorSpeed = 0.0;
-    }
+    };
     b2LineJointDef.prototype.Initialize = function (bA, bB, anchor, axis) {
         this.bodyA = bA;
         this.bodyB = bB;
         this.localAnchorA = this.bodyA.GetLocalPoint(anchor);
         this.localAnchorB = this.bodyB.GetLocalPoint(anchor);
         this.localAxisA = this.bodyA.GetLocalVector(axis);
-    }
+    };
     Box2D.inherit(b2MouseJoint, Box2D.Dynamics.Joints.b2Joint);
     b2MouseJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
     b2MouseJoint.b2MouseJoint = function () {
@@ -9081,48 +9082,48 @@ Box2D.postDefs = [];
     };
     b2MouseJoint.prototype.GetAnchorA = function () {
         return this.m_target;
-    }
+    };
     b2MouseJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchor);
-    }
+    };
     b2MouseJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * this.m_impulse.x, inv_dt * this.m_impulse.y);
-    }
+    };
     b2MouseJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return 0.0;
-    }
+    };
     b2MouseJoint.prototype.GetTarget = function () {
         return this.m_target;
-    }
+    };
     b2MouseJoint.prototype.SetTarget = function (target) {
         if (this.m_bodyB.IsAwake() == false) {
             this.m_bodyB.SetAwake(true);
         }
         this.m_target = target;
-    }
+    };
     b2MouseJoint.prototype.GetMaxForce = function () {
         return this.m_maxForce;
-    }
+    };
     b2MouseJoint.prototype.SetMaxForce = function (maxForce) {
         if (maxForce === undefined) maxForce = 0;
         this.m_maxForce = maxForce;
-    }
+    };
     b2MouseJoint.prototype.GetFrequency = function () {
         return this.m_frequencyHz;
-    }
+    };
     b2MouseJoint.prototype.SetFrequency = function (hz) {
         if (hz === undefined) hz = 0;
         this.m_frequencyHz = hz;
-    }
+    };
     b2MouseJoint.prototype.GetDampingRatio = function () {
         return this.m_dampingRatio;
-    }
+    };
     b2MouseJoint.prototype.SetDampingRatio = function (ratio) {
         if (ratio === undefined) ratio = 0;
         this.m_dampingRatio = ratio;
-    }
+    };
     b2MouseJoint.prototype.b2MouseJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         this.m_target.SetV(def.target);
@@ -9137,7 +9138,7 @@ Box2D.postDefs = [];
         this.m_dampingRatio = def.dampingRatio;
         this.m_beta = 0.0;
         this.m_gamma = 0.0;
-    }
+    };
     b2MouseJoint.prototype.InitVelocityConstraints = function (step) {
         var b = this.m_bodyB;
         var mass = b.GetMass();
@@ -9174,7 +9175,7 @@ Box2D.postDefs = [];
         b.m_linearVelocity.x += invMass * this.m_impulse.x;
         b.m_linearVelocity.y += invMass * this.m_impulse.y;
         b.m_angularVelocity += invI * (rX * this.m_impulse.y - rY * this.m_impulse.x);
-    }
+    };
     b2MouseJoint.prototype.SolveVelocityConstraints = function (step) {
         var b = this.m_bodyB;
         var tMat;
@@ -9206,11 +9207,11 @@ Box2D.postDefs = [];
         b.m_linearVelocity.x += b.m_invMass * impulseX;
         b.m_linearVelocity.y += b.m_invMass * impulseY;
         b.m_angularVelocity += b.m_invI * (rX * impulseY - rY * impulseX);
-    }
+    };
     b2MouseJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         return true;
-    }
+    };
     Box2D.inherit(b2MouseJointDef, Box2D.Dynamics.Joints.b2JointDef);
     b2MouseJointDef.prototype.__super = Box2D.Dynamics.Joints.b2JointDef.prototype;
     b2MouseJointDef.b2MouseJointDef = function () {
@@ -9223,7 +9224,7 @@ Box2D.postDefs = [];
         this.maxForce = 0.0;
         this.frequencyHz = 5.0;
         this.dampingRatio = 0.7;
-    }
+    };
     Box2D.inherit(b2PrismaticJoint, Box2D.Dynamics.Joints.b2Joint);
     b2PrismaticJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
     b2PrismaticJoint.b2PrismaticJoint = function () {
@@ -9239,18 +9240,18 @@ Box2D.postDefs = [];
     };
     b2PrismaticJoint.prototype.GetAnchorA = function () {
         return this.m_bodyA.GetWorldPoint(this.m_localAnchor1);
-    }
+    };
     b2PrismaticJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchor2);
-    }
+    };
     b2PrismaticJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * (this.m_impulse.x * this.m_perp.x + (this.m_motorImpulse + this.m_impulse.z) * this.m_axis.x), inv_dt * (this.m_impulse.x * this.m_perp.y + (this.m_motorImpulse + this.m_impulse.z) * this.m_axis.y));
-    }
+    };
     b2PrismaticJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return inv_dt * this.m_impulse.y;
-    }
+    };
     b2PrismaticJoint.prototype.GetJointTranslation = function () {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -9262,7 +9263,7 @@ Box2D.postDefs = [];
         var axis = bA.GetWorldVector(this.m_localXAxis1);
         var translation = axis.x * dX + axis.y * dY;
         return translation;
-    }
+    };
     b2PrismaticJoint.prototype.GetJointSpeed = function () {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -9292,21 +9293,21 @@ Box2D.postDefs = [];
         var w2 = bB.m_angularVelocity;
         var speed = (dX * ((-w1 * axis.y)) + dY * (w1 * axis.x)) + (axis.x * (((v2.x + ((-w2 * r2Y))) - v1.x) - ((-w1 * r1Y))) + axis.y * (((v2.y + (w2 * r2X)) - v1.y) - (w1 * r1X)));
         return speed;
-    }
+    };
     b2PrismaticJoint.prototype.IsLimitEnabled = function () {
         return this.m_enableLimit;
-    }
+    };
     b2PrismaticJoint.prototype.EnableLimit = function (flag) {
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_enableLimit = flag;
-    }
+    };
     b2PrismaticJoint.prototype.GetLowerLimit = function () {
         return this.m_lowerTranslation;
-    }
+    };
     b2PrismaticJoint.prototype.GetUpperLimit = function () {
         return this.m_upperTranslation;
-    }
+    };
     b2PrismaticJoint.prototype.SetLimits = function (lower, upper) {
         if (lower === undefined) lower = 0;
         if (upper === undefined) upper = 0;
@@ -9314,33 +9315,33 @@ Box2D.postDefs = [];
         this.m_bodyB.SetAwake(true);
         this.m_lowerTranslation = lower;
         this.m_upperTranslation = upper;
-    }
+    };
     b2PrismaticJoint.prototype.IsMotorEnabled = function () {
         return this.m_enableMotor;
-    }
+    };
     b2PrismaticJoint.prototype.EnableMotor = function (flag) {
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_enableMotor = flag;
-    }
+    };
     b2PrismaticJoint.prototype.SetMotorSpeed = function (speed) {
         if (speed === undefined) speed = 0;
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_motorSpeed = speed;
-    }
+    };
     b2PrismaticJoint.prototype.GetMotorSpeed = function () {
         return this.m_motorSpeed;
-    }
+    };
     b2PrismaticJoint.prototype.SetMaxMotorForce = function (force) {
         if (force === undefined) force = 0;
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_maxMotorForce = force;
-    }
+    };
     b2PrismaticJoint.prototype.GetMotorForce = function () {
         return this.m_motorImpulse;
-    }
+    };
     b2PrismaticJoint.prototype.b2PrismaticJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         var tMat;
@@ -9364,7 +9365,7 @@ Box2D.postDefs = [];
         this.m_limitState = b2Joint.e_inactiveLimit;
         this.m_axis.SetZero();
         this.m_perp.SetZero();
-    }
+    };
     b2PrismaticJoint.prototype.InitVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -9462,7 +9463,7 @@ Box2D.postDefs = [];
             this.m_impulse.SetZero();
             this.m_motorImpulse = 0.0;
         }
-    }
+    };
     b2PrismaticJoint.prototype.SolveVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -9545,7 +9546,7 @@ Box2D.postDefs = [];
         bA.m_angularVelocity = w1;
         bB.m_linearVelocity.SetV(v2);
         bB.m_angularVelocity = w2;
-    }
+    };
     b2PrismaticJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         var limitC = 0;
@@ -9657,7 +9658,7 @@ Box2D.postDefs = [];
         bA.SynchronizeTransform();
         bB.SynchronizeTransform();
         return linearError <= b2Settings.b2_linearSlop && angularError <= b2Settings.b2_angularSlop;
-    }
+    };
     Box2D.inherit(b2PrismaticJointDef, Box2D.Dynamics.Joints.b2JointDef);
     b2PrismaticJointDef.prototype.__super = Box2D.Dynamics.Joints.b2JointDef.prototype;
     b2PrismaticJointDef.b2PrismaticJointDef = function () {
@@ -9677,7 +9678,7 @@ Box2D.postDefs = [];
         this.enableMotor = false;
         this.maxMotorForce = 0.0;
         this.motorSpeed = 0.0;
-    }
+    };
     b2PrismaticJointDef.prototype.Initialize = function (bA, bB, anchor, axis) {
         this.bodyA = bA;
         this.bodyB = bB;
@@ -9685,7 +9686,7 @@ Box2D.postDefs = [];
         this.localAnchorB = this.bodyB.GetLocalPoint(anchor);
         this.localAxisA = this.bodyA.GetLocalVector(axis);
         this.referenceAngle = this.bodyB.GetAngle() - this.bodyA.GetAngle();
-    }
+    };
     Box2D.inherit(b2PulleyJoint, Box2D.Dynamics.Joints.b2Joint);
     b2PulleyJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
     b2PulleyJoint.b2PulleyJoint = function () {
@@ -9699,28 +9700,28 @@ Box2D.postDefs = [];
     };
     b2PulleyJoint.prototype.GetAnchorA = function () {
         return this.m_bodyA.GetWorldPoint(this.m_localAnchor1);
-    }
+    };
     b2PulleyJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchor2);
-    }
+    };
     b2PulleyJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * this.m_impulse * this.m_u2.x, inv_dt * this.m_impulse * this.m_u2.y);
-    }
+    };
     b2PulleyJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return 0.0;
-    }
+    };
     b2PulleyJoint.prototype.GetGroundAnchorA = function () {
         var a = this.m_ground.m_xf.position.Copy();
         a.Add(this.m_groundAnchor1);
         return a;
-    }
+    };
     b2PulleyJoint.prototype.GetGroundAnchorB = function () {
         var a = this.m_ground.m_xf.position.Copy();
         a.Add(this.m_groundAnchor2);
         return a;
-    }
+    };
     b2PulleyJoint.prototype.GetLength1 = function () {
         var p = this.m_bodyA.GetWorldPoint(this.m_localAnchor1);
         var sX = this.m_ground.m_xf.position.x + this.m_groundAnchor1.x;
@@ -9728,7 +9729,7 @@ Box2D.postDefs = [];
         var dX = p.x - sX;
         var dY = p.y - sY;
         return Math.sqrt(dX * dX + dY * dY);
-    }
+    };
     b2PulleyJoint.prototype.GetLength2 = function () {
         var p = this.m_bodyB.GetWorldPoint(this.m_localAnchor2);
         var sX = this.m_ground.m_xf.position.x + this.m_groundAnchor2.x;
@@ -9736,10 +9737,10 @@ Box2D.postDefs = [];
         var dX = p.x - sX;
         var dY = p.y - sY;
         return Math.sqrt(dX * dX + dY * dY);
-    }
+    };
     b2PulleyJoint.prototype.GetRatio = function () {
         return this.m_ratio;
-    }
+    };
     b2PulleyJoint.prototype.b2PulleyJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         var tMat;
@@ -9759,7 +9760,7 @@ Box2D.postDefs = [];
         this.m_impulse = 0.0;
         this.m_limitImpulse1 = 0.0;
         this.m_limitImpulse2 = 0.0;
-    }
+    };
     b2PulleyJoint.prototype.InitVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -9850,7 +9851,7 @@ Box2D.postDefs = [];
             this.m_limitImpulse1 = 0.0;
             this.m_limitImpulse2 = 0.0;
         }
-    }
+    };
     b2PulleyJoint.prototype.SolveVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -9927,7 +9928,7 @@ Box2D.postDefs = [];
             bB.m_linearVelocity.y += bB.m_invMass * P2Y;
             bB.m_angularVelocity += bB.m_invI * (r2X * P2Y - r2Y * P2X);
         }
-    }
+    };
     b2PulleyJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         var bA = this.m_bodyA;
@@ -10062,7 +10063,7 @@ Box2D.postDefs = [];
             bB.SynchronizeTransform();
         }
         return linearError < b2Settings.b2_linearSlop;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.Joints.b2PulleyJoint.b2_minPulleyLength = 2.0;
     });
@@ -10088,7 +10089,7 @@ Box2D.postDefs = [];
         this.maxLengthB = 0.0;
         this.ratio = 1.0;
         this.collideConnected = true;
-    }
+    };
     b2PulleyJointDef.prototype.Initialize = function (bA, bB, gaA, gaB, anchorA, anchorB, r) {
         if (r === undefined) r = 0;
         this.bodyA = bA;
@@ -10107,7 +10108,7 @@ Box2D.postDefs = [];
         var C = this.lengthA + this.ratio * this.lengthB;
         this.maxLengthA = C - this.ratio * b2PulleyJoint.b2_minPulleyLength;
         this.maxLengthB = (C - b2PulleyJoint.b2_minPulleyLength) / this.ratio;
-    }
+    };
     Box2D.inherit(b2RevoluteJoint, Box2D.Dynamics.Joints.b2Joint);
     b2RevoluteJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
     b2RevoluteJoint.b2RevoluteJoint = function () {
@@ -10126,66 +10127,66 @@ Box2D.postDefs = [];
     };
     b2RevoluteJoint.prototype.GetAnchorA = function () {
         return this.m_bodyA.GetWorldPoint(this.m_localAnchor1);
-    }
+    };
     b2RevoluteJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchor2);
-    }
+    };
     b2RevoluteJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * this.m_impulse.x, inv_dt * this.m_impulse.y);
-    }
+    };
     b2RevoluteJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return inv_dt * this.m_impulse.z;
-    }
+    };
     b2RevoluteJoint.prototype.GetJointAngle = function () {
         return this.m_bodyB.m_sweep.a - this.m_bodyA.m_sweep.a - this.m_referenceAngle;
-    }
+    };
     b2RevoluteJoint.prototype.GetJointSpeed = function () {
         return this.m_bodyB.m_angularVelocity - this.m_bodyA.m_angularVelocity;
-    }
+    };
     b2RevoluteJoint.prototype.IsLimitEnabled = function () {
         return this.m_enableLimit;
-    }
+    };
     b2RevoluteJoint.prototype.EnableLimit = function (flag) {
         this.m_enableLimit = flag;
-    }
+    };
     b2RevoluteJoint.prototype.GetLowerLimit = function () {
         return this.m_lowerAngle;
-    }
+    };
     b2RevoluteJoint.prototype.GetUpperLimit = function () {
         return this.m_upperAngle;
-    }
+    };
     b2RevoluteJoint.prototype.SetLimits = function (lower, upper) {
         if (lower === undefined) lower = 0;
         if (upper === undefined) upper = 0;
         this.m_lowerAngle = lower;
         this.m_upperAngle = upper;
-    }
+    };
     b2RevoluteJoint.prototype.IsMotorEnabled = function () {
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         return this.m_enableMotor;
-    }
+    };
     b2RevoluteJoint.prototype.EnableMotor = function (flag) {
         this.m_enableMotor = flag;
-    }
+    };
     b2RevoluteJoint.prototype.SetMotorSpeed = function (speed) {
         if (speed === undefined) speed = 0;
         this.m_bodyA.SetAwake(true);
         this.m_bodyB.SetAwake(true);
         this.m_motorSpeed = speed;
-    }
+    };
     b2RevoluteJoint.prototype.GetMotorSpeed = function () {
         return this.m_motorSpeed;
-    }
+    };
     b2RevoluteJoint.prototype.SetMaxMotorTorque = function (torque) {
         if (torque === undefined) torque = 0;
         this.m_maxMotorTorque = torque;
-    }
+    };
     b2RevoluteJoint.prototype.GetMotorTorque = function () {
         return this.m_maxMotorTorque;
-    }
+    };
     b2RevoluteJoint.prototype.b2RevoluteJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         this.m_localAnchor1.SetV(def.localAnchorA);
@@ -10200,7 +10201,7 @@ Box2D.postDefs = [];
         this.m_enableLimit = def.enableLimit;
         this.m_enableMotor = def.enableMotor;
         this.m_limitState = b2Joint.e_inactiveLimit;
-    }
+    };
     b2RevoluteJoint.prototype.InitVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -10278,7 +10279,7 @@ Box2D.postDefs = [];
             this.m_impulse.SetZero();
             this.m_motorImpulse = 0.0;
         }
-    }
+    };
     b2RevoluteJoint.prototype.SolveVelocityConstraints = function (step) {
         var bA = this.m_bodyA;
         var bB = this.m_bodyB;
@@ -10387,7 +10388,7 @@ Box2D.postDefs = [];
         bA.m_angularVelocity = w1;
         bB.m_linearVelocity.SetV(v2);
         bB.m_angularVelocity = w2;
-    }
+    };
     b2RevoluteJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         var oldLimitImpulse = 0;
@@ -10490,7 +10491,7 @@ Box2D.postDefs = [];
             bB.SynchronizeTransform();
         }
         return positionError <= b2Settings.b2_linearSlop && angularError <= b2Settings.b2_angularSlop;
-    }
+    };
     Box2D.postDefs.push(function () {
         Box2D.Dynamics.Joints.b2RevoluteJoint.tImpulse = new b2Vec2();
     });
@@ -10513,14 +10514,14 @@ Box2D.postDefs = [];
         this.motorSpeed = 0.0;
         this.enableLimit = false;
         this.enableMotor = false;
-    }
+    };
     b2RevoluteJointDef.prototype.Initialize = function (bA, bB, anchor) {
         this.bodyA = bA;
         this.bodyB = bB;
         this.localAnchorA = this.bodyA.GetLocalPoint(anchor);
         this.localAnchorB = this.bodyB.GetLocalPoint(anchor);
         this.referenceAngle = this.bodyB.GetAngle() - this.bodyA.GetAngle();
-    }
+    };
     Box2D.inherit(b2WeldJoint, Box2D.Dynamics.Joints.b2Joint);
     b2WeldJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
     b2WeldJoint.b2WeldJoint = function () {
@@ -10532,18 +10533,18 @@ Box2D.postDefs = [];
     };
     b2WeldJoint.prototype.GetAnchorA = function () {
         return this.m_bodyA.GetWorldPoint(this.m_localAnchorA);
-    }
+    };
     b2WeldJoint.prototype.GetAnchorB = function () {
         return this.m_bodyB.GetWorldPoint(this.m_localAnchorB);
-    }
+    };
     b2WeldJoint.prototype.GetReactionForce = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return new b2Vec2(inv_dt * this.m_impulse.x, inv_dt * this.m_impulse.y);
-    }
+    };
     b2WeldJoint.prototype.GetReactionTorque = function (inv_dt) {
         if (inv_dt === undefined) inv_dt = 0;
         return inv_dt * this.m_impulse.z;
-    }
+    };
     b2WeldJoint.prototype.b2WeldJoint = function (def) {
         this.__super.b2Joint.call(this, def);
         this.m_localAnchorA.SetV(def.localAnchorA);
@@ -10551,7 +10552,7 @@ Box2D.postDefs = [];
         this.m_referenceAngle = def.referenceAngle;
         this.m_impulse.SetZero();
         this.m_mass = new b2Mat33();
-    }
+    };
     b2WeldJoint.prototype.InitVelocityConstraints = function (step) {
         var tMat;
         var tX = 0;
@@ -10596,7 +10597,7 @@ Box2D.postDefs = [];
         else {
             this.m_impulse.SetZero();
         }
-    }
+    };
     b2WeldJoint.prototype.SolveVelocityConstraints = function (step) {
         var tMat;
         var tX = 0;
@@ -10636,7 +10637,7 @@ Box2D.postDefs = [];
         wB += iB * (rBX * impulse.y - rBY * impulse.x + impulse.z);
         bA.m_angularVelocity = wA;
         bB.m_angularVelocity = wB;
-    }
+    };
     b2WeldJoint.prototype.SolvePositionConstraints = function (baumgarte) {
         if (baumgarte === undefined) baumgarte = 0;
         var tMat;
@@ -10689,7 +10690,7 @@ Box2D.postDefs = [];
         bA.SynchronizeTransform();
         bB.SynchronizeTransform();
         return positionError <= b2Settings.b2_linearSlop && angularError <= b2Settings.b2_angularSlop;
-    }
+    };
     Box2D.inherit(b2WeldJointDef, Box2D.Dynamics.Joints.b2JointDef);
     b2WeldJointDef.prototype.__super = Box2D.Dynamics.Joints.b2JointDef.prototype;
     b2WeldJointDef.b2WeldJointDef = function () {
@@ -10701,7 +10702,7 @@ Box2D.postDefs = [];
         this.__super.b2JointDef.call(this);
         this.type = b2Joint.e_weldJoint;
         this.referenceAngle = 0.0;
-    }
+    };
     b2WeldJointDef.prototype.Initialize = function (bA, bB, anchor) {
         this.bodyA = bA;
         this.bodyB = bB;

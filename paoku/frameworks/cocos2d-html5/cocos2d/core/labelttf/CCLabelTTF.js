@@ -507,7 +507,7 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         this._fontSize = textDefinition.fontSize || 12;
 
         if(textDefinition.lineHeight)
-            this._lineHeight = textDefinition.lineHeight
+            this._lineHeight = textDefinition.lineHeight;
         else
             this._lineHeight = this._fontSize;
 

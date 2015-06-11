@@ -374,7 +374,7 @@
      * ImageView parser (UIImageView)
      */
     parser.ImageViewAttributes = function(widget, options, resourcePath){
-        var imageFileNameDic = options["fileNameData"]
+        var imageFileNameDic = options["fileNameData"];
         getPath(resourcePath, imageFileNameDic["resourceType"], imageFileNameDic["path"], function(path, type){
             widget.loadTexture(path, type);
         });

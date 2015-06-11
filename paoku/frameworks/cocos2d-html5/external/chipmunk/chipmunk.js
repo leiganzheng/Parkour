@@ -2075,7 +2075,7 @@ BBTree.prototype.incrementStamp = function()
 	} else {
 		this.stamp++;
 	}
-}
+};
 
 // **** Pair/Thread Functions
 
@@ -2865,7 +2865,7 @@ Arbiter.prototype.getShapes = function()
 	}else{
 		return [this.a, this.b];
 	}
-}
+};
 
 /// Calculate the total impulse that was applied by this arbiter.
 /// This function should only be called from a post-solve, post-step or cpBodyEachArbiter callback.
@@ -3287,7 +3287,7 @@ var circle2segment = function(circleShape, segmentShape)
 	} else {
 		return NONE;
 	}
-}
+};
 
 // Find the minimum separating axis for the given poly and axis list.
 //
@@ -5755,7 +5755,7 @@ DampedSpring.prototype.getImpulse = function()
 
 var defaultSpringTorque = function(spring, relativeAngle){
 	return (relativeAngle - spring.restAngle)*spring.stiffness;
-}
+};
 
 var DampedRotarySpring = cp.DampedRotarySpring = function(a, b, restAngle, stiffness, damping)
 {

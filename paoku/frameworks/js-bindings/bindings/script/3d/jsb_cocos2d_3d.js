@@ -278,4 +278,4 @@ jsb.BillBoard.prototype._ctor = function(filename, rect, mode = jsb.BillBoard.Mo
         this.init();
         this.setMode(filename);
     }
-}
+};

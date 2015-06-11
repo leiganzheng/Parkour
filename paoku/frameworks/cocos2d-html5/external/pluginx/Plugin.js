@@ -165,7 +165,7 @@
                 break;
             default:
                 tmpValue = value;
-        }
+        };
         return tmpValue
     };
 

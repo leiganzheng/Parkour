@@ -54,15 +54,13 @@ function TestTabList(aConnection) {
   }
 
   aConnection.addActorPool(this._tabActorPool);
-}
-
+};
 TestTabList.prototype = {
   constructor: TestTabList,
   getList: function () {
-    return promise.resolve([tabActor for (tabActor of this._tabActors)]);
+    return promise.resolve([tabActor for (tabActor; of; this._tabActors)]);
   }
 };
-
 function createRootActor(aConnection)
 {
   let root = new RootActor(aConnection,
@@ -149,9 +147,11 @@ this.processInput = function (inputstr) {
     {
         DebuggerServer.createRootActor = (conn => {
             return new RootActor(conn, { tabList: new TestTabList(conn) });
-        });
-        DebuggerServer.init(() => true);
-        DebuggerServer.openListener(5086);
+    }
+    )
+    DebuggerServer.init(() = > true;
+    )
+    DebuggerServer.openListener(5086);
         if (debuggerServer && debuggerServer.onSocketAccepted)
         {
             var aTransport = {
@@ -172,15 +172,13 @@ this.processInput = function (inputstr) {
             };
             debuggerServer.onSocketAccepted(null, aTransport);
         }
-        return;
-    }
 
-    if (DebuggerServer && DebuggerServer._transport && DebuggerServer._transport.onDataAvailable)
+};
+if (DebuggerServer && DebuggerServer._transport && DebuggerServer._transport.onDataAvailable)
     {
         DebuggerServer._transport.onDataAvailable(inputstr);
     }
-};
-
+}
 this._prepareDebugger = function (global) {
 
     globalDebuggee = global;

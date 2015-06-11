@@ -1811,7 +1811,7 @@ cc._initSys = function (config, CONFIG_KEY) {
         str += "os : " + self.os + "\r\n";
         str += "platform : " + self.platform + "\r\n";
         cc.log(str);
-    }
+    };
 
     /**
      * Open a url in browser

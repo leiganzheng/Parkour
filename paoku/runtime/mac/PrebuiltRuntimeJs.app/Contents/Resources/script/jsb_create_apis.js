@@ -1085,7 +1085,7 @@ cc.TMXTiledMap.create = function (tmxFile, resourcePath) {
 // MenuItemImage
 cc.MenuItemImage.create = function(normalImage, selectedImage, three, four, five) {
     return new cc.MenuItemImage(normalImage, selectedImage, three, four, five);
-}
+};
 
 
 // MenuItemToggle

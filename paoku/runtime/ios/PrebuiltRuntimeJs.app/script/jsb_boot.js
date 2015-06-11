@@ -420,7 +420,7 @@ cc.path = {
         if(index > 0) {
             tempStr = pathStr.substring(index);
             pathStr = pathStr.substring(0, index);
-        };
+        }
         index = pathStr.lastIndexOf(".");
         if(index < 0) return pathStr + extname + tempStr;
         return pathStr.substring(0, index) + extname + tempStr;
@@ -446,7 +446,7 @@ cc.path = {
         if(index > 0) {
             tempStr = pathStr.substring(index);
             pathStr = pathStr.substring(0, index);
-        };
+        }
         index = pathStr.lastIndexOf("/");
         index = index <= 0 ? 0 : index+1;
         return pathStr.substring(0, index) + basename + ext + tempStr;
@@ -881,9 +881,9 @@ cc.view.isRetinaEnabled = function() {
     return (sys.os == sys.OS_IOS || sys.os == sys.OS_OSX) ? true : false;
 };
 cc.view.adjustViewPort = function() {};
-cc.view.resizeWithBrowserSize = function () {return;};
-cc.view.setResizeCallback = function() {return;};
-cc.view.enableAutoFullScreen = function () {return;};
+cc.view.resizeWithBrowserSize = function () {};
+cc.view.setResizeCallback = function() {};
+cc.view.enableAutoFullScreen = function () {};
 cc.view.isAutoFullScreenEnabled = function() {return true;};
 cc.view._setDesignResolutionSize = cc.view.setDesignResolutionSize;
 cc.view.setDesignResolutionSize = function(width,height,resolutionPolicy){
@@ -895,9 +895,9 @@ cc.view.setResolutionPolicy = function(resolutionPolicy){
     var size = cc.view.getDesignResolutionSize();
     cc.view.setDesignResolutionSize(size.width,size.height,resolutionPolicy);
 };
-cc.view.setContentTranslateLeftTop = function(){return;};
+cc.view.setContentTranslateLeftTop = function(){};
 cc.view.getContentTranslateLeftTop = function(){return null;};
-cc.view.setFrameZoomFactor = function(){return;};
+cc.view.setFrameZoomFactor = function(){};
 cc.DENSITYDPI_DEVICE = "device-dpi";
 cc.DENSITYDPI_HIGH = "high-dpi";
 cc.DENSITYDPI_MEDIUM = "medium-dpi";
@@ -1452,7 +1452,7 @@ cc._initSys = function(config, CONFIG_KEY){
         str += "os : " + self.os + "\r\n";
         str += "platform : " + self.platform + "\r\n";
         cc.log(str);
-    }
+    };
 
     locSys.isMobile = (locSys.os == locSys.OS_ANDROID || locSys.os == locSys.OS_IOS || locSys.os == locSys.OS_WP8 || locSys.os == locSys.OS_WINRT) ? true : false;
 

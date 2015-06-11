@@ -27,7 +27,7 @@ var MenuLayer = cc.Layer.extend({
         var menuItemPlay = new cc.MenuItemToggle(
             new cc.MenuItemImage(res.start_n_png), // normal state image
             new cc.MenuItemImage(res.start_s_png), //select state image
-            this.onPlay, this)
+            this.onPlay, this);
 
         var menu = new cc.Menu(menuItemPlay);  //7. create the menu
         menu.setPosition(centerpos);
@@ -36,11 +36,11 @@ var MenuLayer = cc.Layer.extend({
 
     onPlay : function(){
         cc.log("==onplay clicked");
-        var transitionTime = 2;
-        var nextScene = new PlayScene();
-        var transitionScene = new cc.TransitionProgressInOut(transitionTime, nextScene);
-        cc.director.runScene(transitionScene);
-
+        //var transitionTime = 0.5;
+        //var nextScene = new PlayScene();
+        //var transitionScene = new cc.TransitionProgressInOut(transitionTime, nextScene);
+        //cc.director.runScene(transitionScene);
+        cc.director.pushScene(new PlayScene())
     }
 });
 

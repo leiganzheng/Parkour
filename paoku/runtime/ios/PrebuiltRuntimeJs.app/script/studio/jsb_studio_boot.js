@@ -42,7 +42,7 @@ ccs.ActionManager.prototype.clear = function() {
 };
 ccs.ActionManager.prototype.initWithDictionary = function(file, dic, node) {
     ccs.actionManager.initWithDictionaryEx(file, JSON.stringify(dic), node);
-}
+};
 
 /**
  * The same as cc.Node

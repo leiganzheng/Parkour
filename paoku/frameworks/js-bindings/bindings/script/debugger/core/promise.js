@@ -155,7 +155,7 @@ function defer(prototype) {
 
       return deferred.promise;
     }}
-  })
+  });
 
   var deferred = {
     promise: promise,

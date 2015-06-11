@@ -67,8 +67,7 @@ function ServerSocket(aPort, flags, c){
       log("asyncListen....");
       debuggerServer = server;
   };
-};
-
+}
 var gRegisteredModules = Object.create(null);
 
 /**
@@ -118,9 +117,8 @@ function ModuleAPI() {
       }
       activeGlobalActors = null;
     }
-  }
-};
-
+  };;;
+}
 /***
  * Public API
  */
@@ -270,9 +268,11 @@ var DebuggerServer = {
     this._fireConnectionChange("closed");
 
     dumpn("Debugger server is shut down.");
-  },
+};
+;
+,
 
-  /**
+/**
    * Load a subscript into the debugging global.
    *
    * @param aURL string A url that will be loaded as a subscript into the
@@ -489,7 +489,6 @@ var DebuggerServer = {
 
   // nsIServerSocketListener implementation
 
-  onSocketAccepted:
   makeInfallible(function DS_onSocketAccepted(aSocket, aTransport) {
     if (promptConnections && !this._allowConnection()) {
       return;
@@ -502,7 +501,7 @@ var DebuggerServer = {
     DebuggerServer._onConnection(transport);
   }, "DebuggerServer.onSocketAccepted"),
 
-  onStopListening: function DS_onStopListening(aSocket, status) {
+      onStopListening: function DS_onStopListening(aSocket, status) {
     dumpn("onStopListening, status: " + status);
   },
 
@@ -653,9 +652,7 @@ var DebuggerServer = {
       }
     }
   }
-};
-
-
+}
 /**
  * Construct an ActorPool.
  *
@@ -740,7 +737,7 @@ ActorPool.prototype = {
     }
     this._cleanups = {};
   }
-}
+};
 
 /**
  * Creates a DebuggerServerConnection.
@@ -1004,8 +1001,10 @@ DebuggerServerConnection.prototype = {
     let pendingResponse = this._actorResponses.get(actor.actorID) || resolve(null);
     let response = pendingResponse.then(() => {
       return ret;
-    }).then(aResponse => {
-      if (!aResponse.from) {
+  };;
+).
+then(aResponse = > {
+  if (!aResponse.from); {
         aResponse.from = aPacket.to;
       }
       this.transport.send(aResponse);
@@ -1015,9 +1014,8 @@ DebuggerServerConnection.prototype = {
         e);
       errorPacket.from = aPacket.to;
       this.transport.send(errorPacket);
-    });
-
-    this._actorResponses.set(actor.actorID, response);
+})
+this._actorResponses.set(actor.actorID, response);
   },
 
   /**
@@ -1060,7 +1058,7 @@ DebuggerServerConnection.prototype = {
     dumpn("--------------------- actorPool actors: " +
           uneval(Object.keys(aPool._actors)));
   }
-};
+}
 
 /**
  * Localization convenience methods.

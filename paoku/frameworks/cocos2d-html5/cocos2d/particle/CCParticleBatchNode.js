@@ -273,7 +273,7 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
 
             if (getIndexes.oldIndex !== getIndexes.newIndex) {
                 // reorder m_pChildren.array
-                this._children.splice(getIndexes.oldIndex, 1)
+                this._children.splice(getIndexes.oldIndex, 1);
                 this._children.splice(getIndexes.newIndex, 0, child);
 
                 // save old altasIndex

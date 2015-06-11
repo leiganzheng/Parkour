@@ -53,7 +53,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
      */
     fullPathForFilename : function (str)
     {
-        return ;
+
     },
 
     /**
@@ -63,7 +63,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
      */
     getStringFromFile : function (str)
     {
-        return ;
+
     },
 
     /**
@@ -122,7 +122,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
      */
     getValueVectorFromFile : function (str)
     {
-        return new Array();
+        return [];
     },
 
     /**
@@ -131,7 +131,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
      */
     getSearchPaths : function ()
     {
-        return new Array();
+        return [];
     },
 
     /**
@@ -243,7 +243,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
      */
     fullPathFromRelativeFile : function (str, str)
     {
-        return ;
+
     },
 
     /**
@@ -262,7 +262,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
      */
     getSearchResolutionsOrder : function ()
     {
-        return new Array();
+        return [];
     },
 
     /**
@@ -291,7 +291,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
      */
     getWritablePath : function ()
     {
-        return ;
+
     }
 
 };
@@ -318,7 +318,7 @@ jsb.EventAssetsManager = cc.Class.extend(/** @lends jsb.EventAssetsManager# */{
     getAssetId : function (
         )
     {
-        return ;
+
     },
 
     /**
@@ -338,7 +338,7 @@ jsb.EventAssetsManager = cc.Class.extend(/** @lends jsb.EventAssetsManager# */{
     getMessage : function (
         )
     {
-        return ;
+
     },
 
     /**
@@ -484,7 +484,7 @@ jsb.AssetsManager = cc.Class.extend(/** @lends jsb.AssetsManager# */{
      */
     getStoragePath : function ()
     {
-        return ;
+
     },
 
     /**
@@ -553,7 +553,7 @@ jsb.Manifest = cc.Class.extend(/** @lends jsb.Manifest# */{
      */
     getManifestFileUrl : function ()
     {
-        return ;
+
     },
 
     /**
@@ -580,7 +580,7 @@ jsb.Manifest = cc.Class.extend(/** @lends jsb.Manifest# */{
      */
     getPackageUrl : function ()
     {
-        return ;
+
     },
 
     /**
@@ -589,7 +589,7 @@ jsb.Manifest = cc.Class.extend(/** @lends jsb.Manifest# */{
      */
     getVersion : function ()
     {
-        return ;
+
     },
 
     /**
@@ -598,7 +598,7 @@ jsb.Manifest = cc.Class.extend(/** @lends jsb.Manifest# */{
      */
     getVersionFileUrl : function ()
     {
-        return ;
+
     }
 });
 

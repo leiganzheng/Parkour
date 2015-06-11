@@ -237,7 +237,7 @@ cc.Event.TOUCH = 0;                  //CCEvent.js
 cc.Event.KEYBOARD = 1;
 cc.Event.ACCELERATION = 2;
 cc.Event.MOUSE = 3;
-cc.Event.FOCUS = 4
+cc.Event.FOCUS = 4;
 //game controller 5
 cc.Event.CUSTOM = 6;
 cc.EventMouse.NONE = 0;
@@ -1293,7 +1293,8 @@ cc.associateWithNative = function( jsobj, superclass_or_instance ) {};
 //
 cc.inherits = function (childCtor, parentCtor) {
     /** @constructor */
-    function tempCtor() {};
+    function tempCtor() {
+    }
     tempCtor.prototype = parentCtor.prototype;
     childCtor.superClass_ = parentCtor.prototype;
     childCtor.prototype = new tempCtor();
@@ -1533,7 +1534,7 @@ var setTimeout = function (code, delay) {
     target.fun = function () {
         original.apply(this, arguments);
         clearTimeout(target._intervalId);
-    }
+    };
     cc.director.getScheduler().schedule(target.fun, target, delay / 1000, 0, 0, false, target._intervalId+"");
     _windowTimeFunHash[target._intervalId] = target;
     return target._intervalId;
@@ -2774,17 +2775,17 @@ _p.setNormalSpriteFrame = function(frame) {
     if (frame[0] == "#") 
         frame = cc.spriteFrameCache.getSpriteFrame(frame.substr(1));
     this._setNormalSpriteFrame(frame);
-}
+};
 _p.setSelectedSpriteFrame = function(frame) {
     if (frame[0] == "#") 
         frame = cc.spriteFrameCache.getSpriteFrame(frame.substr(1));
     this._setSelectedSpriteFrame(frame);
-}
+};
 _p.setDisabledSpriteFrame = function(frame) {
     if (frame[0] == "#") 
         frame = cc.spriteFrameCache.getSpriteFrame(frame.substr(1));
     this._setDisabledSpriteFrame(frame);
-}
+};
 
 cc.MenuItemToggle.prototype.selectedItem = cc.MenuItemToggle.prototype.getSelectedItem;
 

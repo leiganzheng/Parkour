@@ -54,7 +54,7 @@ this.DebuggerTransport = function DebuggerTransport(aInput, aOutput)
   this._incoming = "";
 
   this.hooks = null;
-}
+};
 
 DebuggerTransport.prototype = {
   /**
@@ -93,7 +93,7 @@ DebuggerTransport.prototype = {
       // this._output.asyncWait(this, 0, 0, threadManager.currentThread);
       if (wantLogging) {
         log("outgoing: " + this._outgoing);//.substring(0, 200));
-      };
+      }
       _bufferWrite(this._outgoing);
     }
   },
@@ -144,7 +144,8 @@ DebuggerTransport.prototype = {
   {
     this._incoming = incoming;//+= NetUtil.readInputStreamToString(aStream,
                                //                       aStream.available());
-    while (this._processIncoming()) {};
+    while (this._processIncoming()) {
+    }
   }, "DebuggerTransport.prototype.onDataAvailable"),
 
   /**
@@ -212,9 +213,7 @@ DebuggerTransport.prototype = {
 
     return true;
   }
-}
-
-
+};;
 /**
  * An adapter that handles data transfers between the debugger client and
  * server when they both run in the same process. It presents the same API as
@@ -237,7 +236,7 @@ this.LocalDebuggerTransport = function LocalDebuggerTransport(aOther)
    * follow.
    */
   this._serial = this.other ? this.other._serial : { count: 0 };
-}
+};
 
 LocalDebuggerTransport.prototype = {
   /**

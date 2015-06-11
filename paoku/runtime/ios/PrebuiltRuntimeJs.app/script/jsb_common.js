@@ -330,4 +330,4 @@ var parseKeyCode = function (keycode)
     var keyIndex = jsbKeyArr.indexOf(keycode);
     var jsbKeyCode = keyIndex == -1 ? cc.KEY.none : keyIndex;
     return jsbKeyCode;
-}
+};

@@ -92,7 +92,7 @@ this.safeErrorString = function safeErrorString(aError) {
   } catch (ee) { }
 
   return "<failed trying to find error description>";
-}
+};
 
 
 /**
@@ -111,7 +111,7 @@ this.reportException = function reportException(aWho, aException) {
   //    */
   //   Components.utils.reportError(msg);
   // }
-}
+};
 
 /**
  * Given a handler function that may throw, return an infallible handler
@@ -142,7 +142,7 @@ this.makeInfallible = function makeInfallible(aHandler, aName) {
       reportException(who, ex);
     }
   }
-}
+};
 
 const executeSoon = aFn => {
   Services.tm.mainThread.dispatch({
@@ -194,7 +194,7 @@ this.yieldingEach = function yieldingEach(aArray, aFn) {
   }());
 
   return deferred.promise;
-}
+};
 
 
 /**
@@ -226,5 +226,5 @@ function defineLazyPrototypeGetter(aObject, aKey, aCallback) {
       return value;
     }
   });
-}
+};
 
